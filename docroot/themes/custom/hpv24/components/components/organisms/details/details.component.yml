@@ -1,0 +1,16 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/10.2.x/core/modules/sdc/src/metadata.schema.json
+name: Details 
+status: experimental
+description: Details
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Title
+    attributes:
+      type: Drupal\Core\Template\Attribute
+    summary_attributes:
+      type: Drupal\Core\Template\Attribute
+    content_attributes:
+      type: Drupal\Core\Template\Attribute

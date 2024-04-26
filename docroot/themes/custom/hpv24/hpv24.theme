@@ -1,0 +1,125 @@
+<?php
+
+/**
+ * @file
+ * Theme functions to support hpv24 theme.
+ */
+
+use Drupal\Core\Language\LanguageInterface;
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function hpv24_preprocess_page(&$variables) {
+  // Add the print logo.
+  $variables['logo_print'] = \Drupal::request()->getBaseUrl() . '/' . \Drupal::service('extension.list.theme')->getPath('hpv24') . '/logo-print.png';
+
+  // Add the white logo.
+  $variables['logo_white'] = \Drupal::request()->getBaseUrl() . '/' . \Drupal::service('extension.list.theme')->getPath('hpv24') . '/logo-white.svg';
+
+  // Add the site name and slogan.
+  $variables['site_name'] = \Drupal::config('system.site')->get('name');
+  $variables['site_slogan'] = \Drupal::config('system.site')->get('slogan');
+
+  $hpv24_contained_regions = [
+    'container_top_bar',
+    // 'container_navbar_branding',
+    // 'container_navigation',
+    // 'container_highlighted',
+    'container_content_above',
+    // 'container_primary_sidebar',
+    'container_content',
+    // 'container_secondary_sidebar',
+    'container_content_below',
+    'container_footer_top',
+    'container_footer_bottom',
+  ];
+
+  foreach ($hpv24_contained_regions as $contained_region) {
+    $theme_settings_for_contained_region = theme_get_setting($contained_region);
+    if (isset($theme_settings_for_contained_region)
+      && $theme_settings_for_contained_region !== '') {
+      $variables[$contained_region] = $theme_settings_for_contained_region;
+    }
+  }
+
+}
+
+/**
+ * Implements hook_preprocess_page_title().
+ */
+function hpv24_preprocess_page_title(&$variables) {
+
+  // Hide page title for the front page and let screen readers only see it.
+  if (\Drupal::service('path.matcher')->isFrontPage()) {
+    $variables['title_attributes']['class'][] = 'visually-hidden';
+  }
+}
+
+/**
+ * Implements hook_preprocess_html().
+ */
+function hpv24_preprocess_html(&$variables) {
+
+  // The path for hpv24 theme in variables.
+  $variables['hpv24_path'] = \Drupal::request()->getBaseUrl() . '/' . \Drupal::service('extension.list.theme')->getPath('hpv24');
+
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function hpv24_form_alter(&$form, $form_state, $form_id) {
+
+  // Have a default style for moderation entity form.
+  if ($form_id == 'content_moderation_entity_moderation_form') {
+    $form['#attributes']['class'][] = 'card card-body bg-light mb-3';
+  }
+
+  // Have a default style for the moderation status in the layout editing node pages.
+  if ((preg_match('/^node_.*._layout_builder_form$/', $form_id)
+    && isset($form['moderation_state']))) {
+    $form['moderation_state']['#attributes']['class'][] = 'card card-body bg-light mb-3';
+    $form['#attached']['library'][] = 'hpv24/content_moderation';
+  }
+}
+
+/**
+ * Implements hook_preprocess_login_with().
+ */
+function hpv24_preprocess_login_with(&$variables) {
+
+  if (\Drupal::moduleHandler()->moduleExists('social_auth')) {
+    foreach ($variables['social_networks'] as $social_network_index => $social_network) {
+      if (isset($social_network['img_path'])) {
+        $theme_path = \Drupal::service('extension.list.theme')->getPath('hpv24');
+
+        $replaced_path_for_icons = str_replace('modules/contrib', 'social_auth', $social_network['img_path']);
+        $social_network_img_path_in_hpv24 = $theme_path . '/images/' . $replaced_path_for_icons;
+
+        if (file_exists(DRUPAL_ROOT . '/' . $social_network_img_path_in_hpv24)) {
+          $variables['social_networks'][$social_network_index]['img_path'] = $social_network_img_path_in_hpv24;
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_region().
+ */
+function hpv24_preprocess_region(&$variables) {
+  $isFront = \Drupal::service('path.matcher')->isFrontPage();
+  if ($isFront && $variables["region"] === "header") {
+    $variables["is_front"] = $isFront;
+  }
+}
+
+/**
+ * Implements hook_preprocess().
+ */
+function hpv24_preprocess(&$variables, $hook, $info) {
+  $language = \Drupal::languageManager()->getCurrentLanguage(LanguageInterface::TYPE_CONTENT);
+  $language_direction = $language->getDirection();
+  $variables['lang_dir'] = $language_direction;
+}

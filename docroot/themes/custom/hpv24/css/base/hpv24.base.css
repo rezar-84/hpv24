@@ -1,0 +1,93 @@
+/*!
+ * Bootstrap  v5.3.3 (https://getbootstrap.com/)
+ * Copyright 2011-2024 The Bootstrap Authors
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+
+/* Temp fix for:
+ * Issue #3233533: Core .placeholder class conflicts with new Bootstrap .placeholder class
+ * https://www.drupal.org/project/drupal/issues/3233533
+ * 
+ * Issue #3246827: Fix em.placeholder style from Bootstrap 5 base styling with the Drupal core placeholder
+ * https://www.drupal.org/i/3246827
+ */
+
+em.placeholder {
+  cursor: unset !important;
+  vertical-align: unset !important;
+  opacity: unset !important;
+  background-color: unset !important;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-required::after {
+  content: "";
+  vertical-align: super;
+  display: inline-block;
+  background-image: url(../../images/required.svg);
+  background-repeat: no-repeat;
+  background-size: calc(calc(1.5em + .75rem + calc(var(--bs-border-width) * 2)) * .1666666667) calc(calc(1.5em + .75rem + calc(var(--bs-border-width) * 2)) * .1666666667);
+  width: calc(calc(1.5em + .75rem + calc(var(--bs-border-width) * 2)) * .1666666667);
+  height: calc(calc(1.5em + .75rem + calc(var(--bs-border-width) * 2)) * .1666666667);
+  margin: 0 .3em;
+}
+
+.ajax-progress {
+  background-color: transparent !important;
+  border: 0 !important;
+}
+
+.ajax-progress-throbber .throbber {
+  background-color: transparent !important;
+  border: 0 !important;
+}
+
+.ajax-progress-throbber .message {
+  background-color: transparent !important;
+  border: 0 !important;
+}
+
+.ajax-progress-fullscreen {
+  background-color: transparent !important;
+}
+
+.hidden-anonymous,
+.visible-admin,
+.visible-logged-in {
+  display: none !important;
+}
+
+body.user-logged-in .visible-admin,
+body.user-logged-in .visible-logged-in,
+body.user-logged-in .hidden-anonymous {
+  display: inline-block !important;
+}
+
+body.user-logged-in .btn .visible-admin,
+body.user-logged-in .btn .visible-logged-in,
+body.user-logged-in .btn .hidden-anonymous {
+  display: inline-block !important;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  text-transform: capitalize;
+}
+
+a {
+  text-underline-offset: .25em;
+}
+

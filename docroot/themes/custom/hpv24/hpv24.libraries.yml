@@ -1,0 +1,161 @@
+framework:
+  dependencies:
+    - hpv24/bootstrap-styles
+    - hpv24/bootstrap-scripts
+    - hpv24/global-styles
+    - hpv24/global-scripts
+    - hpv24/bootstrap-icons
+    - hpv24/fontawesome
+bootstrap-styles:
+  css:
+    base:
+      css/base/bootstrap.base.css: {  }
+bootstrap-scripts:
+  dependencies:
+    - varbase_components/bs-base-component-script
+    - varbase_components/bs-modal-script
+    - varbase_components/bs-offcanvas-script
+    - varbase_components/bs-popover-script
+    - varbase_components/bs-scrollspy-script
+    - varbase_components/bs-tab-script
+    - varbase_components/bs-toast-script
+    - varbase_components/bs-tooltip-script
+    - content_moderation/content_moderation
+popper-script:
+  js:
+    js/popperjs/popper.js: {  }
+bs-base-component-script:
+  dependencies:
+    - core/drupalSettings
+    - core/drupal
+    - core/drupal.ajax
+    - core/jquery
+    - core/once
+    - varbase_components/popper-script
+  js:
+    js/bootstrap/util/index.js: {  }
+    js/bootstrap/dom/data.js: {  }
+    js/bootstrap/dom/event-handler.js: {  }
+    js/bootstrap/dom/manipulator.js: {  }
+    js/bootstrap/dom/selector-engine.js: {  }
+    js/bootstrap/util/config.js: {  }
+    js/bootstrap/util/component-functions.js: {  }
+    js/bootstrap/util/backdrop.js: {  }
+    js/bootstrap/util/focustrap.js: {  }
+    js/bootstrap/util/scrollbar.js: {  }
+    js/bootstrap/util/swipe.js: {  }
+    js/bootstrap/util/sanitizer.js: {  }
+    js/bootstrap/util/template-factory.js: {  }
+    js/bootstrap/base-component.js: {  }
+bs-alert-script:
+  dependencies:
+    - varbase_components/bs-base-component-script
+  js:
+    js/bootstrap/alert.js: {  }
+bs-button-script:
+  dependencies:
+    - varbase_components/bs-base-component-script
+  js:
+    js/bootstrap/button.js: {  }
+bs-carousel-script:
+  dependencies:
+    - varbase_components/bs-base-component-script
+  js:
+    js/bootstrap/carousel.js: {  }
+bs-collapse-script:
+  dependencies:
+    - varbase_components/bs-base-component-script
+  js:
+    js/bootstrap/collapse.js: {  }
+bs-dropdown-script:
+  dependencies:
+    - varbase_components/bs-base-component-script
+  js:
+    js/bootstrap/dropdown.js: {  }
+bs-modal-script:
+  dependencies:
+    - varbase_components/bs-base-component-script
+  js:
+    js/bootstrap/modal.js: {  }
+bs-offcanvas-script:
+  dependencies:
+    - varbase_components/bs-base-component-script
+  js:
+    js/bootstrap/offcanvas.js: {  }
+bs-popover-script:
+  dependencies:
+    - varbase_components/bs-tooltip-script
+  js:
+    js/bootstrap/popover.js: {  }
+bs-scrollspy-script:
+  dependencies:
+    - varbase_components/bs-base-component-script
+  js:
+    js/bootstrap/scrollspy.js: {  }
+bs-tab-script:
+  dependencies:
+    - varbase_components/bs-base-component-script
+  js:
+    js/bootstrap/tab.js: {  }
+bs-toast-script:
+  dependencies:
+    - varbase_components/bs-base-component-script
+  js:
+    js/bootstrap/toast.js: {  }
+bs-tooltip-script:
+  dependencies:
+    - varbase_components/bs-base-component-script
+  js:
+    js/bootstrap/tooltip.js: {  }
+global-styles:
+  css:
+    base:
+      css/base/hpv24.base.css: {  }
+    layout:
+      css/layout/edge2edge.layout.css: {  }
+      css/layout/equal-height.layout.css: {  }
+      css/layout/print.layout.css:
+        media: print
+    theme:
+      fonts/inter/css/inter.css: {  }
+global-scripts:
+  js:
+    js/scripts.js: {  }
+  dependencies:
+    - core/drupalSettings
+    - core/drupal
+    - core/drupal.ajax
+    - core/jquery
+    - core/once
+framework-rtl:
+  dependencies:
+    - hpv24/bootstrap-styles-rtl
+    - hpv24/bootstrap-scripts
+    - hpv24/global-styles-rtl
+    - hpv24/global-scripts
+    - hpv24/bootstrap-icons
+    - hpv24/fontawesome
+bootstrap-styles-rtl:
+  css:
+    base:
+      css/base/bootstrap-rtl.base.css: {  }
+global-styles-rtl:
+  css:
+    base:
+      css/base/hpv24-rtl.base.css: {  }
+    theme:
+      fonts/droid/arabic/kufi/css/droidarabickufi.css: {  }
+content_moderation:
+  css:
+    theme:
+      css/theme/content-moderation.theme.css: {  }
+fontawesome:
+  css:
+    theme:
+      fonts/fontawesome-free/css/all.min.css:
+        minified: true
+bootstrap-icons:
+  css:
+    theme:
+      fonts/bootstrap-icons/font/bootstrap-icons.min.css:
+        minified: true

@@ -1,0 +1,20 @@
+{#
+/**
+ * @file
+ * Page user reset.
+ */
+#}
+
+{% include 'varbase_components:page-user-reset' with {
+  logged_in_without_blocks: [
+    'hpv24_local_tasks',
+    'hpv24_breadcrumbs',
+    'hpv24_local_actions'
+  ],
+  not_logged_in_without_blocks: [
+    'hpv24_local_tasks',
+    'hpv24_breadcrumbs',
+    'hpv24_local_actions',
+    'hpv24_page_title'
+  ]
+} %}

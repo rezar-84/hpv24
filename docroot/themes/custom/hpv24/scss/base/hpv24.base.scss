@@ -1,0 +1,105 @@
+@import "../defaults";   // Global defaults.
+
+// hpv24 Base Global styling.
+// -----------------------------------------------------------------------------
+
+/* Temp fix for:
+ * Issue #3233533: Core .placeholder class conflicts with new Bootstrap .placeholder class
+ * https://www.drupal.org/project/drupal/issues/3233533
+ * 
+ * Issue #3246827: Fix em.placeholder style from Bootstrap 5 base styling with the Drupal core placeholder
+ * https://www.drupal.org/i/3246827
+ */
+ em.placeholder {
+  cursor: unset !important;
+  vertical-align: unset !important;
+  opacity: unset !important;
+  background-color: unset !important;
+}
+
+// Have a margin between field groups in forms.
+.form-group {
+  @include margin-bottom(1rem);
+}
+
+// Have a style form required fieldset, HTML input elements for fields.
+.form-required {
+
+  &::after {
+    content: '';
+    vertical-align: super;
+    display: inline-block;
+    background-image: url(../../images/required.svg);
+    background-repeat: no-repeat;
+    background-size: calc(#{$input-height} * .16666666666) calc(#{$input-height} * .16666666666);
+    width: calc(#{$input-height} * .16666666666);
+    height: calc(#{$input-height} * .16666666666);
+    margin: 0 0.3em;
+  }
+}
+
+.ajax-progress {
+  background-color: transparent !important;
+  border: 0 !important;
+}
+
+.ajax-progress-throbber {
+  .throbber {
+    background-color: transparent !important;
+    border: 0 !important;
+  }
+
+  .message {
+    background-color: transparent !important;
+    border: 0 !important;
+  }
+}
+
+.ajax-progress-fullscreen {
+  background-color: transparent !important;
+}
+
+// Hide for anonymous users.
+.hidden-anonymous,
+.visible-admin,
+.visible-logged-in {
+  display: none !important;
+}
+
+// Show only for logged in users.
+body.user-logged-in {
+  .visible-admin,
+  .visible-logged-in,
+  .hidden-anonymous {
+    display: inline-block !important;
+  }
+
+  .btn {
+    .visible-admin,
+    .visible-logged-in,
+    .hidden-anonymous {
+      display: inline-block !important;
+    }
+  }
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  text-transform: capitalize;
+}
+
+// Change Underline offset for inline links.
+a {
+  text-underline-offset: 0.25em;
+}
+

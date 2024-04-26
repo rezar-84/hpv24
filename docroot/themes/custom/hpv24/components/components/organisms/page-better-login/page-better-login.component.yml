@@ -1,0 +1,12 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/10.2.x/core/modules/sdc/src/metadata.schema.json
+name: Page Better Login 
+status: experimental
+description: The Better Login page component
+props:
+  type: object
+  properties:
+    attributes:
+      type: Drupal\Core\Template\Attribute
+    without_blocks:
+      type: array
+      name: Without Blocks

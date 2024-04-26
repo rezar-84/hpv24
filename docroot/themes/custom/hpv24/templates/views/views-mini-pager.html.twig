@@ -1,0 +1,19 @@
+{#
+/**
+ * @file
+ * hpv24's implementation for a views mini-pager.
+ *
+ * Available variables:
+ * - heading_id: Pagination heading ID.
+ * - items: List of pager items.
+ *
+ * @see template_preprocess_views_mini_pager()
+ *
+ * @ingroup themeable
+ */
+#}
+{% include 'varbase_components:pagination' with {
+  items: items,
+  alignment: 'center',
+  utility_classes: ['mt-3']
+} %}

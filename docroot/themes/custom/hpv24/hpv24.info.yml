@@ -1,0 +1,39 @@
+name: hpv24
+core_version_requirement: ^10
+engine: twig
+type: theme
+'base theme': false
+screenshot: screenshot.png
+'alt text': 'Screenshot of hpv24, Varbase front-end theme.'
+regions:
+  top_bar: 'Top bar'
+  navbar_branding: 'Navbar branding'
+  navigation: 'Navigation (Desktop and Collapse)'
+  highlighted: Highlighted
+  content_above: 'Content above'
+  primary_sidebar: 'Primary sidebar'
+  content: Content
+  secondary_sidebar: 'Secondary sidebar'
+  content_below: 'Content below'
+  footer_top: 'Footer top'
+  footer_bottom: 'Footer bottom'
+libraries:
+  - hpv24/framework
+libraries-override:
+  content_moderation/content_moderation: hpv24/content_moderation
+  varbase_components/popper-script: hpv24/popper-script
+  varbase_components/bs-base-component-script: hpv24/bs-base-component-script
+  varbase_components/bs-modal-script: hpv24/bs-modal-script
+  varbase_components/bs-offcanvas-script: hpv24/bs-offcanvas-script
+  varbase_components/bs-popover-script: hpv24/bs-popover-script
+  varbase_components/bs-scrollspy-script: hpv24/bs-scrollspy-script
+  varbase_components/bs-tab-script: hpv24/bs-tab-script
+  varbase_components/bs-toast-script: hpv24/bs-toast-script
+  varbase_components/bs-tooltip-script: hpv24/bs-tooltip-script
+ckeditor_stylesheets: false
+ckeditor5-stylesheets: false
+enforce_prop_schemas: false
+version: 1.0.0
+project: hpv24
+datestamp: 1713110872
+generator: 'hpv24:3.0.0-beta9'

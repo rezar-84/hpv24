@@ -1,0 +1,114 @@
+.varbase-text-card .card-title {
+  font-weight: 700;
+  line-height: 140%;
+  align-self: stretch;
+  text-transform: capitalize;
+}
+
+.varbase-text-card.anchor-all {
+  position: relative;
+}
+
+.varbase-text-card.anchor-all .text-card-content {
+  position: static;
+}
+
+.varbase-text-card.anchor-all .card-title {
+  position: static;
+}
+
+.varbase-text-card.anchor-all .card-title a {
+  position: static;
+}
+
+.varbase-text-card.anchor-all .card-title a::before {
+  position: absolute;
+  content: "";
+  display: block;
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.varbase-text-card.anchor-all a.card-link,
+.varbase-text-card.anchor-all div.card-link > a {
+  position: static;
+}
+
+.varbase-text-card.anchor-all a.card-link::before,
+.varbase-text-card.anchor-all div.card-link > a::before {
+  position: absolute;
+  content: "";
+  display: block;
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.varbase-text-card.anchor-all a {
+  z-index: 3;
+  position: relative;
+}
+
+.varbase-text-card.border-0 .text-card-content {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.varbase-text-card.bordered .text-card-content {
+  margin: 0;
+  padding: 0;
+}
+
+.varbase-text-card.xlarge .card-title {
+  font-size: calc(1.375rem + 1.5vw);
+}
+
+@media (min-width: 1200px) {
+  .varbase-text-card.xlarge .card-title {
+    font-size: 2.5rem;
+  }
+}
+
+.varbase-text-card.large .card-title {
+  font-size: calc(1.375rem + 1.5vw);
+}
+
+@media (min-width: 1200px) {
+  .varbase-text-card.large .card-title {
+    font-size: 2.5rem;
+  }
+}
+
+.varbase-text-card.medium .card-title {
+  font-size: calc(1.3125rem + .75vw);
+}
+
+@media (min-width: 1200px) {
+  .varbase-text-card.medium .card-title {
+    font-size: 1.875rem;
+  }
+}
+
+.varbase-text-card.small .card-title {
+  font-size: calc(1.275rem + .3vw);
+}
+
+@media (min-width: 1200px) {
+  .varbase-text-card.small .card-title {
+    font-size: 1.5rem;
+  }
+}
+
+.varbase-text-card.xsmall .card-title {
+  font-size: 1.25rem;
+}
+

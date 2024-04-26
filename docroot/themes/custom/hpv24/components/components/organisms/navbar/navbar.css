@@ -1,0 +1,28 @@
+[data-bs-theme=light] .navbar {
+  background: var(--bs-white);
+}
+
+[data-bs-theme=dark] .navbar {
+  background: #084298;
+}
+
+.navbar {
+  height: 5.25rem;
+}
+
+.navbar .form-inline .form-actions {
+  display: none;
+}
+
+.toolbar-oriented .toolbar-bar {
+  z-index: 1200;
+}
+
+[dir="ltr"] .toolbar-horizontal .toolbar-menu.nav {
+  float: left;
+}
+
+[dir="rtl"] .toolbar-horizontal .toolbar-menu.nav {
+  float: right;
+}
+

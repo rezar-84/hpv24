@@ -1,0 +1,11 @@
+{#
+/**
+ * @file
+ * Template for a Figure.
+ */
+#}
+{% include 'varbase_components:figure' with {
+  image: node,
+  caption: caption,
+  utility_classes: classes|split(' '),
+} %}

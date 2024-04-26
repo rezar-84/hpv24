@@ -1,0 +1,32 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/10.2.x/core/modules/sdc/src/metadata.schema.json
+name: List group
+status: experimental
+description: List Group
+props:
+  type: object
+  properties:
+    html_tag:
+      type: string
+      title: HTML tag
+      enum:
+        - ul
+        - ol
+    flush:
+      type: boolean
+      title: Flush
+    horizontal:
+      type: boolean
+      title: Horizontal
+    items_bg_color:
+      type: string
+      title: Items background color
+        - ''
+        - primary
+        - secondary
+        - success
+        - danger
+        - warning
+        - info
+        - dark
+        - light
+        - link

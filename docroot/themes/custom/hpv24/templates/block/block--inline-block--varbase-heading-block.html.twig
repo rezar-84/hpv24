@@ -1,0 +1,10 @@
+{#
+/**
+ * @file
+ * Template for the inline Varbase Heading block.
+ */
+#}
+{% include "varbase_components:block-heading" with {
+  heading_tag: heading_size['#items'].getString(),
+  heading_text: label
+} %}

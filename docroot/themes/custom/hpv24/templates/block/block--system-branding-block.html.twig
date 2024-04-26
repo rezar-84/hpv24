@@ -1,0 +1,21 @@
+{#
+/**
+ * @file
+ * Template for the branding block.
+ */
+#}
+{% embed 'varbase_components:block' with {
+  html_tag: 'div',
+} %}
+
+	{% block content %}
+		{% include 'varbase_components:navbar-brand' with {
+    text: site_name,
+    image_path: site_logo,
+    height: 'auto',
+    path: path('<front>'),
+    alt: elements.content.site_name['#markup'] ~ ' logo' ,
+  } %}
+	{% endblock %}
+
+{% endembed %}

@@ -1,0 +1,18 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/10.2.x/core/modules/sdc/src/metadata.schema.json
+name: Dropdown menu
+status: experimental
+description: Dropdown menu
+props:
+  type: object
+  properties:
+    content:
+      type: string
+      title: Content
+    attributes:
+      type: Drupal\Core\Template\Attribute
+      title: Attributes
+      description: HTML attributes for the containing element.
+libraryOverrides:
+  dependencies:
+    - varbase_components/bs-collapse-script
+    - varbase_components/bs-dropdown-script

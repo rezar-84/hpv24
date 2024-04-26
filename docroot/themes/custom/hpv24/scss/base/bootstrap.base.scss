@@ -1,0 +1,67 @@
+@import "../defaults";   // Global defaults.
+
+// Bootstrap 5 Base Global styling.
+// -----------------------------------------------------------------------------
+
+// Layout & components
+@import "../../node_modules/bootstrap/scss/root";
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap/scss/images";
+@import "../../node_modules/bootstrap/scss/containers";
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/tables";
+@import "../../node_modules/bootstrap/scss/forms";
+@import "../../node_modules/bootstrap/scss/buttons";
+@import "../../node_modules/bootstrap/scss/transitions";
+@import "../../node_modules/bootstrap/scss/dropdown";
+@import "../../node_modules/bootstrap/scss/button-group";
+@import "../../node_modules/bootstrap/scss/nav";
+@import "../../node_modules/bootstrap/scss/navbar";
+@import "../../node_modules/bootstrap/scss/card";
+@import "../../node_modules/bootstrap/scss/badge";
+
+// The Accordion library was overridden and attached with the `varbase_components:accordion-item` component.
+// Which attached to the `varbase_components:accordion` component, when used with accordion items.
+// @import "../../node_modules/bootstrap/scss/accordion"; // Commented the import, but kept for reference.
+
+// The Breadcrumb library was overridden and attached with the `varbase_components:breadcrumb` component.
+// @import "../../node_modules/bootstrap/scss/breadcrumb"; // Commented the import, but kept for reference.
+
+// The Pagination library was overridden and attached with the `varbase_components:pagination` component.
+// @import "../../node_modules/bootstrap/scss/pagination"; // Commented the import, but kept for reference.
+
+// The Alert library was overridden and attached with the `varbase_components:alert` component.
+// @import "../../node_modules/bootstrap/scss/alert"; // Commented the import, but kept for reference.
+
+// The Progress library was overridden and attached with the `varbase_components:progress-bar` component.
+// @import "../../node_modules/bootstrap/scss/progress"; // Commented the import, but kept for reference.
+
+@import "../../node_modules/bootstrap/scss/list-group";
+@import "../../node_modules/bootstrap/scss/close";
+@import "../../node_modules/bootstrap/scss/toasts";
+@import "../../node_modules/bootstrap/scss/modal";
+@import "../../node_modules/bootstrap/scss/tooltip";
+@import "../../node_modules/bootstrap/scss/popover";
+@import "../../node_modules/bootstrap/scss/carousel";
+@import "../../node_modules/bootstrap/scss/spinners";
+@import "../../node_modules/bootstrap/scss/offcanvas";
+@import "../../node_modules/bootstrap/scss/placeholders";
+
+// Helpers
+@import "../../node_modules/bootstrap/scss/helpers";
+
+// Utilities
+@import "../../node_modules/bootstrap/scss/utilities/api";
+// scss-docs-end import-stack
+
+// Border color variants utility.
+// https://www.npmjs.com/package/bootstrap-borders-utilities
+@import "../../node_modules/bootstrap-borders-utilities/utilities/scss/border-color-variants.scss";
+
+// Responsive ratio utility.
+// https://www.npmjs.com/package/bootstrap-ratio-utilities
+@import "../../node_modules/bootstrap-ratio-utilities/utilities/scss/responsive-ratio.scss";
+
+// Flip ratio utility.
+@import "../../node_modules/bootstrap-ratio-utilities/utilities/scss/flip-ratio.scss";

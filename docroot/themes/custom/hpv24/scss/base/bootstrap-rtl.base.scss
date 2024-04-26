@@ -1,0 +1,15 @@
+@import "../defaults";   // Global defaults.
+
+// Bootstrap 5 Base Global styling.
+// -----------------------------------------------------------------------------
+
+[dir="rtl"] {
+  // To exclusively modify the --bs-font-sans-serif CSS3 variable for 
+  // right-to-left (RTL) layouts in Bootstrap 5,
+  // themes can make the following adjustment.
+  &:root,
+  &[data-bs-theme=light],
+  &[data-bs-theme=dark] {
+    --bs-font-sans-serif: "Droid Arabic Kufi", sans-serif;
+  }
+}
