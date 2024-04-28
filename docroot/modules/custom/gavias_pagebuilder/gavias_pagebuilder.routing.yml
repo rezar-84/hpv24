@@ -1,0 +1,97 @@
+gavias_pagebuilder.admin:
+  path: '/admin/structure/gavias-pagebuilder'
+  defaults:
+    _title: 'Blocks - Gavias Page Builder'
+    _controller: '\Drupal\gavias_pagebuilder\Controller\GaviasPageBuilderController::gavias_pagebuilder_list'
+  requirements:
+    _permission: 'administer gavias_pagebuilder'
+
+gavias_pagebuilder.admin.add:
+  path: '/admin/structure/gavias-pagebuilder/form/{bid}'
+  defaults:
+    _title: 'Add Gavias Content Builder'
+    _form: '\Drupal\gavias_pagebuilder\Form\AddForm'
+  requirements:
+    _permission: 'administer gavias_pagebuilder'
+
+gavias_pagebuilder.admin.import:
+  path: '/admin/structure/gavias-pagebuilder/import/{bid}'
+  defaults:
+    _title: 'Import Gavias Content Builder'
+    _form: '\Drupal\gavias_pagebuilder\Form\ImportForm'
+  requirements:
+    _permission: 'administer gavias_pagebuilder'
+
+gavias_pagebuilder.admin.edit:
+  path: '/admin/structure/gavias-pagebuilder/edit/{bid}'
+  defaults:
+    _title: 'Edit Gavias Content Builder'
+    _controller: '\Drupal\gavias_pagebuilder\Controller\GaviasPageBuilderController::gavias_pagebuilder_edit'
+  requirements:
+    _permission: 'administer gavias_pagebuilder'
+
+gavias_pagebuilder.admin.delete:
+  path: '/admin/structure/gavias-pagebuilder/delete/{bid}'
+  defaults:
+    _title: 'Delete Gavias Content Builder'
+    _form: '\Drupal\gavias_pagebuilder\Form\DelForm'
+  requirements:
+    _permission: 'administer gavias_pagebuilder'
+
+gavias_pagebuilder.admin.save:
+  path: '/admin/structure/gavias-pagebuilder/save'
+  defaults:
+    _title: 'Save Configuration of Gavias Page Builder'
+    _controller: '\Drupal\gavias_pagebuilder\Controller\GaviasPageBuilderController::gavias_pagebuilder_save'
+  requirements:
+    _permission: 'administer gavias_pagebuilder'
+
+gavias_pagebuilder.admin.export:
+  path: '/admin/structure/gavias-pagebuilder/export/{bid}'
+  defaults:
+    _title: 'Save configuration of Gavias Page Builder'
+    _controller: '\Drupal\gavias_pagebuilder\Controller\GaviasPageBuilderController::gavias_pagebuilder_export'
+  requirements:
+    _permission: 'administer gavias_pagebuilder'
+
+gavias_pagebuilder.admin.clone:
+  path: '/admin/structure/gavias-pagebuilder/clone/{bid}'
+  defaults:
+    _title: 'Clone Gavias Content Builder'
+    _form: '\Drupal\gavias_pagebuilder\Form\CloneForm'
+  requirements:
+    _permission: 'administer gavias_pagebuilder'
+
+gavias_pagebuilder.admin.save_node:
+  path: '/admin/structure/gavias-pagebuilder/save_node'
+  defaults:
+    _title: 'Save Configuration of Gavias Page Builder'
+    _controller: '\Drupal\gavias_pagebuilder\Controller\GaviasPageBuilderController::gavias_pagebuilder_save_node'
+  requirements:
+    _permission: 'administer gavias_pagebuilder'
+
+gavias_pagebuilder.admin.import_node:
+  path: '/admin/structure/gavias-content-builder/import_node/{nid}'
+  defaults:
+    _title: 'Import Gavias Content Builder'
+    _form: '\Drupal\gavias_pagebuilder\Form\ImportNode'
+  requirements:
+    _permission: 'administer gavias_pagebuilder'
+
+gavias_pagebuilder.admin.export_node:
+  path: '/admin/structure/gavias-content-builder/export_node/{nid}'
+  defaults:
+    _title: 'Save configuration of Gavias Page Builder'
+    _controller: '\Drupal\gavias_pagebuilder\Controller\GaviasPageBuilderController::gavias_pagebuilder_export_node'
+  requirements:
+    _permission: 'administer gavias_pagebuilder'
+
+gavias_pagebuilder.settings_form:
+  path: '/admin/config/gavias_pagebuilder/settings'
+  defaults:
+    _form: '\Drupal\gavias_pagebuilder\Form\SettingsForm'
+    _title: 'Page Builder Settings'
+  requirements:
+    _permission: 'administer gavias_pagebuilder'
+  options:
+    _admin_route: TRUE

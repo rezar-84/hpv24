@@ -1,0 +1,120 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser_2
+    - field.field.node.team.body
+    - field.field.node.team.field_team_contact
+    - field.field.node.team.field_team_description
+    - field.field.node.team.field_team_education
+    - field.field.node.team.field_team_email
+    - field.field.node.team.field_team_facebook
+    - field.field.node.team.field_team_google
+    - field.field.node.team.field_team_image
+    - field.field.node.team.field_team_name
+    - field.field.node.team.field_team_pinterest
+    - field.field.node.team.field_team_position
+    - field.field.node.team.field_team_quote
+    - field.field.node.team.field_team_skills
+    - field.field.node.team.field_team_twitter
+    - image.style.height
+    - node.type.team
+  module:
+    - image
+    - text
+    - user
+id: node.team.teaser_2
+targetEntityType: node
+bundle: team
+mode: teaser_2
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_team_contact:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  field_team_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 114
+    region: content
+  field_team_education:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 110
+    region: content
+  field_team_email:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 113
+    region: content
+  field_team_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: height
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_team_name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_team_position:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_team_quote:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 111
+    region: content
+  field_team_skills:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 115
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_team_facebook: true
+  field_team_google: true
+  field_team_pinterest: true
+  field_team_twitter: true
+  langcode: true

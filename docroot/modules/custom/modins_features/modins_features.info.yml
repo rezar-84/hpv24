@@ -1,0 +1,41 @@
+name: 'Modins Features'
+description: 'Modins Features - Import content type, field, view ... for Modins theme.'
+type: module
+core_version_requirement: '^9.4 || ^10'
+dependencies:
+  - block
+  - block_content
+  - ckeditor5
+  - comment
+  - contact
+  - datetime
+  - editor
+  - field
+  - file
+  - filter
+  - gavias_hook_themer
+  - gavias_pagebuilder
+  - gavias_view
+  - image
+  - imce
+  - language
+  - mailchimp_signup
+  - menu_ui
+  - node
+  - options
+  - path
+  - pathauto
+  - search
+  - shortcut
+  - system
+  - taxonomy
+  - text 
+  - user
+  - views
+  - views_infinite_scroll
+  - webform
+  - config_update
+  - features
+  - admin_toolbar
+version: '1.0.0'
+

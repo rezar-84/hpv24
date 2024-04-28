@@ -1,0 +1,152 @@
+html{
+  overflow-x: hidden!important;
+  font-size: var(--font-body-size);
+}
+body{
+  overflow: hidden!important;
+  position: relative;
+  &.boxed{ 
+	 background-color: #EAF1F7;  
+	 div.gva-body-wrapper{
+		background: $white;
+		max-width: 1440px;  
+		margin: 0 auto;
+		box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.05);
+		position: relative;
+	 }
+  }
+  .body-page{
+	 background-color: #fff;
+  }
+  &.logged-in{
+	 &.toolbar-horizontal{ 
+		.header-1{
+		  margin-top: 39px;
+		}
+	 }
+  }
+  &.bg-dark{
+	 background: #EFF1F2;
+	 .gva-body-page{
+		background: #EFF1F2;
+	 }
+  }
+}
+
+.area{
+  &.slideshow_content{
+	 .block{
+		margin-bottom: 0;
+	 }
+  }
+}
+
+.area-panel{
+  padding: 30px 0;
+}
+
+.header-right{
+  .block{
+	 margin-bottom: 0;
+  }
+}
+
+#page-main-content{
+  min-height: 360px;
+  @media(max-width: 768.9px){
+	 min-height: 100px;
+  }
+}
+
+.main-menu{
+  .area-main-menu{
+	 .area-inner{
+		.block{
+		  margin-bottom: 0;
+		}
+	 }  
+  }
+}  
+
+
+#footer{
+	color: var(--footer-color); 
+	font-size: 16px;
+	background: url('#{$base-theme-image-path}/bg-footer.png') no-repeat top center var(--footer-bg-color); 
+	a{
+	 	color: var(--footer-link-color);
+	 	&:hover, &:focus{
+			color: var(--footer-link-color-hover);
+	 	}
+  }
+ 	.text-medium{
+ 		font-size: 18px;
+ 		font-weight: 700;
+ 		line-height: 1.44;
+ 	}
+  .block{
+	 	padding-bottom: 0;
+	 	margin-bottom: 0;
+	 	.block-title{
+			color: $white;
+			font-size: 20px;
+			font-weight: 700;
+			line-height: 22px;
+			letter-spacing: 0;
+			margin-top: 8px;
+			margin-bottom: 0;
+			padding-bottom: 32px;
+			&:before{
+				content: none;
+			}
+			span{
+				position: relative;
+				&:after{
+					width: 17px;
+					height: 3px;
+					background: $theme-color;
+					content: "";
+					display: inline-block;
+					margin-left: 9px;
+					margin-bottom: 5px;
+				}
+			}
+	 	}
+  }
+  .contact-info{
+  	margin-top: -6px;
+  }
+  .gsc-heading__title{
+  	margin-top: 8px;
+  }
+  .gsc-heading__desc{
+  	margin-top: 27px;
+  }
+  .gsc-socials {
+  	margin: 25px 0 0;
+  	a{
+	  	margin-right: 8px;
+	  	i{
+	  		width: 42px;
+	  		height: 42px;
+	  		background: #3d3d73;
+	  	}
+	  }
+  }
+  .gallery-post a.zoomGallery{
+  	font-size: 15px;
+  }
+  .column-radius-10{
+  	.bg-column-inner{
+  		border-radius: 10px;
+  	}
+  }
+  .copyright{
+	 	font-size: 15px;
+	 	font-weight: 400;
+	 	.copyright-inner{
+			padding: 30px 0;
+			border-top: 1px solid rgba(255, 255, 255, 0.1);
+	 	}
+  }
+}

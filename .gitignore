@@ -9,6 +9,8 @@
 /docroot/profiles/varbase/
 /docroot/libraries/
 /docroot/recipes/
+/tmp
+/private
 
 # Ignore sensitive information
 /docroot/sites/*/settings.php

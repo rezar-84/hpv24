@@ -1,0 +1,52 @@
+<?php
+
+function gavias_pagebuilder_schema() {
+  $schema = array();
+  if(!\Drupal::database()->schema()->tableExists('gavias_pagebuilder')){
+    $schema['gavias_pagebuilder'] = array(
+      'fields' => array(
+        'id' => array(
+          'type' => 'serial',
+          'not null' => TRUE,
+        ),
+        'title' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE,
+        ),
+        'machine_name' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE,
+        ),
+        'type' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE
+        ),
+        'params' => array(
+          'type' => 'text',
+          'size' => 'big',
+          'not null' => FALSE
+        ),
+        'params_1' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE,
+        ),
+        'params_2' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE
+        ),
+        'params_3' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE
+        ),
+      ),
+      'primary key' => array('id')
+    );
+    return $schema;
+  }
+}

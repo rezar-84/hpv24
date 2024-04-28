@@ -1,0 +1,9 @@
+name: Gavias Page Builder
+type: module
+description: Gavias Page Builder module.
+dependencies:
+  - imce
+package: gavias
+version: '2.0.1'
+core_version_requirement: ^8 || ^9 || ^10
+project: 'gavias_pagebuilder'

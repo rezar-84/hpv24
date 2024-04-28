@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700&display=swap');
+body{
+    font-family: 'Vazirmatn', sans-serif !important;
+}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
+    font-family: 'Vazirmatn', sans-serif !important;
+
+}
+
+.persian-text{
+    font-family: 'Vazirmatn', sans-serif !important ;
+
+}
+.gavias_sliderlayer{
+    direction:ltr;
+}
+.block-dropdown-language .dropbutton-wrapper ul.dropbutton:after{
+    float:right;
+}
+.breadcrumb-content-inner .gva-block-breadcrumb .breadcrumb-links nav.breadcrumb ol li{
+float: right;
+
+}
+.feature-carousel,.porfolio-carousel,.blog-carousel,.testimonial-main ,.landing-ltr{
+    direction:ltr
+}
+.feature-one__single{
+    direction:rtl
+}
+
+ul.features-list > li:before{
+    margin-right: 0;
+    margin-left: 20px;
+}
+.search-one__content{
+    right:auto;
+    left:0 !important;
+
+}
+.title-line{
+    line-height: 2rem;
+}
+[dir="rtl"] .dropbutton-toggle {
+    left: auto !important;
+    right: 0 !important;
+}
+.block-dropdown-language .dropbutton-wrapper ul.dropbutton {
+    position: absolute;
+    top: -5px;
+    right: 0;
+    display: inline-block;
+    float: right;
+    z-index: 9;
+    padding: 9px 35px 14px 35px;
+}
+.block-dropdown-language .dropbutton-wrapper ul.dropbutton:after{
+    left:5px !important;
+    right: auto;
+}
+span.language-link.active-language{
+    font-family: 'Vazirmatn', sans-serif;
+
+}
+
+.iconbox-seven__content-inner {
+    text-align: right;
+    padding-right: 20px;
+    direction: ltr;
+}
+
+/* portfolio */
+.portfolio-v1 .arrow {
+
+    left: 0;
+    right: auto;
+    font-size: 14px;
+    border-radius: 10px 0px 0px 10px;
+    clip-path: polygon(0% 0%, 45% 0%, 100% 100%, 0% 100%);
+    padding-right: 15px;
+}
+    .portfolio-v1 .content{
+    margin-right:30px;
+    margin-left: 0;
+    padding: 25px 20px 33px 61px;
+
+    }
+    
+    .fa-arrow-right:before {
+        content: "\f060" !important;
+    }
+
+
+    /* Grid float for articles */
+    [class*="block-grid-"] > div {
+        float: right;
+    }
+.post-content{
+    text-align:right;
+}
+
+    /* typography  */
+    .gsc-heading__sub-title span:before {
+    margin-left: 10px;
+    margin-bottom: 5px;
+    content: "";
+    width: 18px;
+    height: 3px;
+    display: inline-block;
+    background: var(--modins-theme-color);
+    z-index: 1;
+    border-radius: 5px;
+}
+.gsc-heading__sub-title span:after {
+    display:none;
+}
+
+
+/* page builder elements */
+.progress .percentage{
+    right:auto;
+    left: 1px;
+}
+
+
+/* navigation */
+.menu-bar{
+    right:200px;
+}
+.navigation .gva_menu li a{
+    text-align: right !important;
+}
+
+.navigation .gva_menu .sub-menu {
+
+    right: 0;
+    left: auto;
+}

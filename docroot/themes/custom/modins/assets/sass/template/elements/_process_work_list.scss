@@ -1,0 +1,200 @@
+.workprocess-one{
+  &__single{
+    position: relative;
+    max-width: 360px;
+    margin: 0 auto 30px;
+  }
+  &__top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__icon{
+    width: 108px;
+    height: 108px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: $theme-color;
+    color: $white;
+    border-radius: 50%;
+    font-size: 60px;
+  }
+  &__number {
+    width: 50px;
+    height: 50px;
+    border: 4px solid $theme-color;
+    background: #fff;
+    margin-right: -8px;
+    border-radius: 50%;
+    z-index: 19;
+    font-size: 16px;
+    line-height: 45px;
+    text-align: center;
+    font-weight: 700;
+    color: $theme-color-second;
+  }
+  &__content{
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 10px 60px 0px rgba(0,0,0,.12);
+    padding: 26px 20px 30px;
+    margin-top: 30px;
+    border-radius: 8px;
+    background: #fff;
+    &:after {
+      content: '';
+      border: 15px solid transparent;
+      border-bottom-color: transparent;
+      border-bottom-color: #fff;
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+      margin-left: 20px;
+    }
+  }
+  &__title{
+    letter-spacing: -0.8px;
+    font-size: 20px;
+  }
+  &__desc{
+    font-weight: 500;
+  }
+  &__single{
+    &:hover, &.active{
+      
+    }
+  }
+}
+
+.workprocess-two{
+  &__single{
+    position: relative;
+  }
+  &__number{
+    opacity: 0.05;
+    -webkit-text-stroke: 2px #232323;
+    letter-spacing: -15px;
+    line-height: 200px;
+    font-size: 250px;
+    font-weight: 700;
+    color: rgba(102, 207, 169, 0.05);
+    position: absolute;
+    top: 0;
+    left: -10px;
+    z-index: 1;
+  }
+  &__icon{
+    font-size: 50px;
+    color: $theme-color-second;
+    margin-bottom: 10px;
+  }
+  &__title{
+    letter-spacing: -0.66px;
+    font-size: 22px;
+    @media (max-width: 767px){
+      font-size: 20px;
+    }
+  }
+  &__content{
+    padding-top: 40px;
+    padding-left: 60px;
+    position: relative;
+    z-index: 2;
+    @media (max-width: 767px){
+      padding-left: 30px;
+    }
+  }
+  &__action{
+    margin-top: 5px;
+    a{
+      color: $body-color;
+      font-size: 20px;
+      @include transition(all 0.35s);
+      &:hover, &:focus{
+        color: $theme-color-second;
+      }
+    }
+  }
+  &__single{
+    &:hover{
+      .workprocess-two{
+        &__action a{
+          color: $theme-color;
+        }
+      }
+    }
+  }
+}
+.workprocess-three{
+  &__single{
+    position: relative;
+  }
+  &__image{
+    position: relative;
+    overflow: hidden;
+    @include transition(all 0.4s);
+    &:before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      mix-blend-mode: multiply;
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1));
+      z-index: 1;
+    }
+    img{
+      @include transition(all 0.4s);
+    }
+  }
+  &__number{
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: $theme-color-second;
+    letter-spacing: -0.72px;
+    font-size: 16px;
+    font-weight: 700;
+    color: $white;
+    position: absolute;
+    top: 20px;
+    left: 35px;
+    z-index: 2;
+    @include transition(all 0.4s);
+  }
+  &__title{
+    color: $white;
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  &__content{
+    position: absolute;
+    bottom: 20px;
+    left: 35px;
+    z-index: 2;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &__single{
+    &:hover,&.active{
+      .workprocess-three{
+        &__image{ 
+          border-radius: 7px;
+          img{
+            transform: scale(1.1);
+          }
+        }
+        &__number{
+          background: $theme-color-second;
+        }
+      }
+    }
+  }
+}

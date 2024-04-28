@@ -1,0 +1,205 @@
+<?php
+
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Field\FieldDefinition;
+use Drupal\Core\Field\BaseFieldDefinition;
+use Drupal\Core\Template\Attribute;
+use Drupal\Core\Form\FormStateInterface;
+use \Drupal\Core\Menu\MenuLinkInterface;
+use Drupal\Core\Menu\MenuLinkDefault;
+use Drupal\Core\Menu\MenuLinkContent;
+use Drupal\block\Entity\Block;
+use \Drupal\Core\File\FileSystemInterface;
+
+module_load_include('php','gavias_hook_themer', 'includes/customize');
+module_load_include('php','gavias_hook_themer', 'includes/functions');
+module_load_include('php','gavias_hook_themer', 'includes/layout');
+function gavias_hook_themer_theme() {
+  	return [
+	 	'views_view_gvacarouselfilter' => [
+			'variables' => [],
+	 	]
+  	];
+}
+
+function gavias_hook_themer_makeid($length = 5){
+  	$characters = '0123456789abcdefghijklmnopqrstuvwxyz';
+  	$randomString = '';
+  	for ($i = 0; $i < $length; $i++) {
+	 	$randomString .= $characters[rand(0, strlen($characters) - 1)];
+  	}
+  	return $randomString;
+}
+
+/**
+ * Implements hook_preprocess_html().
+ */
+function gavias_hook_themer_preprocess_html(&$variables) {
+  	$path = \Drupal::service('path.current')->getPath();
+  	$path_args = explode('/', $path);
+  	if (isset($path_args[1]) && isset($path_args[2]) && ($path_args[1] == 'node') && (is_numeric($path_args[2]))) {
+	 	$node = \Drupal\node\Entity\Node::load($path_args[2]);
+	 	if($node && $node->hasField('gva_node_class')){
+			$class_body = $node->get('gva_node_class')->getValue();
+			if(isset($class_body) && !empty($class_body[0])) {
+			 	$variables['attributes']['class'][] = $class_body[0]['value'];
+			}
+	 	}
+	 	if($node && $node->hasField('gva_box_layout')){
+			$box_layout = $node->get('gva_box_layout')->getValue();
+			if(isset($box_layout) && !empty($box_layout[0])) {
+			 	$variables['attributes']['class'][] = $box_layout[0]['value'];
+			}
+	 	}
+  	}
+}
+
+function gavias_hook_themer_preprocess_page(&$variables) {
+  	$path = \Drupal::service('path.current')->getPath();
+  	$path_args = explode('/', $path);
+  	if ($node = \Drupal::request()->attributes->get('node')) {
+		if(is_object($node)){
+			$variables['gva_header'] = '';
+			if($node){
+			  	if($node->hasField('gva_header')){
+				 	$gva_header = $node->get('gva_header')->value;
+				 	if($gva_header) {
+						$variables['gva_header'] = $gva_header;
+				 	}
+			  	}
+			  	if($node->hasField('gva_breadcrumb')){
+				 	$gva_breadcrumb = $node->get('gva_breadcrumb')->value;
+				 	if($gva_breadcrumb && $gva_breadcrumb == 'disable'){
+						if(isset($variables['page']['breadcrumbs'])) unset($variables['page']['breadcrumbs']);
+				 	}
+			  	}
+			}  
+	 	}
+  	}
+}
+
+
+/**
+ * Additional submit handler for menu_link_content_form.
+ */
+function gavias_hook_themer_form_menu_link_content_form_submit(array &$form, FormStateInterface $form_state) {
+  	$values = $form_state->getValues();
+  	$attributes = array();
+
+  	foreach ($values['attributes'] as $attribute => $value) {
+	 	$value = trim($value);
+	 	if (!empty($value)) {
+			$attributes[$attribute] = $value;
+	 	}
+  	}
+
+  	$menuLinkEntity = _gavias_hook_themer_get_menu_link_entity_from_form_state($form_state);
+  	$options = $menuLinkEntity->link->first()->options;
+  	$changed = FALSE;
+  	if (empty($attributes)) {
+	 	if (!empty($options['attributes'])) {
+			unset($options['attributes']);
+			$changed = TRUE;
+	 	}
+  	}
+  	else {
+	 	$options['attributes'] = $attributes;
+	 	$changed = TRUE;
+  	}
+
+  	if ($changed) {
+	 	$menuLinkEntity->link->first()->options = $options;
+	 	$menuLinkEntity->save();
+  	}
+}
+
+function _gavias_hook_themer_get_menu_link_entity_from_form_state(FormStateInterface $form_state) {
+  	$buildInfo = $form_state->getBuildInfo();
+  	$menuLinkContentForm = $buildInfo['callback_object'];
+  	return $menuLinkContentForm->getEntity();
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function gavias_hook_themer_preprocess_block(&$variables) {
+  	// Blocks coming from page manager widget does not have id.
+  	if (!empty($variables['elements']['#id'])) {
+	 	$block = Block::load($variables['elements']['#id']);
+	 	if ($classes = $block->getThirdPartySetting('gavias_hook_themer', 'classes')) {
+			$variables['attributes']['class'][] = $classes;
+	 	}
+  	}
+}
+
+
+/**
+* Implements hook_entity_view_alter().
+*/
+function gavias_hook_themer_entity_view_alter(array &$build, Drupal\Core\Entity\EntityInterface $entity, \Drupal\Core\Entity\Display\EntityViewDisplayInterface $display) {
+  	// Cheking view_mode for node.
+  	if ($build['#view_mode'] === 'full' && $entity Instanceof \Drupal\node\NodeInterface) {
+	 	// Cheking html_head_link on attached tags in head.
+	 	if (!isset($build['#attached']['html_head_link'])) return;
+	 	// Array to unset.
+	 	$gavias_hook_themer = [
+			'delete-form',
+			'edit-form',
+			'version-history',
+			'revision'
+	 	];
+	 	// Unset loop.
+	 	foreach ($build['#attached']['html_head_link'] as $key => $value) {
+			if (isset($value[0]['rel']) && in_array($value[0]['rel'], $gavias_hook_themer)) unset($build['#attached']['html_head_link'][$key]);
+	 	}
+  	}
+}
+
+/**
+ * Implements hook_page_attachments_alter().
+ */
+function gavias_hook_themer_page_attachments_alter(array &$attachments) {
+  	// Array to unset.
+  	$gavias_hook_themer = [
+	 	'delete-form',
+	 	'edit-form',
+	 	'version-history',
+	 	'revision'
+  	];
+  	// Unset loop.
+  	if(isset($attachments['#attached']['html_head_link']) && is_array($attachments['#attached']['html_head_link'])){
+	 	foreach ($attachments['#attached']['html_head_link'] as $key => $value) {
+			if (isset($value[0]['rel']) && in_array($value[0]['rel'], $gavias_hook_themer)) unset($attachments['#attached']['html_head_link'][$key]);
+	 	}
+  	}
+}
+
+/**
+ * Implements hook_module_implements_alter().
+ */
+function gavias_hook_themer_module_implements_alter(&$implementations, $hook) {
+  	if ($hook === 'page_attachments_alter') {
+	 	$group = $implementations['gavias_hook_themer'];
+	 	unset($implementations['gavias_hook_themer']);
+	 	$implementations['gavias_hook_themer'] = $group;
+  	}
+}
+
+function gavias_hook_themer_update_projects_alter(&$projects){
+	unset($projects['gavias_hook_themer']);
+	unset($projects['Gaviasthemer']);
+}
+
+
+function gavias_hook_themer_sliderlayer_styles_alter(&$variables){
+  	$variables['data'] = array(
+	 	''                   => 'None',
+	 	'slide-style-1'      => 'Style 1: Headings',
+	 	'slide-style-2'      => 'Style 2: Headings, Letter Spacing',
+	 	'slide-style-3'      => 'Style 3: Headings, Letter Spacing, Border Bottom',
+	 	'btn-slide'          => 'Style 4: Button theme',
+	 	'btn-slide-white'    => 'Style 5: Button white'
+  	);
+}
+
+

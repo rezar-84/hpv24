@@ -1,0 +1,25 @@
+<article class="testimonial-two__single">      
+   <div class="testimonial-two__content">
+      <span class="testimonial-two__quote-icon"><i class="icomoon-quote"></i></span>
+      
+      <div class="testimonial-two__meta">
+         <div class="testimonial-two__avatar">
+            {{ fields.field_testimonial_avatar.content }}
+         </div> 
+         <div class="testimonial-two__info">
+            <div class="testimonial-two__stars"> 
+               <i class="fa fa-star"></i> 
+               <i class="fa fa-star"></i> 
+               <i class="fa fa-star"></i> 
+               <i class="fa fa-star"></i> 
+               <i class="fa fa-star"></i>
+            </div>
+            <h3 class="testimonial-two__name">{{ fields.field_testimonial_name.content }}</h3>
+            <div class="testimonial-two__job">{{ fields.field_testimonial_job.content }}</div> 
+         </div> 
+      </div> 
+      <div class="testimonial-two__quote">
+         {{ fields.body.content|striptags|trim }}
+      </div>
+   </div>
+</article>

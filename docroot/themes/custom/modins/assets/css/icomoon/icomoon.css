@@ -1,0 +1,255 @@
+@font-face {
+  font-family: "icomoon modins";
+  src:  url("./icomoon.eot");
+  src:  url("./icomoon.eot#iefix") format("embedded-opentype"),
+    url("./icomoon.ttf") format("truetype"),
+    url("./icomoon.woff") format("woff"),
+    url("./icomoon.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icomoon-"], [class*=" icomoon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon modins' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icomoon-folder:before {
+  content: "\e900";
+}
+.icomoon-insurance:before {
+  content: "\e901";
+}
+.icomoon-car:before {
+  content: "\e902";
+}
+.icomoon-cardiogram:before {
+  content: "\e903";
+}
+.icomoon-magnifying-glass:before {
+  content: "\e904";
+}
+.icomoon-calling:before {
+  content: "\e905";
+}
+.icomoon-healthy-life:before {
+  content: "\e906";
+}
+.icomoon-car-1:before {
+  content: "\e907";
+}
+.icomoon-home-insurance:before {
+  content: "\e90f";
+}
+.icomoon-save-money:before {
+  content: "\e91b";
+}
+.icomoon-online-registration:before {
+  content: "\e91c";
+}
+.icomoon-guarantee:before {
+  content: "\e91d";
+}
+.icomoon-medal:before {
+  content: "\e91e";
+}
+.icomoon-home1:before {
+  content: "\e91f";
+}
+.icomoon-cross:before {
+  content: "\e92d";
+}
+.icomoon-suitcase:before {
+  content: "\e92e";
+}
+.icomoon-fire1:before {
+  content: "\e934";
+}
+.icomoon-wedding-rings:before {
+  content: "\e935";
+}
+.icomoon-quote:before {
+  content: "\e936";
+}
+.icomoon-group:before {
+  content: "\e937";
+}
+.icomoon-life-insurance:before {
+  content: "\e938";
+}
+.icomoon-success:before {
+  content: "\e939";
+}
+.icomoon-right-arrow2:before {
+  content: "\e93a";
+}
+.icomoon-easy:before {
+  content: "\e93b";
+}
+.icomoon-controls:before {
+  content: "\e93c";
+}
+.icomoon-bonus:before {
+  content: "\e93d";
+}
+.icomoon-right-arrow-1:before {
+  content: "\e93e";
+}
+.icomoon-employees:before {
+  content: "\e93f";
+}
+.icomoon-self-service:before {
+  content: "\e940";
+}
+.icomoon-meeting1:before {
+  content: "\e941";
+}
+.icomoon-agreement1:before {
+  content: "\e942";
+}
+.icomoon-family:before {
+  content: "\e943";
+}
+.icomoon-phone-ringing:before {
+  content: "\e944";
+}
+.icomoon-team:before {
+  content: "\e945";
+}
+.icomoon-art:before {
+  content: "\e946";
+}
+.icomoon-pdf:before {
+  content: "\e947";
+}
+.icomoon-message:before {
+  content: "\e948";
+}
+.icomoon-phone-call:before {
+  content: "\e949";
+}
+.icomoon-placeholder:before {
+  content: "\e94a";
+}
+.icomoon-family-1:before {
+  content: "\e94b";
+}
+.icomoon-right-arrow:before {
+  content: "\e908";
+}
+.icomoon-right-arrow1:before {
+  content: "\e909";
+}
+.icomoon-up-arrow:before {
+  content: "\e90a";
+}
+.icomoon-down-arrow:before {
+  content: "\e90b";
+}
+.icomoon-cashback:before {
+  content: "\e90c";
+}
+.icomoon-insurance1:before {
+  content: "\e90d";
+}
+.icomoon-house:before {
+  content: "\e90e";
+}
+.icomoon-drive:before {
+  content: "\e910";
+}
+.icomoon-home:before {
+  content: "\e911";
+}
+.icomoon-heart-beat:before {
+  content: "\e912";
+}
+.icomoon-fire:before {
+  content: "\e913";
+}
+.icomoon-briefcase:before {
+  content: "\e914";
+}
+.icomoon-ring:before {
+  content: "\e915";
+}
+.icomoon-plane:before {
+  content: "\e916";
+}
+.icomoon-easy-to-use:before {
+  content: "\e917";
+}
+.icomoon-policy:before {
+  content: "\e918";
+}
+.icomoon-contract:before {
+  content: "\e919";
+}
+.icomoon-fund:before {
+  content: "\e91a";
+}
+.icomoon-telephone:before {
+  content: "\e920";
+}
+.icomoon-email:before {
+  content: "\e921";
+}
+.icomoon-telephone-call:before {
+  content: "\e922";
+}
+.icomoon-pin:before {
+  content: "\e923";
+}
+.icomoon-cash-flow:before {
+  content: "\e924";
+}
+.icomoon-profits:before {
+  content: "\e925";
+}
+.icomoon-insurance-2:before {
+  content: "\e926";
+}
+.icomoon-select:before {
+  content: "\e927";
+}
+.icomoon-meeting:before {
+  content: "\e928";
+}
+.icomoon-agreement:before {
+  content: "\e929";
+}
+.icomoon-insurance-agent:before {
+  content: "\e92a";
+}
+.icomoon-tick:before {
+  content: "\e92b";
+}
+.icomoon-money-back:before {
+  content: "\e92c";
+}
+.icomoon-computer:before {
+  content: "\e92f";
+}
+.icomoon-chat:before {
+  content: "\e930";
+}
+.icomoon-file:before {
+  content: "\e931";
+}
+.icomoon-plus:before {
+  content: "\e932";
+}
+.icomoon-shield:before {
+  content: "\e933";
+}

@@ -1,0 +1,81 @@
+<header id="header" class="header-default header-one">
+	
+	{% if page.topbar %}
+		<div class="topbar topbar__one">
+			<div class="topbar__content header-default__topbar-content">
+				<div class="topbar__left">
+					<div class="topbar__left-content"> 
+						{{ page.topbar }}
+					</div>	
+				</div>
+				<div class="topbar__right">
+					<div class="topbar__right-content"> 
+						{% if page.topbar_right %}
+							{{ page.topbar_right }}
+						{% endif %}
+					</div>	
+				</div>
+			</div>
+		</div>
+	{% endif %}
+
+	{% set class_sticky = '' %}
+	{% if sticky_menu == 1 %}
+		{% set class_sticky = 'gv-sticky-menu' %}
+	{% endif %}  
+
+	<div class="header-one__main {{ class_sticky }}">
+		<div class="header-one__content">
+			<div class="header-one__main-inner p-relative">
+				<div class="header-one__left">		
+					<div class="header-one__branding">
+						{% if page.branding %}
+							{{ page.branding }}
+						{% endif %}
+					</div>
+					
+				</div>
+				<div class="header-one__right">
+					<div class="header-one__main-menu">
+						<div class="gva-offcanvas-mobile">
+							<div class="close-offcanvas hidden"><i class="fa fa-times"></i></div>
+							<div class="main-menu-inner">
+								{% if page.main_menu %}
+									{{ page.main_menu }}
+								{% endif %}
+							</div>
+
+							{% if page.offcanvas %}
+								<div class="after-offcanvas hidden">
+									{{ page.offcanvas }}
+								</div>
+							{% endif %}
+						</div>
+						
+						<div id="menu-bar" class="menu-bar menu-bar-mobile d-xxl-none d-xl-none">
+							<span class="one"></span>
+							<span class="two"></span>
+							<span class="three"></span>
+						</div>
+					</div>
+					{% if page.search %}
+						<div class="search-one__box">
+							<span class="search-one__icon"><span class="icomoon-magnifying-glass"></span></span>
+							<div class="search-one__content">  
+								{{ page.search }}
+							</div>  
+						</div>
+					{% endif %}
+
+					{% if gva_theme_setting('header_info') %}
+			 			<div class="header-information d-xl-block d-none">
+			 				{{ gva_theme_setting('header_info')|raw }}
+			 			</div>	
+			 		{% endif %} 
+				</div>	
+			</div>
+		</div>
+	</div>
+
+</header>
+

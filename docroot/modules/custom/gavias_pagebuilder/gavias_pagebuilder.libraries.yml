@@ -1,0 +1,49 @@
+gavias_pagebuilder.assets.admin:
+  version: 1.x
+  css:
+    theme:
+      vendor/font-awesome/css/font-awesome.min.css: {}
+      vendor/notify/styles/metro/notify-metro.css: {}
+      assets/admin/css/admin.css: {}
+      assets/admin/css/libs.css: {}
+  js:
+    vendor/jquery-migrate.min.js: {}
+    assets/admin/js/main.js: { scope: footer }
+    # assets/admin/js/app.min.js: { scope: footer }
+  dependencies:
+    - imce/drupal.imce.input
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - core/once
+    - core/jquery.ui.dialog 
+
+gavias_pagebuilder.assets.node:
+  version: 1.x
+  css:
+    theme:
+      vendor/notify/styles/metro/notify-metro.css: {}
+      vendor/font-awesome/css/font-awesome.min.css: {}
+      assets/admin/css/admin.css: {}
+      assets/admin/css/libs.css: {}
+  js:
+    vendor/notify/notify.min.js: {}
+    assets/admin/js/main.js: { scope: footer }
+    assets/admin/js/node.js: { scope: footer }
+    # assets/admin/js/app.min.js: { scope: footer }
+  dependencies:
+    - imce/drupal.imce.input
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - core/once
+    - core/jquery.ui.dialog  
+
+gavias_pagebuilder.assets.frontend:
+  version: 1.x
+  css: 
+    theme:
+      assets/frontend/css/frontend.css: {}
+  js:
+    vendor/skrollr.min.js: {cope: footer}
+    vendor/main.js: {cope: footer}

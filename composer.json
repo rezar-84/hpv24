@@ -36,7 +36,11 @@
     "vardot/varbase-patches": "~10.0.0",
     "drupal/backup_migrate": "^5.0",
     "drupal/faqfield": "^7.1",
-    "drupal/admin_user_language": "^1.1"
+    "drupal/admin_user_language": "^1.1",
+    "drupal/chosen": "^4.0",
+    "drupal/image_effects": "^3.6",
+    "drupal/imce": "^3.0",
+    "drupal/features": "^3.14"
   },
   "require-dev": {
     "drupal/core-dev": "~10",

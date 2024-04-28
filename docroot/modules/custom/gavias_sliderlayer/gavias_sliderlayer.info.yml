@@ -1,0 +1,8 @@
+name: Gavias SliderLayer
+type: module
+description: Gavias SliderLayer module.
+package: gavias
+version: '2.0.1'
+core_version_requirement: ^8 || ^9 || ^10
+project: 'gavias_sliderlayer'
+datestamp: 1439548441

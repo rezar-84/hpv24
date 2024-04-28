@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Portfolio Tags'
+vid: portfolio_tags
+description: ''
+weight: 0

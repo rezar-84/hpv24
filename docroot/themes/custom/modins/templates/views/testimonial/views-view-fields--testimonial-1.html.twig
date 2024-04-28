@@ -1,0 +1,23 @@
+<article class="testimonial-one__single">      
+   <div class="testimonial-one__content">
+      <div class="testimonial-one__stars"> 
+         <i class="fa fa-star"></i> 
+         <i class="fa fa-star"></i> 
+         <i class="fa fa-star"></i> 
+         <i class="fa fa-star"></i> 
+         <i class="fa fa-star"></i>
+      </div>
+      <div class="testimonial-one__quote">
+         {{ fields.body.content|striptags|trim }}
+         <span class="arrow"></span>
+      </div>
+      <div class="testimonial-one__meta">
+         <div class="testimonial-one__avatar">
+            {{ fields.field_testimonial_avatar.content }}
+         </div>  
+         <div class="testimonial-one__job">{{ fields.field_testimonial_job.content }}</div>   
+         <h3 class="testimonial-one__name">{{ fields.field_testimonial_name.content }}</h3>
+      </div> 
+   </div>
+</article>
+  

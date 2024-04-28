@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: large
+label: 'Large (800×550)'
+effects:
+  b5ec815d-d673-4a82-94a3-0b9490a24cf2:
+    uuid: b5ec815d-d673-4a82-94a3-0b9490a24cf2
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 850
+      height: 550
+      anchor: center-center

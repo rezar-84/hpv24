@@ -1,18 +1,1 @@
-!function($, Drupal, once) {
-  Drupal.behaviors.varbaseHeroSliderPause = {
-    attach: function(context, settings) {
-      $(once("varbase-heroslider-pause", ".js-carousel-control-pause", context)).on("click", (event => {
-        $($(event.currentTarget).data("bs-target")).carousel("pause");
-      }));
-    }
-  }, Drupal.behaviors.varbaseHeroSliderDrimage = {
-    attach: function(context, settings) {
-      var timer;
-      $(once("varbase-heroslider-drimage", ".js-varbase-heroslider", context)).on("slid.bs.carousel", (event => {
-        clearTimeout(timer), timer = setTimeout(Drupal.drimage.init, 5, event.currentTarget);
-      })).on("slide.bs.carousel", (event => {
-        clearTimeout(timer), timer = setTimeout(Drupal.drimage.init, 100, event.currentTarget);
-      }));
-    }
-  };
-}(jQuery, Drupal, once);
+!function(e,r,a){r.behaviors.varbaseHeroSliderPause={attach:function(r,s){e(a("varbase-heroslider-pause",".js-carousel-control-pause",r)).on("click",(r=>{e(e(r.currentTarget).data("bs-target")).carousel("pause")}))}},r.behaviors.varbaseHeroSliderDrimage={attach:function(s,i){var t;e(a("varbase-heroslider-drimage",".js-varbase-heroslider",s)).on("slid.bs.carousel",(e=>{clearTimeout(t),t=setTimeout(r.drimage.init,5,e.currentTarget)})).on("slide.bs.carousel",(e=>{clearTimeout(t),t=setTimeout(r.drimage.init,100,e.currentTarget)}))}}}(jQuery,Drupal,once);

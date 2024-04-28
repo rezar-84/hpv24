@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.categories_post
+  module:
+    - gavias_hook_themer
+    - system
+    - views
+  theme:
+    - modins_sub
+third_party_settings:
+  gavias_hook_themer:
+    classes: ''
+id: modins_sub_views_block__categories_post_block_2
+theme: modins_sub
+region: sidebar_right
+weight: -11
+provider: null
+plugin: 'views_block:categories_post-block_2'
+settings:
+  id: 'views_block:categories_post-block_2'
+  label: 'Tags '
+  label_display: visible
+  provider: views
+  views_label: 'Tags '
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '/user/*'

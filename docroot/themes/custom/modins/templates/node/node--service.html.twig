@@ -1,0 +1,66 @@
+{%
+  	set classes = [
+	 	'node',
+	 	'node-detail',
+	 	'node--type-' ~ node.bundle|clean_class,
+	 	node.isPromoted() ? 'node--promoted',
+	 	node.isSticky() ? 'node--sticky',
+	 	not node.isPublished() ? 'node--unpublished',
+	 	view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+	 	'clearfix',
+  	]
+%}
+
+{% if view_mode == "teaser" %} 
+
+  	<div class="service-block">
+	 	<div class="box-content">
+		 	<div class="frontend">
+			 	<div class="frontend-content">
+					<div class="service-block-content">
+					  	{% if content.field_service_icon %}
+						 	<div class="service-icon">{{ content.field_service_icon }}</div>
+					  	{% endif %}  
+					  	<div class="service-content">
+							<h3 class="title"><a href="{{ url }}" rel="bookmark">{{ label }}</a></h3>
+							<div class="desc">{{ content.body }}</div>
+					  	</div>
+			 		</div>  
+			 	</div>   
+		 	</div>
+		 	<div class="backend">
+			 	<div class="content-be">
+					<div class="service-block-content">
+					  	<div class="service-content">
+						 	<div class="service-images lightGallery">{{ content.field_service_images }}</div>
+						 	<h3 class="title"><a href="{{ url }}" rel="bookmark">{{ label }}</a></h3>
+						 	<div class="readmore"><a class="btn-inline" href="{{ url }}">{{'Read more'|t}}</a></div>
+					  	</div>  
+					</div>    
+			 	</div>
+		 	</div>
+	 	</div>
+  	</div> 
+
+{% else %}
+
+	<article{{ attributes.addClass(classes) }}>
+	  	<div class="header-title">
+		 	<div class="container">
+				<h2 class="title"><span>{{ label }}</span></h2>
+		 	</div>
+  		</div>     
+		<div{{ content_attributes.addClass('node__content', 'clearfix') }}>
+		  	{{ content|without('field_service_images', 'field_service_icon', 'comment') }}
+		</div>
+		{% if content.comment %}
+			<div id="node-single-comment">
+			 	<div id="comments">
+				 	{{ content.comment }}
+			  	</div>  
+			</div>
+		{% endif %}
+	</article>
+
+<!-- End Display article for detail page -->
+{% endif %}

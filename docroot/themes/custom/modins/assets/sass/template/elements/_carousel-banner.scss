@@ -1,0 +1,132 @@
+.banner-one{
+   &__single{
+      text-align: center;
+   }
+   &__image{
+      padding: 20px;
+      width: 100%;
+      border-radius: 8px;
+      min-height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.35s;
+      img{
+         transition: all 0.35s;
+         opacity: 0.3;
+         display: inline-block;
+      }
+   }
+   &__overlay-link{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+   }
+   &__single{
+      &:hover{
+         .banner-one{
+            &__image{
+               background: #f4f3f8;
+               img{
+                  opacity: 1;
+                  animation: beat 1.5s ease 0s infinite;
+               }
+            }
+         }
+      }
+   }
+}
+.el-carousel-feature.style-1{
+   .owl-item.center{
+      .banner-one__single{
+         .banner-one{
+            &__image{
+               background: #f4f3f8;
+               img{
+                  opacity: 1;
+                  animation: beat 1.5s ease 0s infinite;
+               }
+            }
+         }
+      }
+   }
+}
+.gallery-grid-small{
+   .views-row{
+      margin-left: -5px;
+      margin-right: -5px;
+      .views-col{
+         padding-left: 5px;
+         padding-right: 5px;
+      }
+   }
+   .gallery-post{
+      margin-bottom: 10px;
+   }
+   .col-xs-4{
+      flex: 0 0 auto;
+      width: 33.33333%;
+   }
+}
+.gallery-post{
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 576px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  .item-image{
+   position: relative;
+   overflow: hidden;
+   border-radius: 8px;
+   display: block;
+      &:after{
+       content: "";
+       @include size(100%, 100%);
+       @include transition(all 0.35s);
+       top: 0;
+       left: 0;
+       position: absolute;
+       background: #0f256e;
+       z-index: 9;
+       mix-blend-mode: multiply;
+       @include opacity(0);
+     }
+     img{
+      object-fit: cover;
+      width: 100%;
+     }
+  }
+  .images{
+    overflow: hidden;
+    position: relative;
+    img{
+      @include transition(all 5s);
+    }
+  }
+  a.zoomGallery{ 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 99;
+    color: $white;
+    font-size: 30px;
+    line-height: 1;
+    @include opacity(0);
+    @media(max-width: 575px){
+      display: none;
+    }
+  }
+  &:hover{
+    .item-image:after{
+      @include opacity(0.4);
+    }
+    a.zoomGallery{
+      opacity: 1;
+    }
+  }
+}

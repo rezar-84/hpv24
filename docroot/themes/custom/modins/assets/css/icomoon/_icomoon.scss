@@ -1,0 +1,410 @@
+@import "variables";
+
+@font-face {
+  font-family: "#{$icomoon-font-family}";
+  src:  url("#{$icomoon-font-path}/#{$icomoon-font-family}.eot?klwp12");
+  src:  url("#{$icomoon-font-path}/#{$icomoon-font-family}.eot?klwp12#iefix") format("embedded-opentype"),
+    url("#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?klwp12") format("truetype"),
+    url("#{$icomoon-font-path}/#{$icomoon-font-family}.woff?klwp12") format("woff"),
+    url("#{$icomoon-font-path}/#{$icomoon-font-family}.svg?klwp12##{$icomoon-font-family}") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block; 
+}
+
+[class^="icomoon-"], [class*=" icomoon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icomoon-folder {
+  &:before {
+    content: $icomoon-folder; 
+  }
+}
+.icomoon-insurance {
+  &:before {
+    content: $icomoon-insurance; 
+  }
+}
+.icomoon-car {
+  &:before {
+    content: $icomoon-car; 
+  }
+}
+.icomoon-cardiogram {
+  &:before {
+    content: $icomoon-cardiogram; 
+  }
+}
+.icomoon-magnifying-glass {
+  &:before {
+    content: $icomoon-magnifying-glass; 
+  }
+}
+.icomoon-calling {
+  &:before {
+    content: $icomoon-calling; 
+  }
+}
+.icomoon-healthy-life {
+  &:before {
+    content: $icomoon-healthy-life; 
+  }
+}
+.icomoon-car-1 {
+  &:before {
+    content: $icomoon-car-1; 
+  }
+}
+.icomoon-home-insurance {
+  &:before {
+    content: $icomoon-home-insurance; 
+  }
+}
+.icomoon-save-money {
+  &:before {
+    content: $icomoon-save-money; 
+  }
+}
+.icomoon-online-registration {
+  &:before {
+    content: $icomoon-online-registration; 
+  }
+}
+.icomoon-guarantee {
+  &:before {
+    content: $icomoon-guarantee; 
+  }
+}
+.icomoon-medal {
+  &:before {
+    content: $icomoon-medal; 
+  }
+}
+.icomoon-home1 {
+  &:before {
+    content: $icomoon-home1; 
+  }
+}
+.icomoon-cross {
+  &:before {
+    content: $icomoon-cross; 
+  }
+}
+.icomoon-suitcase {
+  &:before {
+    content: $icomoon-suitcase; 
+  }
+}
+.icomoon-fire1 {
+  &:before {
+    content: $icomoon-fire1; 
+  }
+}
+.icomoon-wedding-rings {
+  &:before {
+    content: $icomoon-wedding-rings; 
+  }
+}
+.icomoon-quote {
+  &:before {
+    content: $icomoon-quote; 
+  }
+}
+.icomoon-group {
+  &:before {
+    content: $icomoon-group; 
+  }
+}
+.icomoon-life-insurance {
+  &:before {
+    content: $icomoon-life-insurance; 
+  }
+}
+.icomoon-success {
+  &:before {
+    content: $icomoon-success; 
+  }
+}
+.icomoon-right-arrow2 {
+  &:before {
+    content: $icomoon-right-arrow2; 
+  }
+}
+.icomoon-easy {
+  &:before {
+    content: $icomoon-easy; 
+  }
+}
+.icomoon-controls {
+  &:before {
+    content: $icomoon-controls; 
+  }
+}
+.icomoon-bonus {
+  &:before {
+    content: $icomoon-bonus; 
+  }
+}
+.icomoon-right-arrow-1 {
+  &:before {
+    content: $icomoon-right-arrow-1; 
+  }
+}
+.icomoon-employees {
+  &:before {
+    content: $icomoon-employees; 
+  }
+}
+.icomoon-self-service {
+  &:before {
+    content: $icomoon-self-service; 
+  }
+}
+.icomoon-meeting1 {
+  &:before {
+    content: $icomoon-meeting1; 
+  }
+}
+.icomoon-agreement1 {
+  &:before {
+    content: $icomoon-agreement1; 
+  }
+}
+.icomoon-family {
+  &:before {
+    content: $icomoon-family; 
+  }
+}
+.icomoon-phone-ringing {
+  &:before {
+    content: $icomoon-phone-ringing; 
+  }
+}
+.icomoon-team {
+  &:before {
+    content: $icomoon-team; 
+  }
+}
+.icomoon-art {
+  &:before {
+    content: $icomoon-art; 
+  }
+}
+.icomoon-pdf {
+  &:before {
+    content: $icomoon-pdf; 
+  }
+}
+.icomoon-message {
+  &:before {
+    content: $icomoon-message; 
+  }
+}
+.icomoon-phone-call {
+  &:before {
+    content: $icomoon-phone-call; 
+  }
+}
+.icomoon-placeholder {
+  &:before {
+    content: $icomoon-placeholder; 
+  }
+}
+.icomoon-family-1 {
+  &:before {
+    content: $icomoon-family-1; 
+  }
+}
+.icomoon-right-arrow {
+  &:before {
+    content: $icomoon-right-arrow; 
+  }
+}
+.icomoon-right-arrow1 {
+  &:before {
+    content: $icomoon-right-arrow1; 
+  }
+}
+.icomoon-up-arrow {
+  &:before {
+    content: $icomoon-up-arrow; 
+  }
+}
+.icomoon-down-arrow {
+  &:before {
+    content: $icomoon-down-arrow; 
+  }
+}
+.icomoon-cashback {
+  &:before {
+    content: $icomoon-cashback; 
+  }
+}
+.icomoon-insurance1 {
+  &:before {
+    content: $icomoon-insurance1; 
+  }
+}
+.icomoon-house {
+  &:before {
+    content: $icomoon-house; 
+  }
+}
+.icomoon-drive {
+  &:before {
+    content: $icomoon-drive; 
+  }
+}
+.icomoon-home {
+  &:before {
+    content: $icomoon-home; 
+  }
+}
+.icomoon-heart-beat {
+  &:before {
+    content: $icomoon-heart-beat; 
+  }
+}
+.icomoon-fire {
+  &:before {
+    content: $icomoon-fire; 
+  }
+}
+.icomoon-briefcase {
+  &:before {
+    content: $icomoon-briefcase; 
+  }
+}
+.icomoon-ring {
+  &:before {
+    content: $icomoon-ring; 
+  }
+}
+.icomoon-plane {
+  &:before {
+    content: $icomoon-plane; 
+  }
+}
+.icomoon-easy-to-use {
+  &:before {
+    content: $icomoon-easy-to-use; 
+  }
+}
+.icomoon-policy {
+  &:before {
+    content: $icomoon-policy; 
+  }
+}
+.icomoon-contract {
+  &:before {
+    content: $icomoon-contract; 
+  }
+}
+.icomoon-fund {
+  &:before {
+    content: $icomoon-fund; 
+  }
+}
+.icomoon-telephone {
+  &:before {
+    content: $icomoon-telephone; 
+  }
+}
+.icomoon-email {
+  &:before {
+    content: $icomoon-email; 
+  }
+}
+.icomoon-telephone-call {
+  &:before {
+    content: $icomoon-telephone-call; 
+  }
+}
+.icomoon-pin {
+  &:before {
+    content: $icomoon-pin; 
+  }
+}
+.icomoon-cash-flow {
+  &:before {
+    content: $icomoon-cash-flow; 
+  }
+}
+.icomoon-profits {
+  &:before {
+    content: $icomoon-profits; 
+  }
+}
+.icomoon-insurance-2 {
+  &:before {
+    content: $icomoon-insurance-2; 
+  }
+}
+.icomoon-select {
+  &:before {
+    content: $icomoon-select; 
+  }
+}
+.icomoon-meeting {
+  &:before {
+    content: $icomoon-meeting; 
+  }
+}
+.icomoon-agreement {
+  &:before {
+    content: $icomoon-agreement; 
+  }
+}
+.icomoon-insurance-agent {
+  &:before {
+    content: $icomoon-insurance-agent; 
+  }
+}
+.icomoon-tick {
+  &:before {
+    content: $icomoon-tick; 
+  }
+}
+.icomoon-money-back {
+  &:before {
+    content: $icomoon-money-back; 
+  }
+}
+.icomoon-computer {
+  &:before {
+    content: $icomoon-computer; 
+  }
+}
+.icomoon-chat {
+  &:before {
+    content: $icomoon-chat; 
+  }
+}
+.icomoon-file {
+  &:before {
+    content: $icomoon-file; 
+  }
+}
+.icomoon-plus {
+  &:before {
+    content: $icomoon-plus; 
+  }
+}
+.icomoon-shield {
+  &:before {
+    content: $icomoon-shield; 
+  }
+}
+

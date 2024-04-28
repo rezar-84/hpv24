@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_testimonial_video
+    - node.type.testimonial
+id: node.testimonial.field_testimonial_video
+field_name: field_testimonial_video
+entity_type: node
+bundle: testimonial
+label: 'Testimonial Video'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

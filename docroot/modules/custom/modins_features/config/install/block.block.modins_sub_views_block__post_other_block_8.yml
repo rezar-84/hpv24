@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.post_other
+  module:
+    - views
+  theme:
+    - modins_sub
+id: modins_sub_views_block__post_other_block_8
+theme: modins_sub
+region: quick_side
+weight: 0
+provider: null
+plugin: 'views_block:post_other-block_8'
+settings:
+  id: 'views_block:post_other-block_8'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

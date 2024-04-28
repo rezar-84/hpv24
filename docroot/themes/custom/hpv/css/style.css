@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700&display=swap');
+body{
+    font-family: 'Vazirmatn', sans-serif !important;
+}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
+    font-family: 'Vazirmatn', sans-serif !important;
+
+}
+.gavias_sliderlayer .inner.btn-slide, .gavias_sliderlayer .btn-slide a, #gavias_slider_single .inner.btn-slide, #gavias_slider_single .btn-slide a {
+
+  font-family: 'Vazirmatn', sans-serif !important;
+}
+.persian-text{
+    font-family: 'Vazirmatn', sans-serif !important ;
+
+}
+.gavias_sliderlayer{
+    direction:ltr;
+}
+.block-dropdown-language .dropbutton-wrapper ul.dropbutton:after{
+    float:right;
+}
+.breadcrumb-content-inner .gva-block-breadcrumb .breadcrumb-links nav.breadcrumb ol li{
+float: right;
+
+}
+.feature-carousel,.porfolio-carousel,.blog-carousel,.testimonial-main ,.landing-ltr{
+    direction:ltr
+}
+.feature-one__single{
+    direction:rtl
+}
+
+ul.features-list > li:before{
+    margin-right: 0;
+    margin-left: 20px;
+}
+.search-one__content{
+    right:auto;
+    left:0 !important;
+
+}
+.title-line{
+    line-height: 2rem;
+}
+[dir="rtl"] .dropbutton-toggle {
+    left: auto !important;
+    right: 0 !important;
+}
+.block-dropdown-language .dropbutton-wrapper ul.dropbutton {
+    position: absolute;
+    top: -5px;
+    right: 0;
+    display: inline-block;
+    float: right;
+    z-index: 9;
+    padding: 9px 35px 14px 35px;
+}
+.block-dropdown-language .dropbutton-wrapper ul.dropbutton:after{
+    left:5px !important;
+    right: auto;
+}
+span.language-link.active-language{
+    font-family: 'Vazirmatn', sans-serif;
+
+}
+
+.iconbox-seven__content-inner {
+    text-align: right;
+    padding-right: 20px;
+    direction: ltr;
+}
+
+/* portfolio */
+.portfolio-v1 .arrow {
+
+    left: 0;
+    right: auto;
+    font-size: 14px;
+    border-radius: 10px 0px 0px 10px;
+    clip-path: polygon(0% 0%, 45% 0%, 100% 100%, 0% 100%);
+    padding-right: 15px;
+}
+    .portfolio-v1 .content{
+    margin-right:30px;
+    margin-left: 0;
+    padding: 25px 20px 33px 61px;
+
+    }
+    
+    .fa-arrow-right:before {
+        content: "\f060" !important;
+    }
+
+
+    /* Grid float for articles */
+    [class*="block-grid-"] > div {
+        float: right;
+    }
+.post-content{
+    text-align:right;
+}
+
+    /* typography  */
+    .gsc-heading__sub-title span:before {
+    margin-left: 10px;
+    margin-bottom: 5px;
+    content: "";
+    width: 18px;
+    height: 3px;
+    display: inline-block;
+    background: var(--modins-theme-color);
+    z-index: 1;
+    border-radius: 5px;
+}
+.gsc-heading__sub-title span:after {
+    display:none;
+}
+
+
+/* page builder elements */
+.progress .percentage{
+    right:auto;
+    left: 1px;
+}
+
+
+/* navigation */
+.menu-bar{
+    right:200px;
+}
+.navigation .gva_menu li a{
+    text-align: right !important;
+}
+
+.navigation .gva_menu .sub-menu {
+
+    right: 0;
+    left: auto;
+}
+
+.gsc-call-to-action.skin-v1{
+  background: url(../images/fun-fact-bg.jpg);
+}
+#footer{
+  background:none !important;
+  background-color: #0D0246 !important;
+}
+#block-hpv-breadcrumbs h2{
+  color: aliceblue;
+}
+
+.owl-carousel.owl-loaded{
+direction: ltr;
+text-align: right;
+
+}
+.header-one{
+  background: #EFF8FB !important;
+  padding-bottom: 10px;
+}
+.header-one__main-inner.p-relative{
+  background-color: #ffffff;
+  padding: 10px 25px;
+  border-radius: 5px;
+
+}
+.topbar__one{
+  background: none !important;
+  padding-bottom: 10px;
+}
+.topbar__one .topbar__content{
+  color: #002345;
+
+}
+.topbar__content a{
+  color: #002345;
+}
+.navigation .gva_menu > li > a{
+  padding: 25px 18px !important;
+}
+
+/* blog  */
+
+.skin-care-blog-card {
+    margin-bottom: 25px;
+    transition: 0.6s;
+}
+.skin-care-blog-card .blog-image {
+    position: relative;
+}
+.skin-care-blog-card .blog-image a img {
+    display: inline-block;
+}
+.skin-care-blog-card .blog-image .tag {
+    position: absolute;
+    left: 20px;
+    bottom: -20px;
+}
+.skin-care-blog-card .blog-image .tag a {
+    display: inline-block;
+    background-color: #1DBFCC;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 30px;
+}
+.skin-care-blog-card .blog-content {
+    padding-top: 45px;
+    padding-left: 20px;
+}
+.skin-care-blog-card .blog-content .entry-meta {
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.skin-care-blog-card .blog-content .entry-meta li {
+    display: inline-block;
+    list-style-type: none;
+    font-size: 14px;
+    color: #486683;
+    margin-right: 10px;
+    position: relative;
+    padding-left: 22px;
+}
+.skin-care-blog-card .blog-content .entry-meta li i {
+    color: #1DBFCC;
+    position: absolute;
+    left: 0;
+    top: 2.8px;
+}
+.skin-care-blog-card .blog-content .entry-meta li a {
+    color: #486683;
+}
+
+
+.bx-time:before {
+    content: "\ec45";
+}
+
+.skin-care-blog-card .blog-content .entry-meta li:last-child {
+    margin-right: 0;
+}
+.skin-care-blog-card .blog-content h3 {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "Heebo", sans-serif;
+    line-height: 1.5;
+}
+.skin-care-blog-card .blog-content h3 a {
+    color: #002345;
+}

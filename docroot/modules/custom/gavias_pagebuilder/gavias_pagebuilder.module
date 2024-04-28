@@ -1,0 +1,406 @@
+<?php
+use Drupal\Core\Menu\MenuTreeParameters;
+use Drupal\Core\Template\Attribute;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Field\FieldDefinition;
+use Drupal\Core\Field\BaseFieldDefinition;
+use Drupal\Core\Url;
+use Drupal\node\NodeForm;
+
+define( 'GAVIAS_PAGE_BUILDER_PATH', \Drupal::service('extension.list.module')->getPath('gavias_pagebuilder') );
+
+\Drupal::moduleHandler()->loadInclude('gavias_pagebuilder','php', 'includes/core/model');
+\Drupal::moduleHandler()->loadInclude('gavias_pagebuilder','php', 'includes/define');
+\Drupal::moduleHandler()->loadInclude('gavias_pagebuilder','php', 'includes/utilities');
+\Drupal::moduleHandler()->loadInclude('gavias_pagebuilder','php', 'includes/frontend');
+
+function gavias_pagebuilder_theme_name(){
+	$default_theme = \Drupal::config('system.theme')->get('default');
+	$theme_name = $default_theme;
+	$sub_theme = false;
+	$theme_handler = \Drupal::service('theme_handler');
+	if($theme_handler->themeExists($default_theme)){
+		$theme_handler = $theme_handler->getTheme($default_theme);
+		$theme_info = $theme_handler->info;
+		if(isset($theme_info['base theme']) && !empty($theme_info['base theme'])){
+			$theme_name = $theme_info['base theme'];
+			$sub_theme = $default_theme;
+		}
+	}
+	return array('theme_name' => $theme_name, 'sub_theme' => $sub_theme);
+}
+
+$theme_load_elements = gavias_pagebuilder_theme_name();
+$path_theme = \Drupal::service('extension.list.theme')->getPath($theme_load_elements['theme_name']);
+if(file_exists($path_theme . '/gva_content_builder/_elements.php')){
+	require $path_theme . '/gva_content_builder/_elements.php';
+	$elements = [];
+	if(function_exists('gavias_content_builder_set_elements')){
+		$elements = gavias_content_builder_set_elements();
+	}
+	if($theme_load_elements['sub_theme']){ //If use sub theme
+		$path_sub_theme = \Drupal::service('extension.list.theme')->getPath($theme_load_elements['sub_theme']);
+		foreach( $elements as $el ){
+			$sc_path = '';
+			if(file_exists($path_sub_theme . '/gva_content_builder/' . $el . '.php')){
+				$sc_path = $path_sub_theme . '/gva_content_builder/' . $el . '.php';
+			}elseif( file_exists($path_theme . '/gva_content_builder/' . $el . '.php')){
+				$sc_path = $path_theme . '/gva_content_builder/' . $el . '.php';
+			}
+			if($sc_path){
+				require($sc_path);
+			}
+		}
+	}else{
+		foreach( $elements as $el ){ //if don't use sub theme
+			if(file_exists($path_theme . '/gva_content_builder/' . $el . '.php')){
+				$sc_path = $path_theme . '/gva_content_builder/' . $el . '.php';
+				require($sc_path);
+			}
+		}
+	}  
+}
+
+function gavias_pagebuilder_load_el_fields(){
+	$el_fields = array();
+	$theme_load_elements = gavias_pagebuilder_theme_name();
+	$path_theme = \Drupal::service('extension.list.theme')->getPath($theme_load_elements['theme_name']);
+	if(function_exists('gavias_content_builder_set_elements')){
+		$elements = gavias_content_builder_set_elements();
+		foreach( $elements as $el ){
+			if(file_exists($path_theme . '/gva_content_builder/' . $el . '.php')){
+				$_class = 'element_' . $el;
+				if( class_exists($_class) ){
+					$s = new $_class;
+					if(method_exists($s, 'render_form')){
+						 $el_fields[$el] = $s->render_form();
+					}
+				}
+			}
+		}
+	}
+	return $el_fields;
+}
+
+
+function gavias_pagebuilder_theme($existing, $type, $theme, $path) {
+	$items['gcb-admin-form'] = array(
+		'variables' => array(
+			'content' => '',
+		),
+		'path' => $path . '/templates/backend',
+	);
+	$items['builder'] = array(
+		 'variables'  => array(
+			'content'   => '',
+			'edit_url'  => ''
+		),
+		 'path' => $path . '/templates/frontend',
+	);
+	return $items;
+}  
+
+function gavias_pagebuilder_block_view($delta = '') {
+	$block = array();
+	if (str_replace('gavias_pagebuilder_block____', '', $delta) != $delta) {
+		$bid = str_replace('gavias_pagebuilder_block____', '', $delta);
+		$block['content'] = menu_tree($delta);
+		$block['content']['#markup'] = gavias_pagebuilder_block_content($bid);
+		$block['content']['#contextual_links']['menu'] = array('admin/structure/menu/manage', array($delta));
+	}
+	return $block;
+}
+
+function gavias_pagebuilder_preprocess_blockbuilder(&$vars){
+	require_once GAVIAS_PAGE_BUILDER_PATH .'/includes/frontend.php';
+	$vars['theme_hook_suggestions'][] = 'blockbuilder__block';
+	$params = $vars['params'];
+	$id = $vars['id'];
+	$html_id = drupal_html_id('gavias-blockbuilder-' . $id);
+	$vars['id'] = $html_id;
+	$vars['attributes_array']['id'] = $html_id;
+	$vars['content'] = $params;
+}
+
+function gavias_pagebuilder_form_node_form_alter(&$form, \Drupal\Core\Form\FormStateInterface &$form_state, $form_id) {
+
+	//Hidden gva_pagebuilder_content field
+	$form['gva_pagebuilder_content']['#attributes']['class'][] = 'hidden';
+	$form['gva_pagebuilder_content']['#attributes']['readonly'] = 'readonly';
+	$form['gva_pagebuilder_content']['widget'][0]['value']['#attributes']['readonly'] = 'readonly';
+	$form['gva_pagebuilder_content']['widget'][0]['value']['#attributes']['class'][] = 'hidden';
+
+	 $form['gva_pagebuilder_enable']['#attributes']['class'][] = 'hidden';
+	 $form['gva_pagebuilder_enable']['#attributes']['readonly'] = 'readonly';
+	 $form['gva_pagebuilder_enable']['widget'][0]['value']['#attributes']['readonly'] = 'readonly';
+	 $form['gva_pagebuilder_enable']['widget'][0]['value']['#attributes']['class'][] = 'hidden field_enable_disable_pagebuider';
+
+	//Display main page builder
+	$form_object = $form_state->getFormObject();
+	$user = \Drupal::currentUser();
+
+	if ($user->hasPermission('administer gavias_pagebuilder') && $form_object instanceof NodeForm) {
+		$config = \Drupal::config('gavias_pagebuilder.settings');
+		$entity = $form_object->getEntity();
+		$content_type = $entity->getType();
+
+		$enabled_node_types = !is_null($config->get('node_types')) ? $config->get('node_types') : ['page'];
+
+		if (in_array($content_type, array_values($enabled_node_types), TRUE)) {
+
+			$is_admin = \Drupal::service('router.admin_context')->isAdminRoute();
+			if($is_admin){
+				$form['#attached']['library'][] = 'gavias_pagebuilder/gavias_pagebuilder.assets.node';
+			}
+			$el_fields = gavias_pagebuilder_load_el_fields();
+			$params = '';
+			if( isset($form['gva_pagebuilder_content']['widget'][0]['value']['#default_value']) ){
+				$params = $form['gva_pagebuilder_content']['widget'][0]['value']['#default_value'];
+			}
+
+			$form['#attached']['drupalSettings']['gavias_pagebuilder']['params'] = $params ? $params : '[{}]';
+			$form['#attached']['drupalSettings']['gavias_pagebuilder']['element_fields'] = $el_fields;
+			$form['#attached']['drupalSettings']['gavias_pagebuilder']['base_path'] = base_path();
+			$form['#attached']['drupalSettings']['gavias_pagebuilder']['changed'] = isset($form['changed']['#default_value']) ? $form['changed']['#default_value'] : '';
+			$form['#attached']['drupalSettings']['gavias_pagebuilder']['path_modules'] = base_path()  . \Drupal::service('extension.list.module')->getPath('gavias_pagebuilder');
+			$form['#attached']['drupalSettings']['gavias_pagebuilder']['save_pagebuilder_node_url'] = Url::fromRoute('gavias_pagebuilder.admin.save_node')->toString();
+			$form['#attached']['drupalSettings']['gavias_pagebuilder']['text_translate']['cancel'] = t('Cancel');
+			$form['#attached']['drupalSettings']['gavias_pagebuilder']['text_translate']['update'] = t('Update');
+
+			//print "<pre>";print_r($form['gva_pagebuilder_content']['widget']);
+			//print '<pre>'; print_r($form['gva_pagebuilder_content']); die();
+			$html_script = '<script src="'.base_path()  . \Drupal::service('extension.list.module')->getPath('gavias_pagebuilder') .'/assets/admin/js/app.min.js"></script>';
+			$form['gva_pagebuilder_html_script'] = array(
+				'#type' => 'markup',
+				'#markup' => \Drupal\Core\Render\Markup::create($html_script),
+				'#weight' => 96
+			);
+
+			$html_title_pagebuilder = '<div style="margin: 30px 0 30px;padding: 0 0 10px;border-bottom: 2px solid #ccc;">';
+				$html_title_pagebuilder .= '<span style="display: block;font-size: 18px; font-weight: 700;">Page Builder</span><a class="pagebuilder-enable-disable button button--primary">Disable Page Builder</a>';
+			$html_title_pagebuilder .= '</div>';
+			$form['gva_pagebuilder_enable_markup'] = array(
+				'#type' => 'markup',
+				'#markup' => \Drupal\Core\Render\Markup::create($html_title_pagebuilder),
+				'#weight' => 98
+			);
+
+			$form['gva_pagebuilder_markup'] = array(
+				'#type' => 'markup',
+				'#markup' => \Drupal\Core\Render\Markup::create(gavias_pagebuilder_field_markup()),
+				'#weight' => 99
+				//'#allowed_tags' => array('a', 'div', 'span', 'text')
+			);
+		}
+	}
+}
+
+function gavias_pagebuilder_field_markup(){
+		$path = \Drupal::service('path.current')->getPath();
+		$path_args = explode('/', $path);
+		$output = '';
+		$node_id = 0;
+		$node_language = \Drupal::languageManager()->getCurrentLanguage()->getId();
+		if (isset($path_args[1]) && isset($path_args[2]) && ($path_args[1] == 'node') && (is_numeric($path_args[2]))) {
+			$node = \Drupal\node\Entity\Node::load($path_args[2]);
+			if($node->id()){
+				$node_id = $node->id();
+			}
+		}
+		
+		ob_start();
+		if($node_id){ ?>
+			
+			<div id="gavias-pagebuilder-admin-content-main">
+				<p>
+					<a class="import use-ajax button button--primary" data-dialog-type="modal" href="<?php print Url::fromRoute('gavias_pagebuilder.admin.import_node', array('nid'=>$node_id))->toString(); ?>"><?php print t('Import Page Builder') ?></a>
+					<a class="export button button--second" data-dialog-type="modal" href="<?php print Url::fromRoute('gavias_pagebuilder.admin.export_node', array('nid'=>$node_id))->toString(); ?>"><?php print t('Export Page Builder') ?></a>
+					<a class="pagebuilder-fullscreen button button--primary" style="float: right;"><i class="fa fa-arrows-alt"></i>&nbsp;&nbsp;<?php print t('Full Width'); ?></a>
+				</p>
+				<div id="gpb_form-content-change" class="form-horizontal gpb_content-change-field">
+					<textarea class="hidden" id="gpb-content--data" name="content"></textarea>
+					<input class="hidden" id="gpb-node-id" name="gpb-node-id" value="<?php print $node_id ?>">
+					<input class="hidden" id="gpb-node-language" name="gpb-node-language" value="<?php print $node_language ?>">
+					<div id="gpb_content-bottom">
+						<div class="action-add-row">
+							<a href="#" id="gpb_add-element" class="gpb_add-element"><i class="fa fa-plus-square-o"></i></a>
+							<a href="#" id="gpb_add-element-import" class="gpb_add-element-import"><i class="fa fa-plus-square-o"></i> Add Row with Import</a>
+							<div class="row-import hidden">
+								<textarea rows="6" id="row-import-data" name="row-import-data"></textarea>
+								<a href="#" class="button" id="gpb_add-element-import-submit">Import Row</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>  
+
+		<?php }else{ ?>
+
+			<div class="messages messages--warning">
+				<span>Page Builder work after create content!</span>
+			</div>
+
+		<?php } 
+
+		$output = ob_get_clean();
+		return $output;
+	}
+
+
+function gavias_pagebuilder_entity_base_field_info(EntityTypeInterface $entity_type){
+	if ($entity_type->id() === 'node') {
+		$fields['gva_pagebuilder_content'] = BaseFieldDefinition::create('string_long')
+			->setLabel(t('Page Builder'))
+			->setDisplayOptions('form', array(
+				'type'    => 'string_textfield',
+				'weight'  => 99,
+			))
+			->setTranslatable(true)
+			->setReadOnly(TRUE)
+			->setDisplayConfigurable('form', TRUE);
+
+		$fields['gva_pagebuilder_enable'] = BaseFieldDefinition::create('string')
+			->setLabel(t('Enable/Display Page Builder'))
+			->setDisplayOptions('form', array(
+				'type'    => 'string_textfield',
+				'weight'  => 98,
+			))
+			->setDefaultValue('enable')
+			->setTranslatable(true)
+			->setDisplayConfigurable('form', TRUE);
+
+		return $fields;
+	}
+}
+
+function gavias_pagebuilder_form_alter(&$form, FormStateInterface $form_state) {
+	$form_object = $form_state->getFormObject();
+	$user = \Drupal::currentUser();
+	$path = \Drupal::service('path.current')->getPath();
+	$path_args = explode('/', $path);
+
+	if ($user->hasPermission('administer gavias_pagebuilder') && $form_object instanceof NodeForm) {
+		$config = \Drupal::config('gavias_pagebuilder.settings');
+		$entity = $form_object->getEntity();
+		$content_type = $entity->getType();
+
+		$enabled_node_types = !is_null($config->get('node_types')) ? $config->get('node_types') : ['page'];
+
+		if (in_array($content_type, array_values($enabled_node_types), TRUE) && $config->get('gva_edit_save')=='enable') {
+			$form['actions']['gva_save_edit'] = [
+				'#type' => 'submit',
+				'#value' => "Save & Edit",
+				'#name' => 'gva_save_edit',
+				'#attributes' => array(
+					'class'  => ['button--primary'],
+				),
+				'#submit' => [
+					'::submitForm',
+					'::save',
+					'gavias_pagebuilder_form_submit_redirect',
+				],
+				'#weight' => 3,
+			];
+			$form['actions']['unpublish']['#access'] = FALSE;
+			$form['actions']['submit']['#access'] = FALSE;
+		}
+
+		if (in_array($content_type, array_values($enabled_node_types), TRUE)) {
+			$node_language = \Drupal::languageManager()->getCurrentLanguage()->getId();
+			$node_id = 0;
+			$enable_quick_save = in_array('edit', $path_args) && !in_array('add', $path_args);
+
+			if (isset($path_args[1]) && isset($path_args[2]) && ($path_args[1] == 'node') && (is_numeric($path_args[2]))) {
+				$node = \Drupal\node\Entity\Node::load($path_args[2]);
+				if($node->id()){
+					$node_id = $node->id();
+				}
+			}
+
+			if($enable_quick_save && $node_id){
+				$form['actions']['gva_pagebuilder_btn_save'] = [
+					'#type' => 'markup',
+					'#markup' => \Drupal\Core\Render\Markup::create('<input value="Quick Save Page Builder" type="button" id="gva-pagebuilder-btn-save" class="button" />'),
+					'#name' => 'gva_pagebuilder_btn_save',
+					'#weight' => 1,
+				];
+			}
+
+		}
+	}
+}
+
+function gavias_pagebuilder_form_submit_redirect(&$form, FormStateInterface $form_state) {
+	$entity = $form_state->getFormObject()->getEntity();
+	$toUrl = $entity->toUrl('edit-form');
+	if ($destination = \Drupal::request()->query->get('destination')) {
+		$toUrl->setRouteParameter("destination", $destination);
+	}
+	\Drupal::request()->query->remove('destination');
+	$form_state->setRedirectUrl($toUrl);
+}
+
+function gavias_pagebuilder_preprocess_node(&$variables){
+	$variables['#cache'] = array('max-age' => 0);
+	$node = $variables['node'];
+	$html = $params = '';
+	if($node->hasField('gva_pagebuilder_content')){
+		$params = $node->get('gva_pagebuilder_content')->value;
+	}
+	$check = '';
+	if($node->hasField('gva_pagebuilder_enable')){
+		$check = $node->get('gva_pagebuilder_enable')->value;
+	}
+	if(trim((string)$check) != 'disable'){
+		$html = '<div class="gavias-builder--content">';
+			$html .= gavias_pagebuilder_frontend($params);
+		$html .= '</div>'; 
+	}
+
+	$variables['content']['pagebuilder_content'] = array(
+		'#markup' => \Drupal\Core\Render\Markup::create($html),
+		'#weight' => 399	
+	);
+}
+
+function gavias_pagebuilder_preprocess_html(&$variables){
+	$variables['attributes']['class'][] = "gavias-pagebuilder";
+	$variables['#attached']['library'][] = 'gavias_pagebuilder/gavias_pagebuilder.assets.frontend';
+	$variables['#cache'] = array('max-age' => 0);
+	$css = '';
+	if (($node = \Drupal::routeMatch()->getParameter('node')) && $node instanceof \Drupal\node\NodeInterface) {
+		if(is_object($node)){
+			$params = '';
+			if($node->hasField('gva_pagebuilder_content')){
+				$params = $node->get('gva_pagebuilder_content')->value;
+			}
+			$check = '';
+			if($node->hasField('gva_pagebuilder_enable')){
+				$check = $node->get('gva_pagebuilder_enable')->value;
+			}
+			if(trim((string)$check) != 'disable'){
+				$style = gavias_pagebuilder_frontend_css($params);
+				if(!empty($style)){
+					$css = $style;
+				}
+			}
+		}
+	}
+	$content_blocks = gavias_pagebuilder_get_list();
+	foreach ($content_blocks as $key => $blocks) {
+		if(isset($blocks->params) && $blocks->params){
+			$style = gavias_pagebuilder_frontend_css($blocks->params);
+			if(!empty($style)){
+				$css .= $style;
+			}
+		}
+	}
+	if(!empty($css)){
+		$variables['pagebuilder_style'] = $css;
+	}
+}
+
+function gavias_pagebuilder_update_projects_alter(&$projects){
+	unset($projects['gavias_pagebuilder']);
+}

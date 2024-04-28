@@ -1,0 +1,183 @@
+.milestone-one{
+   &__single{
+      max-width: 250px;
+      border: 1px solid #e2dfeb;
+      padding: 40px 30px 30px;
+      -webkit-box-shadow: 15px 30px 86px 0px rgba(0,0,0,.07);
+      box-shadow: 15px 30px 86px 0px rgba(0,0,0,.07);
+      border-radius: 0 50px;
+      background: url("#{$base-theme-image-path}/shape-one.png") no-repeat right bottom #fff;
+      @media (max-width: 767px){
+         max-width: 320px;
+      }
+   }
+   &__icon{ 
+      font-size: 60px;
+      line-height: 1;
+      margin-left: -8px;
+      color: $theme-color;
+   }
+   &__content{
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+   }
+   &__number-inner{
+      font-size: 45px;
+      line-height: 1;
+      font-weight: 700;
+      color: $theme-color-second;
+      display: flex;
+   }
+   &__text{
+      font-size: 18px;
+      font-weight: 500;
+      color: $body-color;
+      margin-top: 15px;
+      margin-bottom: 0;
+   }
+}
+
+.milestone-two{
+   &__single{
+      position: relative;
+      margin-bottom: 30px;
+   }
+   &__icon{
+      color: $theme-color;
+      font-size: 62px;
+      line-height: 1;
+      margin-bottom: 15px;
+   }
+   &__content{
+   }
+   &__number-inner{
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 1;
+      margin: 0 0 15px;
+      color: $theme-color;
+      display: flex;
+   }
+   &__text{
+      font-size: 18px;
+      color: $headings-color;
+      margin: 0;
+      font-weight: 500;
+      line-height: 22px;
+      padding: 10px 30px;
+      background: rgba(255, 255, 255, 0.1);
+      display: inline-block;
+      position: relative;
+      transition: all .35s;
+      @media (max-width: 1024px){
+         padding-left: 25px;
+         padding-right: 25px;
+      }
+      &:after {
+         content: '';
+         border: 8px solid transparent;
+         border-bottom-color: transparent;
+         border-bottom-color: rgba(255, 255, 255, 0.1);
+         position: absolute;
+         bottom: 100%;
+         left: 15px;
+         z-index: 1;
+         transition: all .35s;
+      }
+   } 
+   &__single{
+      &:hover{
+         .milestone-two{
+            &__icon .icon{ 
+               display: inline-block;
+               animation: beat 1.5s ease 0s infinite;
+            }
+         }
+      }
+      &:hover, &.active{
+         .milestone-two{
+            &__text{
+               background: $white;
+               &:after{
+                  border-bottom-color: $white;
+               }
+            }
+         }
+      }
+   }
+   &__single{
+      &.text-light{
+         .milestone-two{
+            &__number-inner{
+               color: $white;
+            }
+            &__text{
+               color: $white;
+            }
+         }
+         &:hover, &.active{
+            .milestone-two{
+               &__text{
+                  color: $headings-color;
+               }
+            }
+         }
+      }
+   }
+}
+
+.milestone-three{
+   &__single{
+      position: relative;
+      margin-bottom: 30px;
+   }
+   &__icon{
+      color: $theme-color;
+      font-size: 62px;
+      line-height: 1;
+      margin-bottom: 15px;
+   }
+   &__content{
+   }
+   &__number-inner{
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 1;
+      margin: 0 0 15px;
+      color: $theme-color;
+      display: flex;
+   }
+   &__text{
+      font-size: 18px;
+      color: $headings-color;
+      margin: 0;
+      font-weight: 500;
+      line-height: 22px;
+   } 
+   &__single{
+      &:hover{
+         .milestone-three{
+            &__icon .icon{ 
+               display: inline-block;
+               animation: beat 1.5s ease 0s infinite;
+            }
+         }
+      }
+   }
+   &__single{
+      &.text-light{
+         .milestone-three{
+            &__icon{
+               color: $white;
+            }
+            &__number-inner{
+               color: $white;
+            }
+            &__text{
+               color: $white;
+            }
+         }
+      }
+   }
+}

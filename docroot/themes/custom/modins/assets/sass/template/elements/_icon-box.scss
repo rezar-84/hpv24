@@ -1,0 +1,423 @@
+.iconbox-one{
+  	&__single{
+	 	position: relative;
+	 	margin-bottom: 30px;
+	 	display: flex;
+	 	@media(max-width: 1024px){
+	 		margin-bottom: 20px;
+	 	}
+	}
+	&__icon-inner{
+		color: $theme-color;
+		margin-right: 20px;
+	  	flex: 0 0 60px;
+	  	font-size: 60px;
+	  	line-height: 1;
+	}
+	&__content-inner{
+		p{ 
+			margin: 0;
+		}
+	}
+	&__title{
+	  	font-size: 20px;
+	  	letter-spacing: -0.8px;
+	  	line-height: 1.2;
+	  	margin-bottom: 5px;
+	}
+	&__desc{
+  		font-weight: 400;
+	}
+	&__single{
+	 	&.bg-second{
+	 		background: $theme-color-second;
+	 		padding: 30px;
+	 		border-radius: 8px;
+	 		align-items: center;
+	 		.iconbox-one{
+		 		&__icon-inner{
+					color: $white;
+					margin-right: 20px;
+				  	flex: 0 0 42px;
+				  	font-size: 42px;
+				  	text-align: center;
+				  	line-height: 1;
+				}
+				&__desc{
+					color: #a0a0c0;
+				}
+		 	}
+	 	}
+	 	
+	}
+}
+
+.iconbox-two{
+	&__single{
+		background: $white;
+		position: relative;
+		padding: 30px 20px;
+		margin-bottom: 30px;
+	}
+ 	&__icon-inner{
+		@include size(56px, 56px);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: $theme-color;
+		color: $white;
+		position: absolute;
+		top: 30px;
+		left: 20px;
+		z-index: 1;
+		@include border-radius(50%);
+		float: left;
+		.icon{
+	  		font-size: 30px;
+	  		color: $white;
+		}
+ 	}
+ 	&__content-inner{
+		padding-left: 70px;
+		color: $body-color;
+	 	@include media-breakpoint-down(md){
+	 	 	padding-left: 0;
+	  		padding-top: 70px;
+		}
+		p{ margin: 0;}
+	}
+	&__title{
+  		font-size: 20px;
+  		line-height: 24px;
+  		@include media-breakpoint-down(lg){
+	 		font-size: 18px;
+  		}
+	}	
+	&__desc{
+	  	margin-top: 10px;
+	  	font-size: 15px;
+	  	ul{
+		 	list-style: none;
+		 	padding: 0;
+		 	margin: 0;
+		 	li{
+				position: relative;
+				padding-left: 15px;
+				&:after{
+				  	content: "\f111";
+				  	margin-right: 10px;
+				  	color: $theme-color;
+				  	display: block;
+				  	font-size: 6px;
+				  	font-family: $font-icon;
+				  	position: absolute;
+				  	top: 9px;
+				  	left: 0;
+				  	z-index: 1;
+				  	font-weight: 900;
+				}
+		 	}
+	  	}
+	}
+	&__overlay-link{
+	 	position: absolute;
+	 	top: 0;
+	 	left: 0;
+	 	width: 100%;
+	 	height: 100%;
+	 	z-index: 1;
+  	}
+}
+
+.iconbox-three{
+	&__single{
+ 		width: 100%;
+ 		margin-bottom: 30px;
+ 	}
+ 	&__icon-inner{
+		color: $theme-color;
+		font-size: 62px;
+		line-height: 1;
+		margin-bottom: 10px;
+ 	}
+ 	&__content-inner{
+		padding-top: 8px;
+		
+ 	}
+ 	&__title{
+		font-size: 18px;
+		padding: 0 0 22px;
+		margin: 0 0 16px;
+		position: relative;
+		&:after{
+			content: '';
+			width: 120px;
+			height: 2px;
+			background: rgba(0, 0, 0, 0.2);
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			z-index: 1;
+		}
+	}
+	&__single{
+	 	&.text-light{
+	 		.iconbox-three{
+		 		&__title{ 
+	 				color: $white;
+	 				&:after{
+	 					background: rgba(255, 255, 255, 0.2);
+	 				}
+	 			}
+		 		&__desc{
+		 			color: rgba(255, 255, 255, 0.5);
+		 		}
+		 	}
+	 	}
+	}
+}
+
+.iconbox-four{
+	&__single{
+		position: relative;
+	}
+	&__content{
+		display: flex;
+		align-items: center;
+	}
+	&__icon{
+		font-size: 62px;
+		color: $theme-color-second;
+		margin-right: 20px;
+	}
+	&__content-inner{
+
+	}
+	&__title{
+		font-size: 20px;
+		color: $headings-color;
+		margin: 0;
+		line-height: 34px;
+	}
+	&__link{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 11;
+	}
+}
+
+.iconbox-five{
+	&__single{
+		background: $white;
+		position: relative;
+		@include transition(all 0.35s);
+		margin-bottom: 20px;
+		overflow: hidden;
+		padding: 20px;
+		@include border-radius(6px);
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		@include media-breakpoint-down(lg){
+			padding: 20px 10px;
+		}
+	}
+	&__content-inner{
+		text-align: left;
+	}
+	&__title{
+		color: $headings-color;
+		font-size: 20px;
+		@include transition(all 0.35s);
+		margin: 6px 0 6px;
+		line-height: 24px;
+		@include media-breakpoint-down(lg){
+			font-size: 18px;
+			line-height: 22px;
+		}
+	}
+	&__desc{
+	  	color: #999;
+	  	line-height: 22px;
+	  	font-size: 16px;
+	  	a{
+		 	text-decoration: underline;
+		 	color: #999;
+		 	&:hover{
+				color: $theme-color;
+		 	}
+	  	}
+	}
+	&__icon-inner{
+		text-align: center;
+		@include size(70px, 70px);
+		float: left;
+		@include border-radius(50%);
+		border: 1px solid $border-color;
+		padding-top: 9px;
+		@include media-breakpoint-down(lg){
+		  	@include size(60px, 60px);
+		  	padding-top: 4px;
+		}
+		.icon{
+		  	color: $theme-color;
+		  	@include transition(all 0.35s);
+		  	font-size: 26px;
+		  	@include size(50px, 50px);
+		  	line-height: 50px;
+		  	text-align: center;
+		  	background: #f5f5f5;
+		  	display: inline-block;
+		  	position: relative;
+		  	@include border-radius(50%);
+		}
+	}
+	&__content-inner{
+		padding-left: 85px;
+		@include media-breakpoint-down(lg){
+		  padding-left: 75px;
+		}
+	}
+
+	&__single{
+		&:hover{
+			.iconbox-five{
+				&__icon-inner{
+				  	.icon{
+					 	color: $white;
+					 	background: $theme-color;
+				  	}
+				}
+			}
+		}
+	}
+} 
+
+.iconbox-six{
+	&__single{
+		position: relative;
+		@include transition(all 0.35s);
+		overflow: hidden;
+		padding: 20px;
+		text-align: center;
+		@include media-breakpoint-down(lg){
+			padding: 10px;
+		}
+	}
+	&__content-inner{
+		
+	}
+	&__title{
+		color: $headings-color;
+		font-size: 18px;
+		@include transition(all 0.35s);
+		margin: 10px 0 0;
+		line-height: 22px;
+	}
+	&__desc{
+	  	color: #999;
+	  	line-height: 22px;
+	  	font-size: 16px;
+	  	margin-top: 15px;
+	  	a{
+		 	text-decoration: underline;
+		 	color: #999;
+		 	&:hover{
+				color: $theme-color;
+		 	}
+	  	}
+	}
+	&__icon-inner{
+		.icon{
+		  	color: $theme-color-second;
+		  	@include transition(all 0.35s);
+		  	font-size: 62px;
+		  	line-height: 1;
+		  	display: inline-block;
+		}
+	}
+	&__content-inner{
+		
+	}
+	&__single{
+		&:hover{
+			.iconbox-five{
+				&__icon-inner{
+				  	.icon{
+					 	color: $white;
+					 	background: $theme-color;
+				  	}
+				}
+			}
+		}
+	}
+}
+
+.iconbox-seven{
+	&__single{
+		position: relative;
+		@include transition(all 0.35s);
+		overflow: hidden;
+		padding: 0 0 10px;
+	}
+	&__wrap{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__link{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 11;
+	}
+	&__icon-inner{
+		flex: 0 0 70px;
+
+		.icon{
+		  	color: $white;
+		  	@include transition(all 0.35s);
+		  	font-size: 30px;
+		  	line-height: 1;
+		  	display: inline-block;
+		  	width: 70px;
+		  	height: 70px;
+		  	border-radius: 8px;
+		  	background: $theme-color;
+		  	display: flex;
+		  	align-items: center;
+		  	justify-content: center;
+		}
+	}
+	&__content-inner{
+		text-align: left;
+		flex: 0 0 calc(100% - 70px);
+		padding-left: 20px;
+	}
+	&__title{
+		color: $body-color;
+		font-size: 16px;
+		@include transition(all 0.35s);
+		margin: 0 0 8px;
+		line-height: 20px;
+		font-weight: 500;
+	}
+	&__desc{
+	  	color: $headings-color;
+	  	line-height: 24px;
+	  	font-size: 18px;
+	  	font-weight: 600;
+	  	p{
+	  		margin-bottom: 0;
+	  	}
+	  	a{
+		 	text-decoration: underline;
+		 	&:hover{
+				color: $theme-color;
+		 	}
+	  	}
+	}
+} 

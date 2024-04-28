@@ -1,0 +1,159 @@
+.colorpicker{
+   z-index: 9999999!important;
+}
+.permission-save-hidden{
+  #gavias_customize_save{
+    display: none!important;
+  }
+}
+.gavias-skins-panel{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    background:#fff;
+    right: -403px;
+    position: fixed;
+    height: auto;
+    top: 0px;
+    bottom: 0;
+    @include transition(all 0.35s);
+    width: 400px;
+    z-index: 999;
+    .gavias-skins-panel-inner{
+      bottom: 0;
+      padding: 10px 10px 10px;
+      height: auto;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+    &.active{
+      right: 0!important;
+    }
+    #gavias_profile_customize_name option{
+      color: $black;
+    }
+    .control-panel{
+      @include box-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+      position: absolute;
+      top: 150px;
+      left: -40px;
+      @include size(40px, 40px);
+      background: $theme-color;
+      color: $white;
+      font-size: 16px;
+      line-height: 45px;
+      text-align: center;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+    .panel-skins-content{
+      padding-bottom: 20px;
+      overflow: hidden;
+      &:last-child{
+        padding-bottom: 0;
+      }
+      .title{
+        font-size: 14px;
+        font-weight: 700;
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        text-transform: uppercase;
+        color: $black;
+        margin-bottom: 10px;
+      }
+    }
+}
+
+#customize-gavias-preivew{
+  font-size: 14px;
+  .accordion-item{
+    .accordion-button{
+      box-shadow: none;
+      font-weight: 600;
+    }
+  }
+  select, input{
+    font-size: 14px;
+    padding: 10px 10px;
+    line-height: 20px;
+  }
+  .form-group{
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+    label{
+      width: 170px;
+      float: left;
+      padding-top: 10px;
+      font-size: 13px;
+      color: $headings-color;
+      font-weight: 400;
+      &.fw{
+        width: 100%;
+      }
+    }
+    input{   
+      width: calc(100% - 170px);
+      float: left;
+    }
+    .colorselector{
+      width: calc(100% - 170px);
+      position: relative; 
+      input{
+        width: 100%!important;
+      }
+      .input-group-addon{
+        border: 1px solid $border-color;
+        position: absolute;
+        @include size(30px, 100%);
+        top: 0;
+        right: 0;
+        z-index: 1;
+        i{
+          @include size(30px, 20px); 
+          display: inline-block;
+        }
+      }
+      .remove{
+        @include size(34px, 34px);
+        color: $black;
+        position: absolute;
+        top: 4px;
+        right: 25px;
+        line-height: 34px;
+        text-align: center;
+        z-index: 99;
+        &:hover{
+          cursor: pointer;
+        }
+      }
+    }
+  }  
+}  
+.gavias_customize_form{
+  .form-group.action{
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+    input{
+      width: 28%;
+      margin-left: 10px;
+      color: $white;
+      font-weight: 600;
+      margin-bottom: 10px;
+      padding: 10px 0;
+      &#gavias_customize_save{
+        background: theme-color("success");
+      }
+      &#gavias_customize_preview{
+        background: theme-color("info");
+      }
+      &#gavias_customize_reset{
+        background: theme-color("warning");
+      } 
+    }
+  }
+}

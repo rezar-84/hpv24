@@ -1,0 +1,12 @@
+hpv.skin.default:
+   version: VERSION
+   header: true
+   css:
+      theme:
+         css/style.css: {}
+   js:
+      js/main.js: {}
+styles-rtl:
+   css:
+      theme:
+         css/style-rtl.css:      

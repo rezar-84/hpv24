@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser_3
+    - field.field.node.service.body
+    - field.field.node.service.comment
+    - node.type.service
+  module:
+    - text
+    - user
+id: node.service.teaser_3
+targetEntityType: node
+bundle: service
+mode: teaser_3
+content:
+  body:
+    type: text_trimmed
+    label: hidden
+    settings:
+      trim_length: 100
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  comment: true
+  langcode: true
+  links: true

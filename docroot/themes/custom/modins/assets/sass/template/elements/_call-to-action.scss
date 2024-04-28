@@ -1,0 +1,340 @@
+.gsc-call-to-action{
+  .icon-inner{
+    font-size: 64px;
+    line-height: 1;
+    color: $theme-color;
+  }
+  .title{
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: -1.44px;
+    margin: 0;
+    color: $white;
+    @media(max-width: 1024px){
+      font-size: 32px;
+    }
+    @media(max-width: 768px){
+      font-size: 22px;
+      letter-spacing: 0;
+    }
+  }
+  .sub-title{
+    color: #a3c4e0;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1.4px;
+  }
+  &.skin-v1{
+    border-top: 10px solid $theme-color;
+    border-radius: 10px;
+    background-color: transparent;
+    background-image: linear-gradient(90deg,$theme-color-second 0%,$theme-color 100%);
+    
+    .content{
+      padding: 60px;
+      margin: 0 auto;
+      @media(max-width: 1024px){
+        padding: 30px;
+      }
+      @media (min-width: 576px){
+        max-width: 540px;
+      }
+      @media (min-width: 768px){
+        max-width: 768px;
+      }
+      @media (min-width: 992px){
+        max-width: 992px;
+      }
+      @media (min-width: 1025px){
+        max-width: 1025px;
+      }
+      @media (min-width: 1200px){
+        max-width: 1200px;
+      }
+    }
+    .content-inner{
+      text-align: left;
+      position: relative;
+    }
+    .content-box{
+      display: flex;
+      align-items: center;
+    }
+    .icon-inner{
+      flex: 0 0 64px;
+      margin-right: 28px;
+    }
+    .video-inner{
+      margin-bottom: 45px;
+      .link-video{
+        display: inline-block;
+        font-size: 24px;
+        color: $white;
+        background: $theme-color;   
+        text-align: center;
+        position: relative;
+        @include transition(all 0.35s);
+        @include size(80px, 80px);
+        line-height: 82px;
+        @include media-breakpoint-down(md){
+          @include size(60px, 60px);
+          line-height: 62px;
+        }
+        &::before{
+          position: absolute;
+          content: '';
+          left: 0;
+          top: 0;
+          height: 100%;
+          width: 100%;
+          border: 1px solid #fff;
+          opacity: 0;
+          @include animation(pulse-border-2 1.5s linear infinite);
+        }
+        &::after{
+          position: absolute;
+          content: '';
+          left: 0;
+          top: 0;
+          height: 100%;
+          width: 100%;
+          border: 1px solid #fff;
+          opacity: 0;
+          @include animation(pulse-border 1s linear infinite);
+        }
+        &:hover{
+          @include scale(0.9);
+        }
+      }
+    }
+    &.full-width{
+      border-radius: 0;
+      border: 0;
+      .content{
+        padding: 52px 15px;
+      }
+    }
+  }
+  &.skin-v2{
+
+  }
+  &.skin-v3{
+    .icon-inner{
+      font-size: 32px;
+      margin-right: 10px;
+    }
+    .title{
+      font-size: 20px;
+      letter-spacing: 0;
+      margin-bottom: 0;
+    }
+    .content-box{
+      display: flex;
+      align-items: center;
+    }
+    .button-action a{
+      height: 45px;
+      padding: 12px 30px;
+    }
+  }
+  .button-action{
+    > a{
+      margin: 0 10px;
+      display: inline-block;
+      &:first-child{
+        margin-left: 0;
+      }
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+  .desc{
+    line-height: 30px;
+  }
+  
+  &.button-right{
+    position: relative;
+    text-align: left;
+    .title{
+      margin: 0;
+    }
+    .content-inner{
+      padding-right: 30%;
+      @media(max-width: 991px){
+        padding-right: 0;
+      }
+      p{
+        margin: 0;
+      }
+    }
+    .button-action{
+      position: absolute;
+      right: 0px;
+      top: 50%;
+      z-index: 1;
+      transform: translateY(-50%);
+      @media(max-width: 991px){
+        position: initial;
+        margin-top: 20px;
+        transform: none;
+      }
+    }
+  }
+  &.button-left{
+    position: relative;
+    text-align: right;
+    .title{
+      margin: 0 0 10px!important;
+    }
+    .heading-line{
+      margin: 16px 0;
+    }
+    .content{
+      padding-left: 210px;
+      @media(max-width: 800px){
+        padding-left: 0;
+      }
+      p{
+        margin: 0;
+      }
+    }
+    .button-action{
+      position: absolute;
+      left: 0;
+      top: 50%;
+      margin-top: -20px;
+      z-index: 1;
+      @media(max-width: 800px){
+        position: relative;
+        margin-top: 15px;
+      }
+    }
+  }
+  &.button-bottom{
+    padding: 0 0 30px;
+    .title{
+      position: relative;
+      margin-bottom: 32px;
+      @include media-breakpoint-down(md){
+        font-size: 32px;
+        margin-bottom: 20px;
+      }
+      .text-small{
+        font-size: 28px;
+        line-height: 36px;
+      }
+    }
+    .heading-line{
+      margin: 16px 0;
+    }
+    .desc{
+      font-size: 16px;
+    }
+    .button-action{
+      margin-top: 45px;
+       @include media-breakpoint-down(md){
+        margin-top: 30px;
+      }
+    }
+    &.text-light{
+      .title{
+        &:after{
+          background: $white;
+        }
+      }
+    }
+  }
+  &.button-bottom-right{
+    padding: 30px 0;
+    text-align: right;
+    @include media-breakpoint-down(md){
+      padding: 0;
+    }
+    .title{
+      position: relative;
+      margin-top: 0;
+      letter-spacing: 0;
+      font-weight: 700;
+      margin-bottom: 32px;
+      &:after{
+        left: auto;
+        right: 0;
+      }
+      .text-small{
+        font-size: 30px;
+      }
+    }
+    .desc{
+      font-size: 16px;
+    }
+    .button-action{
+      margin-top: 30px;
+    }
+    &.text-light{
+      .title{
+        &:after{
+          background: $white;
+        }
+      }
+    }
+  }
+  &.button-center{
+    text-align: center;
+    margin: 0 auto;
+    .title{
+      font-size: 32px;
+      position: relative;
+      margin-bottom: 10px;
+      margin-top: 0;
+    }
+    .desc{
+      margin-top: 20px;
+    }
+    .button-action{
+      margin-top: 45px;
+    }
+    &.text-light{
+      .title{
+        &:after{
+          background: $white;
+        }
+      }
+    }
+  }
+  &.has-background{
+    padding: 35px;
+    margin-bottom: 30px;
+    .title{
+      margin-bottom: 0;
+      padding-bottom: 15px;
+      font-size: 20px;
+      &:after{
+        display: none;
+      }
+    }
+    &.button-right{
+      .button-action{
+        right: 30px;
+      }
+    }
+  }
+  &.text-light{
+    .content{
+      color: $white;
+      .sub-title{
+        color: $white;
+      }
+      .title{
+        color: $white;
+      }
+      .desc *{
+        color: rgba(255, 255, 255, 0.96);
+      }
+    }
+    .subtitle{
+      color: rgba(255, 255, 255, 0.96);
+    }
+  }
+}

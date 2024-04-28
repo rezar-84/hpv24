@@ -1,0 +1,63 @@
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin square($size) {
+  @include size($size, $size);
+}
+
+@mixin translate($x, $y) {
+  -webkit-transform: translate($x, $y);
+      -ms-transform: translate($x, $y); // IE9 only
+       -o-transform: translate($x, $y);
+          transform: translate($x, $y);
+}
+
+@mixin translateX($x) {
+	-webkit-transform: translateX($x);
+	-ms-transform: translateX($x); // IE9 only
+	-o-transform: translateX($x);
+	transform: translateX($x);
+}
+
+@mixin translateY($y) {
+	-webkit-transform: translateY($y);
+	-ms-transform: translateY($y); // IE9 only
+	-o-transform: translateY($y);
+	transform: translateY($y);
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  // IE8 filter
+  $opacity-ie: ($opacity * 100);
+  filter: #{alpha(opacity=$opacity-ie)};
+}
+
+@mixin scale($ratio...) {
+  -webkit-transform: scale($ratio);
+		-ms-transform: scale($ratio); // IE9 only
+		 -o-transform: scale($ratio);
+			transform: scale($ratio);
+}
+@mixin animation($animation) {
+  	-webkit-animation: $animation;
+      -o-animation: $animation;
+         animation: $animation;
+}
+
+@mixin transform($argument){
+   -webkit-transform: ($argument);
+   -moz-transform: ($argument);
+   -ms-transform: ($argument);
+   -o-transform: ($argument);
+   transform: ($argument);
+}
+
+@mixin rotate($degrees) {
+  -webkit-transform: rotate($degrees);
+      -ms-transform: rotate($degrees); // IE9 only
+       -o-transform: rotate($degrees);
+          transform: rotate($degrees);
+}

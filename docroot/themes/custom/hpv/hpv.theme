@@ -1,0 +1,6 @@
+<?php
+
+function hpv_preprocess_html(&$variables)
+{
+  $variables['#attached']['library'][] = 'hpv/hpv.skin.default';
+}

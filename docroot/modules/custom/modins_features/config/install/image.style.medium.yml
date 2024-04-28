@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: medium
+label: 'Medium (680×460)'
+effects:
+  06e6172c-354a-42b2-9962-986117d04601:
+    uuid: 06e6172c-354a-42b2-9962-986117d04601
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 680
+      height: 460
+      anchor: center-center

@@ -1,0 +1,11 @@
+node_types:
+  page: page
+  portfolio: portfolio
+  service: service
+  article: 0
+  event: 0
+  gallery: 0
+  location: 0
+  team: 0
+  testimonial: 0
+gva_edit_save: disable

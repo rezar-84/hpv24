@@ -1,0 +1,63 @@
+global-styling:
+  version: VERSION
+  header: true
+  css:
+    theme:
+      //fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600;700&display=swap: { type: external }
+      assets/css/font-awesome/css/all.min.css: {}
+      assets/css/icon/flaticon.css: {}
+      assets/css/icomoon/icomoon.css: {}
+      assets/css/animate.css: {}
+      assets/vendor/owl-carousel/assets/owl.carousel.min.css: {}
+      assets/vendor/owl-carousel/assets/owl.theme.default.min.css: {}
+      assets/vendor/prettyphoto/css/prettyPhoto.css: {}
+      assets/vendor/ytplayer/css/jquery.mb.YTPlayer.min.css: {}
+      assets/vendor/magnific/magnific-popup.css: {}
+      assets/css/bootstrap.css: {}
+      assets/css/template.css: {}
+  js:
+    assets/vendor/jquery-migrate.min.js: {}
+    assets/js/bootstrap.js: {}
+    assets/js/imagesloader.min.js: {}
+    assets/vendor/jquery.easing.js: {}
+    assets/vendor/jquery.appear.js: {}
+    assets/vendor/jquery.easypiechart.min.js: {}
+    assets/vendor/owl-carousel/owl.carousel.js: {}
+    assets/vendor/waypoint.js: {}
+    assets/vendor/count-to.js: {}
+    assets/vendor/masonry.pkgd.min.js: {}
+    assets/vendor/isotope.pkgd.min.js: {}
+    assets/vendor/aos.js: {}
+    assets/vendor/prettyphoto/js/jquery.prettyPhoto.js: {}
+    assets/vendor/ytplayer/js/jquery.mb.YTPlayer.min.js: {}
+    assets/vendor/magnific/jquery.magnific-popup.min.js: {}
+    assets/vendor/jquery.nicescroll.min.js: {}
+    assets/js/main.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+
+modins-admin:
+  version: VERSION
+  css: 
+    theme: 
+      assets/css/theme-settings.css: {}
+      assets/vendor/colorpicker/css/colorpicker.css: {}
+      assets/vendor/codemirror/lib/codemirror.css: {}
+      assets/vendor/codemirror/addon/hint/show-hint.css: {}
+  js:
+      assets/vendor/jquery-migrate.min.js: {}
+      assets/vendor/colorpicker/js/colorpicker.js: {}
+      assets/vendor/codemirror/lib/codemirror.js: {cope: footer}
+      assets/vendor/codemirror/mode/css/css.js: {cope: footer}
+      assets/js/customize.js: {}
+
+views-infinite-scroll:
+  version: VERSION
+  js:
+    assets/js/override/infinite-scroll.js : {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupal.debounce

@@ -1,0 +1,9 @@
+customize:
+   version: VERSION
+   css:
+      theme:
+         assets/vendor/colorpicker/css/colorpicker.css: {}
+   js:
+      assets/vendor/colorpicker/js/colorpicker.js: {}
+      assets/js/customize.js: {}
+   dependencies:   

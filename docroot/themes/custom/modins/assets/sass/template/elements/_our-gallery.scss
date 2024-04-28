@@ -1,0 +1,66 @@
+.gsc-our-gallery{
+	
+  	.owl-nav{
+	 	> div.owl-prev{
+	 		left: 15px!important;
+	 	}
+	 	> div.owl-next{
+	 		right: 15px!important;
+	 	}
+  	}
+}
+
+.gallery-one{
+	&__single{
+		position: relative;
+	}
+	&__image{
+		border-radius: 8px;
+		overflow: hidden;
+		img{
+			object-fit: cover;
+			width: 100%;
+			border-radius: 8px;
+		}
+	}
+	&__content{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: $theme-color-second;
+		opacity: 0;
+		transition: all 0.35s;
+		border-radius: 8px;
+	}
+	&__content-inner{
+		position: relative;
+		text-align: center;
+		top: 50%;
+    	left: 0;
+    	width: 100%;
+    	transform: translateY(-50%);
+	}
+	&__title{
+		color: $white;
+		font-size: 20px;
+		margin-bottom: 0;
+	}
+	&__desc{
+		font-size: 12px;
+		color: rgba(255,255,255,.9);
+		font-weight: 500;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+	&__single{
+		&:hover{
+			.gallery-one{
+				&__content{
+					opacity: 0.8;
+				}
+			}
+		}
+	}
+}

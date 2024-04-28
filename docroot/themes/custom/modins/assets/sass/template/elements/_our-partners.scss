@@ -1,0 +1,36 @@
+.gsc-our-partners{
+  @include clearfix();
+  margin-bottom: 45px;
+  @media(max-width: 767px){
+    margin-bottom: 30px;
+  }
+  .image{
+    width: 35%;
+    float: left;
+    @media(max-width: 575px){
+      width: 100%;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  }
+  .content-inner{
+    width: 65%;
+    float: left;
+    padding-left: 30px;
+    @media(max-width: 575px){
+      width: 100%;
+      padding-left: 0;
+    }
+    .title{
+      font-size: 20px;
+    }
+    .info{
+      font-size: 13px;
+      padding: 5px 0 12px;
+      font-family: $headings-font-family;
+      .category{
+        color: $theme-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+<footer id="footer" class="footer">
+  	{% if page.footer %}
+  		<div class="footer-inner">
+		  	<div class="footer-content">
+				{{ page.footer }}
+		  	</div>
+		</div>   
+  {% endif %}
+
+  {% if page.copyright %}
+	 <div class="copyright">
+		<div class="container">
+		  <div class="copyright-inner">
+				{{ page.copyright }}
+		  </div>   
+		</div>   
+	 </div>
+  {% endif %}
+
+</footer>

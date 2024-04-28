@@ -1,0 +1,36 @@
+name: Modins
+type: theme
+description: 'A flexible, recolorable theme with many regions and a responsive, mobile-first layout.'
+package: gaviasthemes
+base theme: false
+libraries:
+  - modins/global-styling
+  - core/jquery
+
+libraries-override:
+  views_infinite_scroll/views-infinite-scroll: modins/views-infinite-scroll
+
+regions:
+  offcanvas: 'After Offcanvas'
+  topbar: 'Topbar'
+  topbar_right: 'Topbar Right'
+  quick_side: 'Quick Side'
+  search: 'Search'
+  branding: 'Branding'
+  header_right: 'Header Right'
+  breadcrumbs: 'Breadcrumbs'
+  help: 'Help'
+  main_menu: 'Main menu'
+  slideshow_content: 'Slideshow'
+  before_content: 'Before Content'
+  content: 'Main content'
+  sidebar_left: 'Sidebar Left'
+  sidebar_right: 'Sidebar Right'
+  after_content: 'After Content'
+  footer: 'Footer'
+  copyright: 'Copyright'
+  other: 'Other'
+
+version: '1.0.2'
+core_version_requirement: ^9 || ^10
+project: 'drupal'

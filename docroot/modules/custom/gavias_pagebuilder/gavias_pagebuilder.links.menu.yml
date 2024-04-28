@@ -1,0 +1,13 @@
+gavias_pagebuilder.admin:
+  title: 'Gavias Block Builder'
+  description: 'List of Gavias Block Builder items'
+  parent: system.admin_structure
+  route_name: gavias_pagebuilder.admin
+
+gavias_pagebuilder.settings_form:
+  title: 'Page Builder Settings'
+  route_name: gavias_pagebuilder.settings_form
+  description: 'Administer settings related to the Page Builder module.'
+  parent: system.admin_config_content
+  weight: 99
+  

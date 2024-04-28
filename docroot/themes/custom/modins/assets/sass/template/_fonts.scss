@@ -1,0 +1,53 @@
+
+@font-face {
+    font-family: 'kumbh-sans';
+    src: url('#{$theme-font-path}kumbh-sans/KumbhSans-Bold.eot');
+    src: url('#{$theme-font-path}kumbh-sans/KumbhSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('#{$theme-font-path}kumbh-sans/KumbhSans-Bold.woff2') format('woff2'),
+        url('#{$theme-font-path}kumbh-sans/KumbhSans-Bold.woff') format('woff'),
+        url('#{$theme-font-path}kumbh-sans/KumbhSans-Bold.ttf') format('truetype'),
+        url('#{$theme-font-path}kumbh-sans/KumbhSans-Bold.svg#KumbhSans-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;  
+}
+
+@font-face {
+    font-family: 'kumbh-sans';
+    src: url('#{$theme-font-path}kumbh-sans/KumbhSans-Medium.eot');
+    src: url('#{$theme-font-path}kumbh-sans/KumbhSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('#{$theme-font-path}kumbh-sans/KumbhSans-Medium.woff2') format('woff2'),
+        url('#{$theme-font-path}kumbh-sans/KumbhSans-Medium.woff') format('woff'),
+        url('#{$theme-font-path}kumbh-sans/KumbhSans-Medium.ttf') format('truetype'),
+        url('#{$theme-font-path}kumbh-sans/KumbhSans-Medium.svg#KumbhSans-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;  
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'kumbh-sans';
+    src: url('#{$theme-font-path}kumbh-sans/KumbhSans-SemiBold.eot');
+    src: url('#{$theme-font-path}kumbh-sans/KumbhSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('#{$theme-font-path}kumbh-sans/KumbhSans-SemiBold.woff2') format('woff2'),
+        url('#{$theme-font-path}kumbh-sans/KumbhSans-SemiBold.woff') format('woff'),
+        url('#{$theme-font-path}kumbh-sans/KumbhSans-SemiBold.ttf') format('truetype'),
+        url('#{$theme-font-path}kumbh-sans/KumbhSans-SemiBold.svg#KumbhSans-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'kumbh-sans';
+    src: url('#{$theme-font-path}kumbh-sans/KumbhSans-Regular.eot');
+    src: url('#{$theme-font-path}kumbh-sans/KumbhSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('#{$theme-font-path}kumbh-sans/KumbhSans-Regular.woff2') format('woff2'),
+        url('#{$theme-font-path}kumbh-sans/KumbhSans-Regular.woff') format('woff'),
+        url('#{$theme-font-path}kumbh-sans/KumbhSans-Regular.ttf') format('truetype'),
+        url('#{$theme-font-path}kumbh-sans/KumbhSans-Regular.svg#KumbhSans-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+

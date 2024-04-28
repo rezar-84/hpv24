@@ -1,0 +1,15 @@
+gavias_hook_themer.admin.customize_save:
+   path: 'admin/gavias_hook_themer_customize/save'
+   defaults:
+      _title: 'Save Customize'
+      _controller: '\Drupal\gavias_hook_themer\Controller\CustomizeController::save'
+   requirements:
+      _permission: 'administer gavias_customize'
+
+gavias_hook_themer.admin.customize_preview:
+   path: 'admin/gavias_hook_themer_customize/preview'
+   defaults:
+      _title: 'Preview Customize'
+      _controller: '\Drupal\gavias_hook_themer\Controller\CustomizeController::preview'
+   requirements:
+      _permission: 'administer gavias_customize preview'
