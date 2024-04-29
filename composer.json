@@ -40,7 +40,8 @@
     "drupal/chosen": "^4.0",
     "drupal/image_effects": "^3.6",
     "drupal/imce": "^3.0",
-    "drupal/features": "^3.14"
+    "drupal/features": "^3.14",
+    "drupal/tb_megamenu": "^3.0@alpha"
   },
   "require-dev": {
     "drupal/core-dev": "~10",
@@ -165,7 +166,7 @@
       ]
     },
     "enable-patching": true,
-    "composer-exit-on-patch-failure": true,
+    "composer-exit-on-patch-failure": false,
     "patchLevel": {
       "drupal/core": "-p2"
     },

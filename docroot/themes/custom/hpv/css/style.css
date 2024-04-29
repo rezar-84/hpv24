@@ -243,9 +243,66 @@ text-align: right;
 .skin-care-blog-card .blog-content h3 {
     font-size: 24px;
     font-weight: 500;
-    font-family: "Heebo", sans-serif;
+    font-family: 'Vazirmatn', sans-serif !important ;
     line-height: 1.5;
 }
 .skin-care-blog-card .blog-content h3 a {
     color: #002345;
 }
+
+/* faq */
+span.ui-accordion-header-icon {
+    display: inline-block;
+}
+.ui-widget{
+    font-family: 'Vazirmatn', sans-serif !important ;
+
+}
+
+.ui-accordion .ui-accordion-content {
+    margin-bottom: 30px;
+    border: none;
+    line-height: 1.8em;
+
+}
+
+.ui-accordion .ui-accordion-header {
+    padding: 25px 40px 25px 25px;
+    color: #222222;
+    position: relative;
+    display: block;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    background: #f6f7f9;
+    border: none;
+    border-radius: 5px;
+}
+.ui-accordion h3.ui-state-active {
+
+    background: #e5e7e9;
+
+}
+.ui-icon-triangle-1-e {
+    background-position: -94px -16px;
+}
+
+
+
+/* /mobile menu
+ */
+
+ .gva-offcanvas-mobile .gva-navigation .gva_menu li a .icaret{
+    font-family: 'Vazirmatn', sans-serif !important ;
+
+    left: 5px;
+    right: auto;
+ }
+
+
+ .breadcrumb-style.gva-parallax-background{
+    background: none !important;
+    background-color: #124390 !important;
+
+ }

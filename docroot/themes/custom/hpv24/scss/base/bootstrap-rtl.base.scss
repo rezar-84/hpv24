@@ -2,6 +2,7 @@
 
 // Bootstrap 5 Base Global styling.
 // -----------------------------------------------------------------------------
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700&display=swap');
 
 [dir="rtl"] {
   // To exclusively modify the --bs-font-sans-serif CSS3 variable for 
@@ -10,6 +11,6 @@
   &:root,
   &[data-bs-theme=light],
   &[data-bs-theme=dark] {
-    --bs-font-sans-serif: "Droid Arabic Kufi", sans-serif;
+    --bs-font-sans-serif: "Vazirmatn","Droid Arabic Kufi", sans-serif;
   }
 }
