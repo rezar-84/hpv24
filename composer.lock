@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "88019b715fbb4ef36f560362911105cc",
+    "content-hash": "2328e399e507ce62aeb957b5cbeb2830",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -3021,6 +3021,62 @@
             ],
             "support": {
                 "source": "https://git.drupalcode.org/project/bootstrap_styles"
+            }
+        },
+        {
+            "name": "drupal/calendar_systems",
+            "version": "4.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/calendar_systems.git",
+                "reference": "4.0.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/calendar_systems-4.0.2.zip",
+                "reference": "4.0.2",
+                "shasum": "d8e2a90857283d81e312026a32278343511f377c"
+            },
+            "require": {
+                "drupal/core": "^10"
+            },
+            "require-dev": {
+                "drupal/better_exposed_filters": "*",
+                "drupal/fullcalendar": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "4.0.2",
+                    "datestamp": "1675630275",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "hkoosha",
+                    "homepage": "https://www.drupal.org/user/2439888"
+                },
+                {
+                    "name": "sepla",
+                    "homepage": "https://www.drupal.org/user/668010"
+                },
+                {
+                    "name": "sinasalek",
+                    "homepage": "https://www.drupal.org/user/52244"
+                }
+            ],
+            "description": "Calendar Systems is a date localization and internationalization module using php-intl.",
+            "homepage": "https://www.drupal.org/project/calendar_systems",
+            "support": {
+                "source": "https://git.drupalcode.org/project/calendar_systems"
             }
         },
         {

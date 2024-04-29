@@ -165,9 +165,8 @@ text-align: right;
   border-radius: 5px;
 
 }
-.topbar__one{
-  background: none !important;
-  padding-bottom: 10px;
+.topbar__one {
+    background: var(--topbar-bg-color);
 }
 .topbar__one .topbar__content{
   color: #002345;
@@ -180,56 +179,10 @@ text-align: right;
   padding: 25px 18px !important;
 }
 
-/* blog  */
-
-.skin-care-blog-card {
-    margin-bottom: 25px;
-    transition: 0.6s;
-}
-.skin-care-blog-card .blog-image {
-    position: relative;
-}
-.skin-care-blog-card .blog-image a img {
-    display: inline-block;
-}
-.skin-care-blog-card .blog-image .tag {
-    position: absolute;
-    left: 20px;
-    bottom: -20px;
-}
-.skin-care-blog-card .blog-image .tag a {
-    display: inline-block;
-    background-color: #1DBFCC;
-    color: #ffffff;
-    padding: 10px 15px;
-    border-radius: 30px;
-}
-.skin-care-blog-card .blog-content {
-    padding-top: 45px;
-    padding-left: 20px;
-}
-.skin-care-blog-card .blog-content .entry-meta {
-    padding: 0;
-    margin-bottom: 15px;
-}
-
-.skin-care-blog-card .blog-content .entry-meta li {
-    display: inline-block;
-    list-style-type: none;
-    font-size: 14px;
-    color: #486683;
-    margin-right: 10px;
-    position: relative;
-    padding-left: 22px;
-}
-.skin-care-blog-card .blog-content .entry-meta li i {
-    color: #1DBFCC;
-    position: absolute;
-    left: 0;
-    top: 2.8px;
-}
-.skin-care-blog-card .blog-content .entry-meta li a {
-    color: #486683;
+/* block  */
+.block .block-title:before{
+    right:0;
+    left: auto;
 }
 
 
@@ -305,4 +258,11 @@ span.ui-accordion-header-icon {
     background: none !important;
     background-color: #124390 !important;
 
+ }
+
+ /* cpanel */
+ #customize-gavias-preivew select, #customize-gavias-preivew input{
+    direction: ltr;
+ }
+ .header-one__right {
  }

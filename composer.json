@@ -41,7 +41,8 @@
     "drupal/image_effects": "^3.6",
     "drupal/imce": "^3.0",
     "drupal/features": "^3.14",
-    "drupal/tb_megamenu": "^3.0@alpha"
+    "drupal/tb_megamenu": "^3.0@alpha",
+    "drupal/calendar_systems": "^4.0"
   },
   "require-dev": {
     "drupal/core-dev": "~10",

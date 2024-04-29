@@ -1,16 +1,19 @@
 <?php
-function modins_font_size(){
+function modins_font_size()
+{
     $size = array();
     $size[''] = '-- Default --';
-    for ($i=12; $i <= 50 ; $i = $i+1) { 
+    for ($i = 12; $i <= 50; $i = $i + 1) {
         $size[$i] = $i;
     }
     return $size;
 }
 
-function modins_fonts(){
-$tmp = array(
+function modins_fonts()
+{
+    $tmp = array(
         '---',
+        "'Vazirmatn', Helvetica, sans-serif",
         "'Arial', Helvetica, sans-serif",
         "'Arial Black', Gadget, sans-serif",
         "'Bookman Old Style', serif",
@@ -683,32 +686,35 @@ $tmp = array(
         'Yeseva One',
         'Yesteryear',
         'Zeyada',
+        'Vazirmatn',
     );
     $fonts = array();
     foreach ($tmp as $key => $value) {
-        $fonts[$value] = $value;   
-    }   
+        $fonts[$value] = $value;
+    }
     return $fonts;
 }
 
-function modins_render_option_font(){
+function modins_render_option_font()
+{
     $fonts = modins_fonts();
     $output = '';
     foreach ($fonts as $key => $value) {
-        $output .= '<option value="'.$key.'">' . $value . '</option>';
+        $output .= '<option value="' . $key . '">' . $value . '</option>';
     }
     return $output;
 }
 
-function modins_typography_font_styles($option, $selectors) {
+function modins_typography_font_styles($option, $selectors)
+{
     $output = $selectors . ' {';
-    if(isset($option['face']) && $option['face']){
+    if (isset($option['face']) && $option['face']) {
         $output .= 'font-family:' . $option['face'] . '; ';
-    }    
-    if(isset($option['weight']) && $option['weight']){
+    }
+    if (isset($option['weight']) && $option['weight']) {
         $output .= 'font-weight:' . $option['weight'] . '; ';
     }
-    if(isset($option['size']) && $option['size']){
+    if (isset($option['size']) && $option['size']) {
         $output .= 'font-size:' . $option['size'] . '; ';
     }
     $output .= '}';
@@ -716,24 +722,26 @@ function modins_typography_font_styles($option, $selectors) {
     return $output;
 }
 
-function modins_typography_enqueue_google_font($font) {
- 
-    if($font && $font != "---"){
-        if(array_search($font, array_keys(modins_fonts())) > 17){
+function modins_typography_enqueue_google_font($font)
+{
+
+    if ($font && $font != "---") {
+        if (array_search($font, array_keys(modins_fonts())) > 17) {
             $font = str_replace(" ", "+", $font);
             return "<link rel=\"stylesheet\" type=\"text/css\" href=\"https://fonts.googleapis.com/css?family=$font:100,300,400,600,800,900\"/>\n";
         }
-    } 
-    return '';   
+    }
+    return '';
 }
 
-function modins_links_typography_font($json){
+function modins_links_typography_font($json)
+{
     $links_fonts = '';
     $customize = (array)json_decode((string)$json, true);
-    if(isset($customize['font_family_primary']) && $customize['font_family_primary']){
+    if (isset($customize['font_family_primary']) && $customize['font_family_primary']) {
         $links_fonts .= modins_typography_enqueue_google_font($customize['font_family_primary']);
     }
-    if(isset($customize['font_family_second']) && $customize['font_family_second']){
+    if (isset($customize['font_family_second']) && $customize['font_family_second']) {
         $links_fonts .= modins_typography_enqueue_google_font($customize['font_family_second']);
     }
     return $links_fonts;
