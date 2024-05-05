@@ -127,7 +127,10 @@ a {
     background-color: green;
   }
 }
-.card-body, .card{
+
+}
+
+.card-body.card{
   border: none !important;
 }
 .card-header{
