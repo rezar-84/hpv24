@@ -100,6 +100,10 @@ a {
   border-radius: 1em;
 }
 
+.card-header:first-child {
+  background: #fff;
+}
+
 form#webform-submission-online-consult-add-form {
   max-width: 800px;
   margin: 0 auto;
@@ -121,18 +125,21 @@ form#webform-submission-online-consult-add-form {
 
 .js-form-wrapper {
   background: white;
+  border-radius: 10px;
+  padding: 20px;
 }
 
 .js-form-item.form-item.js-form-type-radio {
   line-height: 1.5em;
-  background: darkseagreen;
+  background: #a6de9b;
   padding: 20px;
   border-radius: 2em;
-  color: darkslategray;
+  color: #325343;
 }
 
 .js-form-item.form-item.js-form-type-radio:hover {
-  background-color: green;
+  background-color: #397a4a;
+  color: #fff;
 }
 
 .mb-3 {
@@ -154,6 +161,12 @@ form#webform-submission-online-consult-add-form {
 
 .webform-progress-tracker .progress-step .progress-marker::after {
   display: none;
+}
+
+.btn-primary {
+  background: #397a4a;
+  border-radius: .3rem;
+  border-color: #397a4a;
 }
 
 
