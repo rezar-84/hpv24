@@ -305,7 +305,7 @@ span.ui-accordion-header-icon {
     cursor: pointer;
     color: #325343;
     background-color: #a6de9b;
-    border-radius: 3px;
+    border-radius: 2rem;
     font-size: 18px;
     padding: 16px 25px 14px;
     line-height: 24px;
