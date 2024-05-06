@@ -121,5 +121,40 @@ a {
   border-radius: 1em;
 }
 
+.online-help {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.progress-marker::before {
+  border-radius: 1rem !important;
+  width: 95%;
+}
+
+.progress-title {
+  display: none;
+}
+
+.js-form-wrapper {
+  background: white;
+}
+
+.js-form-item.form-item.js-form-type-radio {
+  line-height: 1.5em;
+  background: darkseagreen;
+  padding: 20px;
+  border-radius: 2em;
+  color: darkslategray;
+}
+
+.js-form-item.form-item.js-form-type-radio:hover {
+  background-color: green;
+}
+
+.card-header {
+  border-bottom: none;
+  border-radius: 1em;
+}
+
 
 /*# sourceMappingURL=hpv24.base.css.map*/
