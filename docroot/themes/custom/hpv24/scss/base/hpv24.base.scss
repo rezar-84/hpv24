@@ -127,6 +127,7 @@ form#webform-submission-online-consult-add-form{
   &::before{
     border-radius: 0.3rem !important;
     width: 95%;
+    font-size: 1px;
   }
 }
 .progress-title{
@@ -155,4 +156,11 @@ form#webform-submission-online-consult-add-form{
 }
 .webform-progress-tracker .progress-step.is-active:hover .progress-marker::before {
   background-color: #325343;
+}
+
+.webform-progress-tracker .progress-step:not(.is-active) , .webform-progress-tracker .progress-step:hover .progress-marker::before {
+  background-color: #dce2da;
+}
+.webform-progress-tracker .progress-step .progress-marker::after{
+  display: none;
 }
