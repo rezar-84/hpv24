@@ -356,4 +356,5 @@ width: auto;
 .webform-submission-form .form-actions {
   width: 72%;
   margin: 0 auto;
+  float: none;
 }
