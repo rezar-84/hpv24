@@ -276,8 +276,8 @@ span.ui-accordion-header-icon {
     background: #fff;
   }
   
-  form#webform-submission-online-consult-add-form{
-    max-width: 800px;
+  form#webform-submission-online-consult-add-form , .webform-ajax-form-wrapper{
+    max-width: 640px;
     margin: 0 auto;
   }
   
