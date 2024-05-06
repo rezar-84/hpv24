@@ -295,7 +295,7 @@ span.ui-accordion-header-icon {
     display: none;
   }
   .webform-submission-form .form-item  label {
-    display: block;
+    display: inline;
     color: #333;
   }
 
@@ -340,4 +340,10 @@ span.ui-accordion-header-icon {
     background: #397a4a;
     border-radius: 0.3rem;
     border-color: #397a4a;
+}
+.webform-submission-form .form-item input{
+display: inline;
+min-height: 30px;
+width: 20%;
+
 }
