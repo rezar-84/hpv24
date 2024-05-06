@@ -344,6 +344,6 @@ span.ui-accordion-header-icon {
 .webform-submission-form .form-item input{
 display: inline;
 min-height: 30px;
-width: 20%;
+width: auto;
 
 }
