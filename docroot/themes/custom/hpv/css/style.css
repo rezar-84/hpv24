@@ -335,3 +335,6 @@ span.ui-accordion-header-icon {
       border-radius: 0.3rem;
       border-color: #397a4a;
   }
+  .webform-submission-form .form-item label {
+    display: block !important;
+}
