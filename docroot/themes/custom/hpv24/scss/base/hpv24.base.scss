@@ -10,6 +10,9 @@
  * Issue #3246827: Fix em.placeholder style from Bootstrap 5 base styling with the Drupal core placeholder
  * https://www.drupal.org/i/3246827
  */
+body{
+  background: #f5f5f5;
+}
  em.placeholder {
   cursor: unset !important;
   vertical-align: unset !important;
@@ -103,9 +106,26 @@ a {
   text-underline-offset: 0.25em;
 }
 
+
+
+
+
+.card-header{
+  border-bottom: none;
+  border-radius: 1em;
+}
+
+form#webform-submission-online-consult-add-form{
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.progress-title {
+  display: none;
+}
 .progress-marker{
   &::before{
-    border-radius: 1rem !important;
+    border-radius: 0.3rem !important;
     width: 95%;
   }
 }
@@ -127,46 +147,12 @@ a {
     background-color: green;
   }
 }
-
-
-
-
-.card-header{
-  border-bottom: none;
-  border-radius: 1em;
+.mb-3{    margin-bottom: 1rem !important;
+  background: #fffcf6;
 }
-
-.online-help{
-  max-width: 800px;
-  margin: 0 auto;
+.progress-step.is-active .progress-marker::before {
+  background-color: #325343;
 }
-
-.progress-marker::before {
-  border-radius: 1rem !important;
-  width: 95%;
-}
-
-.progress-title {
-  display: none;
-}
-
-.js-form-wrapper {
-  background: white;
-}
-
-.js-form-item.form-item.js-form-type-radio {
-  line-height: 1.5em;
-  background: darkseagreen;
-  padding: 20px;
-  border-radius: 2em;
-  color: darkslategray;
-}
-
-.js-form-item.form-item.js-form-type-radio:hover {
-  background-color: green;
-}
-
-.card-header {
-  border-bottom: none;
-  border-radius: 1em;
+.webform-progress-tracker .progress-step.is-active:hover .progress-marker::before {
+  background-color: #325343;
 }
