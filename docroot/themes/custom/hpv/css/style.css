@@ -266,3 +266,72 @@ span.ui-accordion-header-icon {
  }
  .header-one__right {
  }
+
+
+.card-header{
+    border-bottom: none;
+    border-radius: 1em;
+  }
+  .card-header:first-child{
+    background: #fff;
+  }
+  
+  form#webform-submission-online-consult-add-form{
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .progress-title {
+    display: none;
+  }
+  .progress-marker{
+    &::before{
+      border-radius: 0.3rem !important;
+      width: 95%;
+      font-size: 1px;
+    }
+  }
+  .progress-title{
+    display: none;
+  }
+  
+  .js-form-wrapper{
+    background: white;
+    border-radius: 10px ;
+    padding: 20px;
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 0 10px rgba(0,0,0,6%);
+  
+  }
+  .js-form-item.form-item.js-form-type-radio {
+    line-height: 1.5em;
+    background: #a6de9b;
+    padding: 20px;
+    border-radius: 2em;
+    color: #325343;
+    &:hover{
+      background-color: #397a4a;
+      color: #fff;
+    }
+  }
+  .mb-3{    margin-bottom: 1rem !important;
+    background: #fffcf6;
+  }
+  .progress-step.is-active .progress-marker::before {
+    background-color: #325343;
+  }
+  .webform-progress-tracker .progress-step.is-active:hover .progress-marker::before {
+    background-color: #325343;
+  }
+  
+  .webform-progress-tracker .progress-step:not(.is-active) , .webform-progress-tracker .progress-step:hover .progress-marker::before {
+    background-color: #dce2da;
+  }
+  .webform-progress-tracker .progress-step .progress-marker::after{
+    display: none;
+  }
+  
+  .btn-primary {
+      background: #397a4a;
+      border-radius: 0.3rem;
+      border-color: #397a4a;
+  }
