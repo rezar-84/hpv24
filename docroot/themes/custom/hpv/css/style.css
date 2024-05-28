@@ -395,11 +395,16 @@ border-radius: 50%;
 
   100% { transform: rotate(360deg) }
 }
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
 .field-content.story-image {
   background: linear-gradient(90deg, hsla(197, 100%, 64%, 1) 0%, hsla(339, 100%, 55%, 1) 100%);
   border-radius: 50%;
   padding: 3px;
-  animation: o-rotate-360 linear 8s infinite;
+  animation: moveGradient 4s alternate infinite;
 
 }
 
