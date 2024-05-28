@@ -311,6 +311,11 @@ span.ui-accordion-header-icon {
     padding: 16px 25px 14px;
     line-height: 24px;
 }
+.webform-submission-form .form-item input[type=radio]:hover + label  {
+  background-color: #58ba83 !important;
+  color: #fff !important;
+}
+
 .webform-submission-form .form-item input[type="radio"]:checked + label{
   background-color: #58ba83;
 }
@@ -358,7 +363,7 @@ width: auto;
   padding: 16px 25px 14px;
 }
 
-}
+
 
 .webform-options-display-buttons input:checked + label.webform-options-display-buttons-label {
   color: #000;
