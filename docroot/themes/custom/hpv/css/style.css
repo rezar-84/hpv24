@@ -401,7 +401,18 @@ border-radius: 50%;
   }
 }
 .field-content.story-image {
-  background: linear-gradient(90deg, hsla(197, 100%, 64%, 1) 0%, hsla(339, 100%, 55%, 1) 100%);
+  /* background: linear-gradient(90deg, hsla(197, 100%, 64%, 1) 0%, hsla(339, 100%, 55%, 1) 100%); */
+  background: linear-gradient(
+    60deg,
+    hsl(224, 85%, 66%),
+    hsl(269, 85%, 66%),
+    hsl(314, 85%, 66%),
+    hsl(359, 85%, 66%),
+    hsl(44, 85%, 66%),
+    hsl(89, 85%, 66%),
+    hsl(134, 85%, 66%),
+    hsl(179, 85%, 66%)
+  );
   border-radius: 50%;
   padding: 3px;
   animation: moveGradient 4s alternate infinite;
