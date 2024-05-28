@@ -348,7 +348,20 @@ min-height: 30px;
 width: auto;
 
 }
+.webform-options-display-buttons label.webform-options-display-buttons-label{
+  border: 1px solid #eee;
+  border-radius: 20px;
+  color: #325343;
+  background-color: #a6de9b;
+  padding: 3px 25px;
 
+}
+.webform-options-display-buttons input:checked + label.webform-options-display-buttons-label {
+  color: #000;
+  border-color: none;
+  background-color: #58ba83;
+
+}
 .webform-button--previous, .webform-button--next {
   width: 48%;
   margin-bottom: 9px;

@@ -42,7 +42,9 @@
     "drupal/imce": "^3.0",
     "drupal/features": "^3.14",
     "drupal/tb_megamenu": "^3.0@alpha",
-    "drupal/calendar_systems": "^4.0"
+    "drupal/calendar_systems": "^4.0",
+    "drupal/slick_lightbox": "^1.7",
+    "drupal/slick": "^2.11"
   },
   "require-dev": {
     "drupal/core-dev": "~10",
