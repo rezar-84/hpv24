@@ -361,6 +361,9 @@ width: auto;
 .js-hide.button {
   visibility: hidden;
 }
+.story-row{
+  direction: ltr;
+}
 .story-image{
 border-radius: 50%;
 }
