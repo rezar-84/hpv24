@@ -366,8 +366,7 @@ width: auto;
 
 
 .webform-options-display-buttons input:checked + label.webform-options-display-buttons-label {
-  color: #000;
-  border-color: none;
+  color: #fff;
   background-color: #58ba83;
 
 }
