@@ -390,3 +390,16 @@ width: auto;
 .story-image img{
 border-radius: 50%;
 }
+@keyframes o-rotate-360 {
+  0% { transform: rotate(0) }
+
+  100% { transform: rotate(360deg) }
+}
+.field-content.story-image {
+  background: linear-gradient(90deg, hsla(197, 100%, 64%, 1) 0%, hsla(339, 100%, 55%, 1) 100%);
+  border-radius: 50%;
+  padding: 3px;
+  animation: o-rotate-360 linear 8s infinite;
+
+}
+
