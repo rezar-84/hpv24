@@ -349,13 +349,17 @@ width: auto;
 
 }
 .webform-options-display-buttons label.webform-options-display-buttons-label{
-  border: 1px solid #eee;
-  border-radius: 20px;
-  color: #325343;
-  background-color: #a6de9b;
-  padding: 3px 25px;
+  border: none !important ;
+  border-radius: 20px !important;
+  color: #325343 !important;
+  background-color: #a6de9b !important;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 16px 25px 14px;
+}
 
 }
+
 .webform-options-display-buttons input:checked + label.webform-options-display-buttons-label {
   color: #000;
   border-color: none;
