@@ -363,11 +363,13 @@ width: auto;
   padding: 16px 25px 14px;
 }
 
+.webform-options-display-buttons label.webform-options-display-buttons-label:hover{
+  color: #fff !important;
 
+}
 
 .webform-options-display-buttons input:checked + label.webform-options-display-buttons-label {
-  color: #fff;
-  background-color: #58ba83;
+ 
 
 }
 .webform-button--previous, .webform-button--next {
