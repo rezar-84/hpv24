@@ -364,6 +364,6 @@ width: auto;
 .story-row{
   direction: ltr;
 }
-.story-image{
+.story-image img{
 border-radius: 50%;
 }
