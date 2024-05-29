@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c9bb68d5f694c6ba42e0fc7d4c88667d",
+    "content-hash": "366fafc70267c4760fc3a5ec797356ff",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -13460,6 +13460,61 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/smart_trim",
                 "issues": "https://drupal.org/project/issues/smart_trim"
+            }
+        },
+        {
+            "name": "drupal/smsframework",
+            "version": "2.2.0-rc1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/smsframework.git",
+                "reference": "2.2.0-rc1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/smsframework-2.2.0-rc1.zip",
+                "reference": "2.2.0-rc1",
+                "shasum": "03413971785831afecee2a0a41c2326c8d7016ea"
+            },
+            "require": {
+                "drupal/core": "^9.5 || ^10"
+            },
+            "require-dev": {
+                "drupal/dynamic_entity_reference": "*",
+                "drupal/sms": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.2.0-rc1",
+                    "datestamp": "1670241566",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "almaudoh",
+                    "homepage": "https://www.drupal.org/user/488082"
+                },
+                {
+                    "name": "batje",
+                    "homepage": "https://www.drupal.org/user/2696"
+                },
+                {
+                    "name": "dpi",
+                    "homepage": "https://www.drupal.org/user/81431"
+                }
+            ],
+            "homepage": "https://www.drupal.org/project/smsframework",
+            "support": {
+                "source": "https://git.drupalcode.org/project/smsframework"
             }
         },
         {
@@ -29679,7 +29734,8 @@
     "stability-flags": {
         "drupal/tb_megamenu": 15,
         "drupal/name": 5,
-        "drupal/geolocation": 15
+        "drupal/geolocation": 15,
+        "drupal/smsframework": 5
     },
     "prefer-stable": true,
     "prefer-lowest": false,
