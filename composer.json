@@ -44,7 +44,8 @@
     "drupal/tb_megamenu": "^3.0@alpha",
     "drupal/calendar_systems": "^4.0",
     "drupal/slick_lightbox": "^1.7",
-    "drupal/slick": "^2.11"
+    "drupal/slick": "^2.11",
+    "drupal/name": "^1.0@RC"
   },
   "require-dev": {
     "drupal/core-dev": "~10",

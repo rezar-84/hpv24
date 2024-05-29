@@ -381,6 +381,14 @@ width: auto;
   margin: 0 auto;
   float: none;
 }
+
+.webform-submission-form .description {
+  background: #def6d9;
+  color: green;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
 .js-hide.button {
   visibility: hidden;
 }
