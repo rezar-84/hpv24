@@ -429,3 +429,7 @@ border-radius: 50%;
 
 }
 
+.faq-short{
+  max-height: 500px;
+  overflow-y: scroll;
+}
