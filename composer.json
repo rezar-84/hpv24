@@ -51,7 +51,8 @@
     "drupal/leaflet": "^10.2",
     "drupal/smsframework": "^2.2@RC",
     "drupal/votingapi": "^3.0@beta",
-    "drupal/owlcarousel": "^3.0"
+    "drupal/owlcarousel": "^3.0",
+    "drupal/fivestar": "^1.0@alpha"
   },
   "require-dev": {
     "drupal/core-dev": "~10",

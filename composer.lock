@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ac532bb826c13d2571a393ef1dbe9fd4",
+    "content-hash": "bb76a9f12c0ba77eb1755d255ce85650",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -7256,6 +7256,68 @@
             "homepage": "https://www.drupal.org/project/file_mdm",
             "support": {
                 "source": "https://git.drupalcode.org/project/file_mdm"
+            }
+        },
+        {
+            "name": "drupal/fivestar",
+            "version": "1.0.0-alpha5",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/fivestar.git",
+                "reference": "8.x-1.0-alpha5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/fivestar-8.x-1.0-alpha5.zip",
+                "reference": "8.x-1.0-alpha5",
+                "shasum": "cc5be843d7a7e5d1123b632e7c0fd969fe88bf3e"
+            },
+            "require": {
+                "drupal/core": "^9.2 || ^10",
+                "drupal/votingapi": "^3.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-alpha5",
+                    "datestamp": "1696366144",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "dbt102",
+                    "homepage": "https://www.drupal.org/user/338300"
+                },
+                {
+                    "name": "ericduran",
+                    "homepage": "https://www.drupal.org/user/244460"
+                },
+                {
+                    "name": "heddn",
+                    "homepage": "https://www.drupal.org/user/1463982"
+                },
+                {
+                    "name": "init90",
+                    "homepage": "https://www.drupal.org/user/1322186"
+                },
+                {
+                    "name": "TR",
+                    "homepage": "https://www.drupal.org/user/202830"
+                }
+            ],
+            "description": "Enables fivestar ratings on content, users, etc.",
+            "homepage": "https://www.drupal.org/project/fivestar",
+            "support": {
+                "source": "https://git.drupalcode.org/project/fivestar",
+                "issues": "https://www.drupal.org/project/issues/fivestar"
             }
         },
         {
@@ -29889,7 +29951,8 @@
         "drupal/name": 5,
         "drupal/geolocation": 15,
         "drupal/smsframework": 5,
-        "drupal/votingapi": 10
+        "drupal/votingapi": 10,
+        "drupal/fivestar": 15
     },
     "prefer-stable": true,
     "prefer-lowest": false,
