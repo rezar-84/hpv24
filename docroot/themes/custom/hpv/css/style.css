@@ -444,7 +444,7 @@ border-radius: 50%;
 .clinic-block-one {
   display: flex;
   flex-wrap: nowrap;
-  flex-direction: row-reverse;
+  flex-direction: column;
 }
 .clinic-block-one .inner-box {
   position: relative;
@@ -487,6 +487,10 @@ border-radius: 50%;
 .clinic-block-one .inner-box .image-box img {
   width: 100%;
   border-radius: 20px;
+}
+
+figure {
+  margin: 2rem 0rem 2rem 1rem;
 }
 
 .content-box {
