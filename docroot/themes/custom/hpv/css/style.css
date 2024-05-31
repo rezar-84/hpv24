@@ -558,3 +558,52 @@ clinic-block-one .inner-box .content-box .like-box a {
   position: relative;
   margin-bottom: 5px;
 }
+
+
+
+/* doctor profile
+ */
+
+ .clinic-details-content .tabs-box {
+  position: relative;
+  display: block;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.clinic-details-content .tabs-box .tab-btn-box {
+  position: relative;
+  display: block;
+}
+.clinic-details-content .tabs-box .tab-btn-box {
+  background: #453f85;
+}
+
+
+.doctor-details-content .tabs-box .tab-btn-box .tab-btns li {
+  width: 25%;
+}
+
+.clinic-details-content .tabs-box .tabs-content {
+  position: relative;
+  padding: 43px 40px 50px 40px;
+}
+
+.tabs-box .tab.active-tab {
+  transform: scale(1) translateY(0px);
+}
+.tabs-box .tab.active-tab {
+  display: block;
+}
+.tabs-box .tab {
+  transform: scale(0.9, 0.9) translateY(0px);
+}
+.tabs-box .tab {
+  position: relative;
+  display: none;
+  transition: all 900ms ease;
+  -moz-transition: all 900ms ease;
+  -webkit-transition: all 900ms ease;
+  -ms-transition: all 900ms ease;
+  -o-transition: all 900ms ease;
+}
