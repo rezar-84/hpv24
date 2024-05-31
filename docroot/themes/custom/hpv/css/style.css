@@ -456,6 +456,11 @@ border-radius: 50%;
   margin-bottom: 30px;
   box-shadow: 0 15px 40px 10px #edf1f1;
 }
+.clinic-block-one .inner-box:hover {
+  box-shadow: 9px 9px 30px 10px #edf1f1;
+  background: #e2eef1;
+  cursor: pointer;
+}
 .clinic-block-one .inner-box .pattern .pattern-1 {
   position: absolute;
   left: -30px;
@@ -481,8 +486,10 @@ border-radius: 50%;
 
   display: flex;
   border-radius: 20px;
+  width: 20%;
   box-shadow: 0 10px 40px rgba(0, 24, 73, 0.2);
 }
+
 .clinic-block-one .inner-box .image-box img {
   width: 100%;
   border-radius: 20px;
