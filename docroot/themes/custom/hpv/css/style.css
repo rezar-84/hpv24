@@ -487,12 +487,13 @@ border-radius: 50%;
   display: flex;
   border-radius: 20px;
   width: 20%;
-  box-shadow: 0 10px 40px rgba(0, 24, 73, 0.2);
 }
 
 .clinic-block-one .inner-box .image-box img {
   width: 100%;
   border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 24, 73, 0.2);
+
 }
 
 figure {
