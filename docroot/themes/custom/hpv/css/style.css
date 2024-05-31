@@ -497,11 +497,12 @@ figure {
   flex-wrap: wrap;
   width: 100%;
   padding: 10px;
+  flex-direction: column;
 }
 .clinic-block-one .inner-box .content-box .like-box {
   position: absolute;
   top: 40px;
-  right: 40px;
+  left: 40px;
 }
 clinic-block-one .inner-box .content-box .like-box a {
   position: relative;
