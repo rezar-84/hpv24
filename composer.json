@@ -52,7 +52,10 @@
     "drupal/smsframework": "^2.2@RC",
     "drupal/votingapi": "^3.0@beta",
     "drupal/owlcarousel": "^3.0",
-    "drupal/fivestar": "^1.0@alpha"
+    "drupal/fivestar": "^1.0@alpha",
+    "drupal/address": "^2.0",
+    "drupal/bat": "^10.1",
+    "drupal/bee": "^3.0"
   },
   "require-dev": {
     "drupal/core-dev": "~10",
