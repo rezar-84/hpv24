@@ -1,0 +1,305 @@
+{%
+	set classes = [
+		'node',
+		'node-detail',
+		'node--type-' ~ node.bundle|clean_class,
+		node.isPromoted() ? 'node--promoted',
+		node.isSticky() ? 'node--sticky',
+		not node.isPublished() ? 'node--unpublished',
+		view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+		'clearfix',
+	]
+%}
+  <!-- Start Display doctor for teaser page -->
+  {% if view_mode == 'teaser' %} 
+   
+  <!-- Start Display doctor for detail page -->
+  
+  <div class="clinic-details-content doctor-details-content">
+    <div class="clinic-block-one">
+        <div class="inner-box">
+            <figure class="image-box"><img src="assets/images/team/team-33.jpg" alt=""></figure>
+            <div class="content-box">
+                <div class="like-box"><a href="doctors-details.html"><i class="far fa-heart"></i></a></div>
+                <div class="share-box">
+                    <a href="doctors-details.html" class="share-btn"><i class="fas fa-share-alt"></i></a>
+                </div>
+                <ul class="name-box clearfix">
+                    <li class="name"><h2>Dr. Agnes Ayres</h2></li>
+                    <li><i class="icon-Trust-1"></i></li>
+                    <li><i class="icon-Trust-2"></i></li>
+                </ul>
+                <span class="designation">BDS, MDS - Oral &amp; Maxillofacial Surgery</span>
+                <div class="rating-box clearfix">
+                    <ul class="rating clearfix">
+                        <li><i class="icon-Star"></i></li>
+                        <li><i class="icon-Star"></i></li>
+                        <li><i class="icon-Star"></i></li>
+                        <li><i class="icon-Star"></i></li>
+                        <li><i class="icon-Star"></i></li>
+                        <li><a href="doctors-details.html">(32)</a></li>
+                    </ul>
+                </div>
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet consectur adipisc eiusmod tempor incididunt.</p>
+                </div>
+                <div class="lower-box clearfix">
+                    <ul class="info clearfix">
+                        <li><i class="fas fa-map-marker-alt"></i>G87P, Birmingham, UK</li>
+                        <li><i class="fas fa-phone"></i><a href="tel:2265458856">+(22) 65_458_856</a></li>
+                    </ul>
+                    <div class="view-map"><a href="doctors-details.html">View Map</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tabs-box">
+        <div class="tab-btn-box centred">
+            <ul class="tab-btns tab-buttons clearfix">
+                <li class="tab-btn active-btn" data-tab="#tab-1">Overview</li>
+                <li class="tab-btn" data-tab="#tab-2">Experience</li>
+                <li class="tab-btn" data-tab="#tab-3">Location</li>
+                <li class="tab-btn" data-tab="#tab-4">Reviews</li>
+            </ul>
+        </div>
+        <div class="tabs-content">
+            <div class="tab active-tab" id="tab-1">
+                <div class="inner-box">
+                    <div class="text">
+                        <h3>About Dr. Agnes Ayres:</h3>
+                        <p>Dr. Agnes Ayres is a Maxillofacial Surgeon in New York, NY.  Dr. Ayres has more experience with Congenital Cardiac Disorders and Cardiac Care than other specialists in his area.  He is affiliated with medical facilities such as Mount Sinai Morningside and Roosevelt Hospital.  He is accepting new patients.  Be sure to call ahead with Dr. Pinney to book an appointment.</p>
+                        <h3>Specialities</h3>
+                        <p>Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Nullam mollis. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapi.</p>
+                        <ul class="treatments-list clearfix">
+                            <li><a href="doctors-details.html">Cardiology</a></li>
+                            <li><a href="doctors-details.html">Dermatology</a></li>
+                            <li><a href="doctors-details.html">Family Medicine</a></li>
+                            <li><a href="doctors-details.html">Obstetrics &amp; Gynecology</a></li>
+                            <li><a href="doctors-details.html">Oncology</a></li>
+                            <li><a href="doctors-details.html">Orthopedic Surgery</a></li>
+                        </ul>
+                        <h3>Educational Background</h3>
+                        <p>Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Nullam mollis. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapi.</p>
+                        <ul class="list clearfix">
+                            <li>New York Medical College <span>- Doctor of Medicine</span></li>
+                            <li>Montefiore Medical Center <span>- Residency in Internal Medicine</span></li>
+                            <li>New York Medical College <span>- Master Internal Medicine</span></li>
+                        </ul>
+                    </div>
+                    <div class="accordion-box">
+                        <h3>Offered Services</h3>
+                        <div class="title-box">
+                            <h6>Service - Visit<span>Price</span></h6>
+                        </div>
+                        <ul class="accordion-inner">
+                            <li class="accordion block">
+                                <div class="acc-btn">
+                                    <div class="icon-outer"></div>
+                                    <h6>New Patient Visit<span>$40</span></h6>
+                                </div>
+                                <div class="acc-content">
+                                    <div class="text">
+                                        <p>Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id mattis vel nisi.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="accordion block active-block">
+                                <div class="acc-btn active">
+                                    <div class="icon-outer"></div>
+                                    <h6>General Consultation<span>$50</span></h6>
+                                </div>
+                                <div class="acc-content current">
+                                    <div class="text">
+                                        <p>Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id mattis vel nisi.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="accordion block">
+                                 <div class="acc-btn">
+                                    <div class="icon-outer"></div>
+                                    <h6>Back Pain<span>$60</span></h6>
+                                </div>
+                                <div class="acc-content">
+                                    <div class="text">
+                                        <p>Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id mattis vel nisi.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="accordion block">
+                                 <div class="acc-btn">
+                                    <div class="icon-outer"></div>
+                                    <h6>Diabetes Consultation<span>$35</span></h6>
+                                </div>
+                                <div class="acc-content">
+                                    <div class="text">
+                                        <p>Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id mattis vel nisi.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="award-box">
+                        <h3>Awards</h3>
+                        <ul class="list clearfix">
+                            <li>Award win by American Dental Council of America<span>(2006)</span></li>
+                            <li>Award win by Karnataka State Dental Council<span>(2009)</span></li>
+                            <li>Award win by Manchester Academy of Oral Medicine<span>(2015)</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="tab" id="tab-2">
+                <div class="experience-box">
+                    <div class="text">
+                        <h3>Professional Experience</h3>
+                        <p>Dr. Agnes Ayres is a Maxillofacial Surgeon in New York, NY.  Dr. Ayres has more experience with Congenital Cardiac Disorders and Cardiac Care than other specialists in his area.  He is affiliated with medical facilities.</p>
+                        <ul class="experience-list clearfix">
+                            <li>
+                                Aurora Medical &amp; Dental College:
+                                <p>Medical &amp; General Dentistry <span>(Aug 2008-Sep 2013)</span></p>
+                            </li>
+                            <li>
+                                Horizon Dermatology &amp; Cosmetic Center:
+                                <p>Assistant Darmatologist <span>(Oct 2013-Nov 2017)</span></p>
+                            </li>
+                            <li>
+                                New Apollo Hospital:
+                                <p>Darmatologist<span>(Dec 2017-Till Now)</span></p>
+                            </li>
+                        </ul>
+                        <h3>Key Skills</h3>
+                        <ul class="skills-list clearfix">
+                            <li>Proficient in assisting all Gynecology &amp; Obstetrics Surgeries.</li>
+                            <li>Expert in conducting all high risk labor.</li>
+                            <li>Proficient in performing all minor surgeries.</li>
+                            <li>Expert in handling all outpatients &amp; inpatients department</li>
+                            <li>Able to perform ultrasound of Gynecology &amp; Obstetrics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="tab" id="tab-3">
+                <div class="location-box">
+                    <h3>Locations</h3>
+                    <div class="map-inner">
+                        <div class="google-map" id="contact-google-map" data-map-lat="40.712776" data-map-lng="-74.005974" data-icon-path="assets/images/icons/map-marker.png" data-map-title="Brooklyn, New York, United Kingdom" data-map-zoom="12" data-markers="{
+                                &quot;marker-1&quot;: [40.712776, -74.005974, &quot;<h4>Branch Office</h4><p>77/99 New York</p>&quot;,&quot;assets/images/icons/map-marker.png&quot;]
+                            }" style="width: 0px; height: 0px;"><div style="height: 100%; width: 100%;"><div style="overflow: hidden;"></div></div></div>
+                    </div>
+                    <h4>New Apollo Hospital:</h4>
+                    <ul class="location-info clearfix">
+                        <li><i class="fas fa-map-marker-alt"></i>369 San Miguel Dr Ste 200 Newport <br>Beach,CA,92660</li>
+                        <li><i class="fas fa-phone"></i><a href="tel:2265458856">+(22) 65_458_856</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab" id="tab-4">
+                <div class="review-box">
+                    <h3>Dr. Agnes Ayres Reviews</h3>
+                    <div class="rating-inner">
+                        <div class="rating-box">
+                            <h2>4.5</h2>
+                            <ul class="clearfix">
+                                <li><i class="icon-Star"></i></li>
+                                <li><i class="icon-Star"></i></li>
+                                <li><i class="icon-Star"></i></li>
+                                <li><i class="icon-Star"></i></li>
+                                <li><i class="icon-Star"></i></li>
+                            </ul>
+                            <span>Based on 5 review</span>
+                        </div>
+                        <div class="rating-pregress">
+                            <div class="single-progress">
+                                <span class="porgress-bar"></span>
+                                <div class="text"><p><i class="icon-Star"></i>5 Stars</p></div>
+                            </div>
+                            <div class="single-progress">
+                                <span class="porgress-bar"></span>
+                                <div class="text"><p><i class="icon-Star"></i>4 Stars</p></div>
+                            </div>
+                            <div class="single-progress">
+                                <span class="porgress-bar"></span>
+                                <div class="text"><p><i class="icon-Star"></i>3 Stars</p></div>
+                            </div>
+                            <div class="single-progress">
+                                <span class="porgress-bar"></span>
+                                <div class="text"><p><i class="icon-Star"></i>2 Stars</p></div>
+                            </div>
+                            <div class="single-progress">
+                                <span class="porgress-bar"></span>
+                                <div class="text"><p><i class="icon-Star"></i>1 Stars</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-inner">
+                        <div class="single-review-box">
+                            <figure class="image-box"><img src="assets/images/resource/review-1.jpg" alt=""></figure>
+                            <ul class="rating clearfix">
+                                <li><i class="icon-Star"></i></li>
+                                <li><i class="icon-Star"></i></li>
+                                <li><i class="icon-Star"></i></li>
+                                <li><i class="icon-Star"></i></li>
+                                <li class="light"><i class="icon-Star"></i></li>
+                            </ul>
+                            <h6>Agnes Ayres <span>- April 10, 2020</span></h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing sed eiusmod tempor incididunt labore dolore magna aliqua enim.</p>
+                        </div>
+                        <div class="single-review-box">
+                            <figure class="image-box"><img src="assets/images/resource/review-2.jpg" alt=""></figure>
+                            <ul class="rating clearfix">
+                                <li><i class="icon-Star"></i></li>
+                                <li><i class="icon-Star"></i></li>
+                                <li><i class="icon-Star"></i></li>
+                                <li><i class="icon-Star"></i></li>
+                                <li><i class="icon-Star"></i></li>
+                            </ul>
+                            <h6>Mary Astor <span>- April 09, 2020</span></h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing sed eiusmod tempor incididunt labore dolore magna aliqua enim.</p>
+                        </div>
+                        <div class="single-review-box">
+                            <figure class="image-box"><img src="assets/images/resource/review-3.jpg" alt=""></figure>
+                            <ul class="rating clearfix">
+                                <li><i class="icon-Star"></i></li>
+                                <li><i class="icon-Star"></i></li>
+                                <li><i class="icon-Star"></i></li>
+                                <li><i class="icon-Star"></i></li>
+                                <li class="light"><i class="icon-Star"></i></li>
+                            </ul>
+                            <h6>Anderson <span>- April 08, 2020</span></h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing sed eiusmod tempor incididunt labore dolore magna aliqua enim.</p>
+                        </div>
+                        <div class="single-review-box">
+                            <figure class="image-box"><img src="assets/images/resource/review-4.jpg" alt=""></figure>
+                            <ul class="rating clearfix">
+                                <li><i class="icon-Star"></i></li>
+                                <li><i class="icon-Star"></i></li>
+                                <li><i class="icon-Star"></i></li>
+                                <li><i class="icon-Star"></i></li>
+                                <li class="light"><i class="icon-Star"></i></li>
+                            </ul>
+                            <h6>Bradshaw <span>- April 07, 2020</span></h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing sed eiusmod tempor incididunt labore dolore magna aliqua enim.</p>
+                        </div>
+                        <div class="single-review-box">
+                            <figure class="image-box"><img src="assets/images/resource/review-5.jpg" alt=""></figure>
+                            <ul class="rating clearfix">
+                                <li><i class="icon-Star"></i></li>
+                                <li><i class="icon-Star"></i></li>
+                                <li><i class="icon-Star"></i></li>
+                                <li><i class="icon-Star"></i></li>
+                                <li class="light"><i class="icon-Star"></i></li>
+                            </ul>
+                            <h6>Bradshaw <span>- April 26, 2020</span></h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing sed eiusmod tempor incididunt labore dolore magna aliqua enim.</p>
+                        </div>
+                    </div>
+                    <div class="btn-box">
+                        <a href="doctors-details.html" class="theme-btn-one">Submit Review<i class="icon-Arrow-Right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  <!-- End Display article for detail page -->
+  {% endif %}
