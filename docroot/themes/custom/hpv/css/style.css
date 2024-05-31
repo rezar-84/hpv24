@@ -437,14 +437,22 @@ border-radius: 50%;
   border-radius: 1rem;
 }
 
+.wrapper.list .clinic-list-content{
 
+  display: block;
+}
+.clinic-block-one {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row-reverse;
+}
 .clinic-block-one .inner-box {
   position: relative;
-  display: block;
+  display: flex;
   overflow: hidden;
   background: #fff;
   border-radius: 10px;
-  padding: 35px 40px 31px 170px;
+  padding: 35px 40px 31px 26px;
   margin-bottom: 30px;
   box-shadow: 0 15px 40px 10px #edf1f1;
 }
@@ -470,17 +478,22 @@ border-radius: 50%;
   transition: all 500ms ease;
 }
 .clinic-block-one .inner-box .image-box {
-  position: absolute;
-  left: 40px;
-  top: 40px;
-  width: 100px;
-  height: 100px;
+
+  display: flex;
+  width: 90%;
   border-radius: 20px;
   box-shadow: 0 10px 40px rgba(0, 24, 73, 0.2);
 }
 .clinic-block-one .inner-box .image-box img {
   width: 100%;
   border-radius: 20px;
+}
+
+.content-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 10px;
 }
 .clinic-block-one .inner-box .content-box .like-box {
   position: absolute;
