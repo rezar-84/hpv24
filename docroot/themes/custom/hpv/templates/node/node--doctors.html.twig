@@ -10,109 +10,60 @@
 		'clearfix',
 	]
 %}
-  <!-- Start Display doctor for teaser page -->
    
   <!-- Start Display doctor for detail page -->
   
-  <div class="clinic-details-content doctor-details-content">
-    <div class="clinic-block-one">
-        <div class="inner-box">
-            <figure class="image-box">{{content.field_doctor_profile_pic}}</figure>
-            <div class="content-box">
-                <div class="like-box"><a href="doctors-details.html"><i class="far fa-heart"></i></a></div>
-                <div class="share-box">
-                    <a href="doctors-details.html" class="share-btn"><i class="fas fa-share-alt"></i></a>
-                </div>
-                <ul class="name-box clearfix">
-                    <li class="name"><h2>            {{ content.field_doctor_name}}                    </h2></li>
-                    <li><i class="icon-Trust-1"></i></li>
-                    <li><i class="icon-Trust-2"></i></li>
-                </ul>
-                <span class="designation">{{content.field_doctor_specialty}}</span>
-                <div class="rating-box clearfix">
+  <div class="doctor-block-two">
+    <div class="inner-box">
+        <div class="left-column">
+            <div class="image">{{content.field_doctor_profile_pic}}</div>
+            <div class="content">
+                <h4><a href="doctor-details.html">{{content.field_doctor_name}}</a></h4>
+                <div class="designation">{{content.field_doctor_specialty}}</div>
+                <div class="rating">
                     {{content.field_doctor_rating}}
+                    <span>(38)</span>
                 </div>
-                <div class="text">
-                    <p>Lorem ipsum dolor sit amet consectur adipisc eiusmod tempor incididunt.</p>
-                </div>
-                <div class="lower-box clearfix">
-                    <ul class="info clearfix">
-                        <li><i class="fas fa-map-marker-alt"></i>G87P, Birmingham, UK</li>
-                        <li><i class="fas fa-phone"></i><a href="tel:2265458856">+(22) 65_458_856</a></li>
-                    </ul>
-                    <div class="view-map"><a href="doctors-details.html">View Map</a></div>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="content-two">
+                <ul class="list">
+                    <li><i class="fas fa-map-marker-alt"></i> tehran</li>
+                    <li><i class="fas fa-award"></i>exp</li>
+                    <li><i class="fas fa-calendar-week"></i> </li>
+                </ul>
+                <div class="link-btn">
+                    <a href="doctor-details.html" class="theme-btn">ویزیت</a>
+                    <a href="#" class="like"><i class="far fa-heart"></i></a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="tabs-box">
-        <div class="tab-btn-box centred">
-            <ul class="tab-btns tab-buttons clearfix">
-                <li class="tab-btn active-btn" data-tab="#tab-1">درباره</li>
-                <li class="tab-btn" data-tab="#tab-2">تجربه ها</li>
-                <li class="tab-btn" data-tab="#tab-3">کلینیک ها</li>
-                <li class="tab-btn" data-tab="#tab-4">نظرات</li>
-            </ul>
-        </div>
-        <div class="tabs-content">
-            <div class="tab active-tab" id="tab-1">
-                <div class="inner-box">
-                    <div class="text">
-                    {{contetn.field_doctor_profile_pic}}
-                    </div>
-                    <div class="accordion-box">
-                        <h3>خدمات</h3>
-                        {{content.field_doctor_services	}}
-                    </div>
-                    <div class="award-box">
-                        <h3>گواهینامه ها</h3>
-                    
-                    </div>
-                </div>
-            </div>
-            <div class="tab" id="tab-2">
-                <div class="experience-box">
-                  
-                </div>
-            </div>
-            <div class="tab" id="tab-3">
-                <div class="location-box">
-                    <h3>مطب ها</h3>
-                    
-                </div>
-            </div>
-            <div class="tab" id="tab-4">
-                <div class="review-box">
-                    <h3>{{content.field_doctor_name}}</h3>
-                    <div class="rating-inner">
-                        {{content.field_doctor_rating}}
+
+
+
+    <div class="gsc-tabs ">
+        <div class="tabs_wrapper tabs_">
+           <ul class="nav nav-tabs">
+             <li><a class="active show" data-bs-toggle="tab" href="#desc1">  درباره </a></li>
+             <li><a class="" data-bs-toggle="tab" href="#clinics1">  کلینیک </a></li>
+             <li><a class="" data-bs-toggle="tab" href="#reviews1">  نظرات کاربران </a></li>
+             <li><a class="" data-bs-toggle="tab" href="#cert1">  گواهینامه </a></li>
+
+           </ul>
+           <div class="tab-content">
+            
+                    <div id="desc1" class="tab-pane fade in active show">
+                        <p>{{content.body}}
+                        </p>
                         </div>
-                        <div class="rating-pregress">
-                            <div class="single-progress">
-                                <span class="porgress-bar"></span>
-                                <div class="text"><p><i class="icon-Star"></i>5 Stars</p></div>
-                            </div>
-                            <div class="single-progress">
-                                <span class="porgress-bar"></span>
-                                <div class="text"><p><i class="icon-Star"></i>4 Stars</p></div>
-                            </div>
-                            <div class="single-progress">
-                                <span class="porgress-bar"></span>
-                                <div class="text"><p><i class="icon-Star"></i>3 Stars</p></div>
-                            </div>
-                            <div class="single-progress">
-                                <span class="porgress-bar"></span>
-                                <div class="text"><p><i class="icon-Star"></i>2 Stars</p></div>
-                            </div>
-                            <div class="single-progress">
-                                <span class="porgress-bar"></span>
-                                <div class="text"><p><i class="icon-Star"></i>1 Stars</p></div>
-                            </div>
-                        </div>
+                    <div id="clinics1" class="tab-pane fade in ">{{ page.user1 }}
                     </div>
-                   
-                </div>
-            </div>
+                    <div id="reviews1" class="tab-pane fade in ">{{content.field_doctor_reviews}}</div>
+                    <div id="cert1" class="tab-pane fade in ">{{content.field_doctor_certificates}}</div>
+
+              
+           </div>
         </div>
-    </div>
-</div>
+     </div>

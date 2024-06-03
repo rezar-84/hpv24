@@ -607,3 +607,807 @@ clinic-block-one .inner-box .content-box .like-box a {
   -ms-transition: all 900ms ease;
   -o-transition: all 900ms ease;
 }
+
+
+
+
+
+/* doctors new */
+
+/* doctor block two */
+.doctor-block-two {
+  position: relative;
+}
+
+.doctor-block-two .inner-box {
+  position: relative;
+  background: #fff;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 30px rgb(0 0 0 / 5%);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 210px;
+  margin-bottom: 30px;
+}
+
+.doctor-block-two .left-column {
+  width: 66%;
+  padding-left: 166px;
+}
+
+.doctor-block-two .image {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+
+.doctor-block-two h4 {
+  font-size: 20px;
+  font-family: inherit;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.doctor-block-two h4 a {
+  color: var(--theme_dark);
+  transition: .5s;
+}
+
+.doctor-block-two h4 a:hover {
+  color: var(--theme_primary);
+}
+
+.doctor-block-two .designation {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--theme_dark);
+  margin-bottom: 6px;
+}
+
+.doctor-block-two .rating {
+  position: relative;
+  font-size: 13px;
+  color: var(--theme_dark);
+  margin-bottom: 10px;
+}
+
+.doctor-block-two .text {
+  position: relative;
+  margin: 0;
+  line-height: 26px;
+}
+
+.doctor-block-two .right-column {
+  width: 30%;
+  padding-left: 20px;
+  border-left: 1px solid #ddd;
+}
+
+.doctor-block-two .list {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.doctor-block-two .list li {
+  position: relative;
+  font-size: 16px;
+  color: var(--theme_dark);
+}
+
+.doctor-block-two .list i {
+  margin-right: 10px;
+  color: var(--theme_primary);
+}
+
+.doctor-block-two .theme-btn {
+  padding: 8.5px 10px;
+  min-width: 140px;
+  vertical-align: middle;
+  display: inline-block;
+  background: #fff;
+  color: var(--theme_dark);
+  border: 2px solid #EBF2F3;
+}
+
+.doctor-block-two .theme-btn:hover {
+  background-color: var(--theme_primary);
+  border-color: var(--theme_primary);
+  color: #fff;
+}
+
+.doctor-block-two .theme-btn:before {
+  background-color: var(--theme_primary);
+}
+
+.doctor-block-two .like {
+  margin-left: 5px;
+  width: 45px;
+  height: 45px;
+  border: 2px solid #EBF2F3;
+  border-radius: 5px;
+  line-height: 45px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  transition: .5s;
+}
+
+.doctor-block-two .like:hover {
+  color: #fff;
+  background-color: var(--theme_primary);
+  border-color: var(--theme_primary);
+}
+
+.post-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.post-pagination.text-center {
+  justify-content: center;
+}
+
+.post-pagination li {
+  background: #EBF2F3;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 10px;
+  margin: 0 5px 10px;
+  text-align: center;
+}
+
+.post-pagination li.prev i {
+  display: inline-block;
+  transform: rotate(180deg);
+}
+
+.post-pagination li a {
+  color: var(--theme_dark);
+  display: block;
+  transition: .5s;
+}
+
+.post-pagination li a:hover,
+.post-pagination li .current {
+  color: #fff;
+  background: var(--theme_primary);
+  display: block;
+  border-radius: 10px;
+}
+
+
+/* doctor block two */
+.doctor-block-three {
+  position: relative;
+}
+
+.doctor-block-three .inner-box {
+  position: relative;
+  background: #fff;
+  padding: 25px;
+  padding-bottom: 30px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 30px rgb(0 0 0 / 5%);
+  min-height: 210px;
+  margin-bottom: 30px;
+}
+
+.doctor-block-three .inner-box .overlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: .7s;
+  padding: 30px 25px;
+  background: #fff;
+  transform: scaleY(.9) translateY(20px);
+  transform-origin: top;
+}
+
+.doctor-block-three .inner-box:hover .overlay {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.doctor-block-three .image {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.doctor-block-three h4 {
+  font-size: 20px;
+  font-family: inherit;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.doctor-block-three h4 a {
+  color: var(--theme_dark);
+  transition: .5s;
+}
+
+.doctor-block-three h4 a:hover {
+  color: var(--theme_primary);
+}
+
+.doctor-block-three .designation {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--theme_dark);
+  margin-bottom: 6px;
+}
+
+.doctor-block-three .rating {
+  position: relative;
+  font-size: 13px;
+  color: var(--theme_dark);
+  margin-bottom: 10px;
+}
+
+.doctor-block-three .text {
+  position: relative;
+  margin: 0 0 0;
+  line-height: 26px;
+}
+
+.doctor-block-three .right-column {
+  width: 30%;
+  padding-left: 20px;
+  border-left: 1px solid #ddd;
+}
+
+.doctor-block-three .list {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.doctor-block-three .list li {
+  position: relative;
+  font-size: 16px;
+  color: var(--theme_dark);
+}
+
+.doctor-block-three .list i {
+  margin-right: 10px;
+  color: var(--theme_primary);
+}
+
+.doctor-block-three .theme-btn {
+  padding: 8.5px 10px;
+  min-width: 140px;
+  vertical-align: middle;
+  display: inline-block;
+  background: #fff;
+  color: var(--theme_dark);
+  border: 2px solid #EBF2F3;
+  width: calc(100% - 55px);
+}
+
+.doctor-block-three .theme-btn:hover {
+  background-color: var(--theme_primary);
+  border-color: var(--theme_primary);
+  color: #fff;
+}
+
+.doctor-block-three .theme-btn:before {
+  background-color: var(--theme_primary);
+}
+
+.doctor-block-three .like {
+  margin-left: 5px;
+  width: 45px;
+  height: 45px;
+  border: 2px solid #EBF2F3;
+  border-radius: 5px;
+  line-height: 45px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  transition: .5s;
+}
+
+.doctor-block-three .like:hover {
+  color: #fff;
+  background-color: var(--theme_primary);
+  border-color: var(--theme_primary);
+}
+
+/* doctor block four */
+.doctor-block-four {
+  position: relative;
+}
+
+.doctor-block-four .inner-box {
+  position: relative;
+  background: #fff;
+  padding: 35px;
+  padding-left: 385px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 30px rgb(0 0 0 / 5%);
+  min-height: 422px;
+  margin-bottom: 60px;
+}
+
+.doctor-block-four .image {
+  position: absolute;
+  top: 35px;
+  left: 35px;
+}
+
+.doctor-block-four h3 {
+  font-size: 30px;
+  font-family: inherit;
+  font-weight: 700;
+  padding-top: 7px;
+}
+
+.doctor-block-four h4 {
+  font-size: 20px;
+  font-family: inherit;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.doctor-block-four h4 a {
+  color: var(--theme_dark);
+  transition: .5s;
+}
+
+.doctor-block-four h4 a:hover {
+  color: var(--theme_primary);
+}
+
+.doctor-block-four .designation {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--theme_dark);
+  margin-bottom: 6px;
+}
+
+.doctor-block-four .rating {
+  position: relative;
+  font-size: 13px;
+  color: var(--theme_dark);
+  margin-bottom: 10px;
+}
+
+.doctor-block-four .text {
+  position: relative;
+  margin: 0;
+  line-height: 26px;
+}
+
+.doctor-block-four .right-column {
+  width: 30%;
+  padding-left: 20px;
+  border-left: 1px solid #ddd;
+}
+
+.doctor-block-four .list {
+  position: relative;
+}
+
+.doctor-block-four .list li {
+  position: relative;
+  font-size: 16px;
+  color: var(--theme_dark);
+}
+
+.doctor-block-four .list i {
+  margin-right: 10px;
+  color: var(--theme_primary);
+}
+
+.doctor-block-four .link-btn a {
+  margin-top: 10px;
+}
+
+.doctor-block-four .theme-btn.phone-number {
+  padding: 8.5px 20px;
+  min-width: 140px;
+  vertical-align: middle;
+  display: inline-block;
+  background: #fff;
+  color: var(--theme_dark);
+  border: 2px solid #EBF2F3;
+}
+
+.doctor-block-four .theme-btn.phone-number i {
+  transform: rotate(90deg);
+  color: var(--theme_primary);
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+.doctor-block-four .theme-btn.phone-number:hover i {
+  color: #fff;
+}
+
+.doctor-block-four .theme-btn.phone-number:hover {
+  background-color: var(--theme_primary);
+  border-color: var(--theme_primary);
+  color: #fff;
+}
+
+.doctor-block-four .theme-btn.phone-number:before {
+  background-color: var(--theme_primary);
+}
+
+.doctor-block-four .theme-btn {
+  padding: 10.5px 20px;
+  margin-right: 10px;
+}
+
+.doctor-block-four .theme-btn i {
+  top: 0px;
+}
+
+.doctor-block-four .share-links {
+  position: absolute;
+  top: 0; 
+  right: 0;
+}
+
+.doctor-block-four .share-links a {
+  margin-left: 5px;
+  width: 45px;
+  height: 45px;
+  border: 2px solid #EBF2F3;
+  border-radius: 5px;
+  line-height: 45px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  transition: .5s;
+}
+
+.doctor-block-four .share-links a:hover {
+  color: #fff;
+  background-color: var(--theme_primary);
+  border-color: var(--theme_primary);
+}
+
+.doctor-block-four .content-row {
+  position: relative;
+  border-bottom: 1px solid #EBF2F3;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.doctor-details {
+  position: relative;
+  padding: 110px 0 80px;
+}
+
+.doctor-details .tabs-box .tabs-content{
+position:relative;
+}
+
+.doctor-details .tabs-content .tab{
+position:absolute;
+left: 0;
+right: 0;
+top: 0;
+z-index:1;
+transition:all 0.7s ease;
+-moz-transition:all 0.7s ease;
+-webkit-transition:all 0.7s ease;
+-ms-transition:all 0.7s ease;
+-o-transition:all 0.7s ease;
+-webkit-transform: scale(0.9,0.9);
+transform: scale(0.9,0.9) translateY(0px);
+opacity: 0;
+visibility: hidden;
+}
+
+.doctor-details .tabs-content .tab.active-tab{
+position:relative;
+z-index:5;
+transform: scale(1);
+opacity: 1;
+visibility: visible;
+}
+
+.doctor-details .content__block .tabs-box {
+  position: relative;
+}
+
+.doctor-details .content__block ul.tab-btns {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.doctor-details .content__block ul.tab-btns li.tab-btn {
+  margin-right: 15px;
+  color: var(--theme_dark);
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+  cursor: pointer;
+  transition: .5s;
+  background: #EBF2F3;
+  border-radius: 5px;
+  padding: 6px 30px;
+  font-size: 16px;
+}
+
+.doctor-details .content__block ul.tab-btns li.tab-btn.active-btn {
+  background-color: var(--theme_primary);
+  color: #fff;
+}
+
+.doctor-details .tabs-box ul.tab-btns {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.doctor-details .tabs-box ul li.tab-btn {
+  position: relative;
+  border-right: 1px solid #ECECEC;
+  width: 20%;
+  text-align: center;
+  background: #fff;
+  box-shadow: 10px 10px 30px rgb(0 0 0 / 5%);
+  padding: 25px 0 23px;
+  border-bottom: 2px solid transparent;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.doctor-details .tabs-box ul li.tab-btn.active-btn {
+  border-bottom-color:var(--theme_primary);
+}
+
+.doctor-details .tabs-box .tabs-content h3 {
+  position: relative;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: inherit;
+  margin-bottom: 30px;
+}
+
+.doctor-details .tabs-box .tabs-content h4 {
+  position: relative;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: inherit;
+  margin-bottom: 30px;
+}
+
+.doctor-details .tabs-box .tabs-content .text {
+  margin-bottom: 40px;
+  color: var(--theme_dark);
+}
+
+.doctor-details .tabs-box .tabs-content .list {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.doctor-details .tabs-box .tabs-content .list li {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--theme_dark);
+  margin-bottom: 15px;
+}
+
+.doctor-details .location-contact .content {
+  position: relative;
+  border: 1px solid #ddd;
+  border-left: 0;
+  padding: 45px 35px 35px;
+}
+
+.doctor-details .location-contact .contact-info {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.doctor-details .location-contact .contact-info li {
+  position: relative;
+  padding-left: 30px;
+  font-size: 16px;
+}
+
+.doctor-details .location-contact .contact-info i {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  font-size: 18px;
+  color: var(--theme_primary);
+}
+
+.doctor-details .location-contact .contact-info a {
+  color: var(--theme_dark);
+}
+
+.doctor-details .hospital-list {
+  position: relative;
+}
+
+.doctor-details .hospital-list li {
+  position: relative;
+  font-size: 16px;
+  color: var(--theme_dark);
+  padding-left: 45px;
+  margin-bottom: 22px;
+}
+
+
+.doctor-details .hospital-list li span {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background: rgb(0 172 177 / 10%);
+  text-align: center;
+  line-height: 35px;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.doctor-details .location-contact {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.doctor-details .experience table {
+  position: relative;
+  width: 100%;
+  margin-bottom: 40px;
+  border: 2px solid #E8E8E8;
+  border-radius: 5px;
+}
+
+.doctor-details .experience table tr {
+  position: relative;
+  border-bottom: 2px solid #E8E8E8;
+}
+
+.doctor-details .experience table td {
+  position: relative;
+  padding: 14px 30px;
+  width: 50%;
+}
+
+.doctor-details .accordion-box .block .acc-btn {
+  color: var(--theme_dark);
+}
+
+.doctor-details .accordion-box .block {
+  margin-bottom: 0;
+  padding: 20px 0;
+  border-bottom: 2px solid #E8E8E8;
+}
+
+.doctor-details .accordion-box .block:last-child {
+  border-bottom: 0;
+}
+
+.doctor-details .accordion-box {
+  border: 2px solid #E8E8E8;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.doctor-details .accordion-box .block .acc-content {
+  padding: 0 35px;
+  border-top: 2px solid #E8E8E8;
+  margin-top: 20px;
+}
+
+.doctor-details .accordion-box .block .content {
+  margin-top: 20px;
+}
+
+.doctor-details .accordion-box .block .content .text {
+  margin: 0;
+}
+
+/* Patient review */
+
+.patient-review .review-area {
+  position: relative;
+}
+
+.patient-review .review-area .review-box {
+  position: relative;
+  border: 2px solid #E8E8E8;
+  padding: 25px 33px;
+  padding-left: 145px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.patient-review .review-area .review-box .author-thumb {
+  position: absolute;
+  top: 25px;
+  left: 33px;
+}
+
+.patient-review .review-area .review-box .name {
+  position: relative;
+  font-size: 20px;
+  color: var(--theme_dark);
+  font-weight: 700;
+}
+
+.patient-review .review-area .review-box .info {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.patient-review .review-area .review-box .rating {
+  font-size: 12px;
+  color: var(--theme_dark);
+  margin-left: 20px;
+  margin-right: 8px;
+}
+
+.patient-review .review-area .review-box .info span {
+  position: relative;
+  font-size: 16px;
+  color: var(--theme_dark);
+}
+
+.patient-review .review-area .review-box .review-date {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 15px;
+  color: var(--theme_dark);
+}
+
+.patient-review .review-area .review-box .text {
+  margin-bottom: 0;
+}
+
+.patient-review .link-btn {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.patient-review .theme-btn {
+  padding: 8.5px 10px;
+  min-width: 140px;
+  vertical-align: middle;
+  display: inline-block;
+  background: #fff;
+  color: var(--theme_dark);
+  border: 2px solid #EBF2F3;
+}
+
+.patient-review .theme-btn:hover {
+  background-color: var(--theme_primary);
+  border-color: var(--theme_primary);
+  color: #fff;
+}
+
+.patient-review .theme-btn:before {
+  background-color: var(--theme_primary);
+}
+
+.patient-review .theme-btn i {
+  margin-left: 7px;
+  top: 1px;
+}

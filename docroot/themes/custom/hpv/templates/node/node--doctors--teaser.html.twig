@@ -1,0 +1,69 @@
+{%
+	set classes = [
+		'node',
+		'node-detail',
+		'node--type-' ~ node.bundle|clean_class,
+		node.isPromoted() ? 'node--promoted',
+		node.isSticky() ? 'node--sticky',
+		not node.isPublished() ? 'node--unpublished',
+		view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+		'clearfix',
+	]
+%}
+  <!-- Start Display doctor for teaser page -->
+  <div class="doctor-block-two">
+    <div class="inner-box">
+        <div class="left-column">
+            <div class="image">{{content.field_doctor_profile_pic}}</div>
+            <div class="content">
+                <h4>
+                    
+                    <a href="{{ path('entity.node.canonical', {'node': node.id}) }}">{{content.field_doctor_name}}</a>
+                <div class="designation">{{content.field_doctor_specialty}}</div>
+                <div class="rating">
+                    {{content.field_doctor_rating}}
+                    <span>(38)</span>
+                </div>
+                <hr/>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="content-two">
+                <ul class="list">
+                    <li><i class="fas fa-map-marker-alt"></i> tehran</li>
+                    <li><i class="fas fa-award"></i> 6 - 10 Yrs Experience</li>
+                    <li><i class="fas fa-calendar-week"></i> Tue, Wed, Thu, Fri</li>
+                </ul>
+                <div class="link-btn">
+                    <a href="doctor-details.html" class="theme-btn">ویزیت</a>
+                    <a href="#" class="like"><i class="far fa-heart"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<article class="testimonial-one__single">      
+    <div class="testimonial-one__content">
+       <div class="testimonial-one__stars"> 
+          <i class="fa fa-star"></i> 
+          <i class="fa fa-star"></i> 
+          <i class="fa fa-star"></i> 
+          <i class="fa fa-star"></i> 
+          <i class="fa fa-star"></i>
+       </div>
+       <div class="testimonial-one__quote">
+          {{ fields.body.content|striptags|trim }}
+          <span class="arrow"></span>
+       </div>
+       <div class="testimonial-one__meta">
+          <div class="testimonial-one__avatar">
+             {{ fields.field_testimonial_avatar.content }}
+          </div>  
+          <div class="testimonial-one__job">{{ fields.field_testimonial_job.content }}</div>   
+          <h3 class="testimonial-one__name">{{ fields.field_testimonial_name.content }}</h3>
+       </div> 
+    </div>
+ </article>
+   

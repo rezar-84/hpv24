@@ -26,6 +26,12 @@ regions:
   footer: 'Footer'
   copyright: 'Copyright'
   other: 'Other'
+  user1: 'user1'
+  user2: 'user2'
+  user3: 'user3'
+  user4: 'user4'
+  user5: 'user5'
+  user6: 'user6'
 
 version: '1.0.0'
 core_version_requirement: ^9 || ^10
