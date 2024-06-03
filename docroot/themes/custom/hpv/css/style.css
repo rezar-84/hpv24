@@ -647,9 +647,9 @@ clinic-block-one .inner-box .content-box .like-box a {
   padding: 20px;
 }
 .doctor-block-two .image {
-  position: absolute;
-  top: 25px;
-  left: 25px;
+ display: flex;
+  border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 24, 73, 0.2);
 }
 
 .doctor-block-two h4 {
