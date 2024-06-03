@@ -636,8 +636,16 @@ clinic-block-one .inner-box .content-box .like-box a {
 .doctor-block-two .left-column {
   width: 66%;
   padding-left: 166px;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
+.doctor-block-two .content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 20px;
+}
 .doctor-block-two .image {
   position: absolute;
   top: 25px;
