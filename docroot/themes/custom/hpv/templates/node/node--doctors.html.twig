@@ -15,32 +15,38 @@
   
   <div class="doctor-block-two">
     <div class="inner-box">
-        <div class="left-column">
-            <div class="image">{{content.field_doctor_profile_pic}}</div>
-            <div class="content">
-                <h4><a href="doctor-details.html">{{content.field_doctor_name}}</a></h4>
+        <div class="left-column col-md-8">
+            <div class="row">
+             <div class="image col-md-4 ">{{content.field_doctor_profile_pic}}</div>
+             <div class="content col-md-8">
+                <h4>
+                    <a href="{{ path('entity.node.canonical', {'node': node.id}) }}">{{content.field_doctor_name}}</a>
+                </h4>
+
                 <div class="designation">{{content.field_doctor_specialty}}</div>
                 <div class="rating">
                     {{content.field_doctor_rating}}
                     <span>(38)</span>
                 </div>
             </div>
+            <hr/>
+
         </div>
-        <div class="right-column">
+    </div>
+        <div class="right-column col-md-4">
             <div class="content-two">
                 <ul class="list">
                     <li><i class="fas fa-map-marker-alt"></i> تهران</li>
-                    <li><i class="fas fa-award"></i>تجربیات</li>
+                    <li><i class="fas fa-award"></i> سال تجربه</li>
                     <li><i class="fas fa-calendar-week"></i> ساعات کاری</li>
                 </ul>
                 <div class="link-btn">
-                    <a href="/online-help" class="theme-btn">ویزیت</a>
+                    <a href="doctor-details.html" class="theme-btn">ویزیت</a>
                     <a href="#" class="like"><i class="far fa-heart"></i></a>
                 </div>
             </div>
         </div>
     </div>
-
 
 
     <div class="gsc-tabs ">
@@ -67,3 +73,4 @@
            </div>
         </div>
      </div>
+</div>
