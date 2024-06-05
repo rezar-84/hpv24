@@ -1420,3 +1420,30 @@ visibility: visible;
   margin-left: 7px;
   top: 1px;
 }
+
+
+
+/* gallery .story-image */
+
+.story .images img {
+  -webkit-transition: all 5s;
+
+  /* background: linear-gradient(90deg, hsla(197, 100%, 64%, 1) 0%, hsla(339, 100%, 55%, 1) 100%); */
+  background: linear-gradient(
+    60deg,
+    hsl(224, 85%, 66%),
+    hsl(269, 85%, 66%),
+    hsl(314, 85%, 66%),
+    hsl(359, 85%, 66%),
+    hsl(44, 85%, 66%),
+    hsl(89, 85%, 66%),
+    hsl(134, 85%, 66%),
+    hsl(179, 85%, 66%)
+  );
+  background-size: 300% 300%;
+  background-position: 0 50%;
+  border-radius: 50%;
+  padding: 3px;
+  animation: moveGradient 4s alternate infinite;
+
+};
