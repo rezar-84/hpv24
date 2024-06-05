@@ -56,7 +56,9 @@
     "drupal/address": "^2.0",
     "drupal/bat": "^10.1",
     "drupal/bee": "^3.0",
-    "drupal/eva": "^3.0"
+    "drupal/eva": "^3.0",
+    "drupal/office_hours": "^1.17",
+    "drupal/facets": "^3.0@beta"
   },
   "require-dev": {
     "drupal/core-dev": "~10",
