@@ -17,22 +17,20 @@
     <div class="inner-box">
         <div class="left-column col-md-8">
             <div class="row">
-             <div class="image col-md-4 ">{{content.field_doctor_profile_pic}}</div>
-             <div class="content col-md-8">
-                <h4>
-                    <a href="{{ path('entity.node.canonical', {'node': node.id}) }}">{{content.field_doctor_name}}</a>
-                </h4>
-
-                <div class="designation">{{content.field_doctor_specialty}}</div>
-                <div class="rating">
-                    {{content.field_doctor_rating}}
-                    <span>(38)</span>
+                <div class="image col-md-4">{{ content.field_doctor_profile_pic }}</div>
+                <div class="content col-md-8">
+                    <h4>
+                        <a href="{{ path('entity.node.canonical', {'node': node.id}) }}">{{ content.field_doctor_name }}</a>
+                    </h4>
+                    <div class="designation">{{ content.field_doctor_specialty }}</div>
+                    <div class="rating">
+                        {{ content.field_doctor_rating }}
+                        <span>(38)</span>
+                    </div>
                 </div>
+                <hr/>
             </div>
-            <hr/>
-
         </div>
-    </div>
         <div class="right-column col-md-4">
             <div class="content-two">
                 <ul class="list">
@@ -48,29 +46,22 @@
         </div>
     </div>
 
-
-    <div class="gsc-tabs ">
+    <div class="gsc-tabs">
         <div class="tabs_wrapper tabs_">
-           <ul class="nav nav-tabs">
-             <li><a class="active show" data-bs-toggle="tab" href="#desc1">  درباره </a></li>
-             <li><a class="" data-bs-toggle="tab" href="#clinics1">  کلینیک </a></li>
-             <li><a class="" data-bs-toggle="tab" href="#reviews1">  نظرات کاربران </a></li>
-             <li><a class="" data-bs-toggle="tab" href="#cert1">  گواهینامه </a></li>
-
-           </ul>
-           <div class="tab-content">
-            
-                    <div id="desc1" class="tab-pane fade in active show">
-                        <p>{{content.body}}
-                        </p>
-                        </div>
-                    <div id="clinics1" class="tab-pane fade in ">{{ page.user1 }}
-                    </div>
-                    <div id="reviews1" class="tab-pane fade in ">{{content.field_doctor_reviews}}</div>
-                    <div id="cert1" class="tab-pane fade in ">{{content.field_doctor_certificates}}</div>
-
-              
-           </div>
+            <ul class="nav nav-tabs">
+                <li><a class="active show" data-bs-toggle="tab" href="#desc1">درباره</a></li>
+                <li><a data-bs-toggle="tab" href="#clinics1">کلینیک</a></li>
+                <li><a data-bs-toggle="tab" href="#reviews1">نظرات کاربران</a></li>
+                <li><a data-bs-toggle="tab" href="#cert1">گواهینامه</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="desc1" class="tab-pane fade show active">
+                    <p>{{ content.body }}</p>
+                </div>
+                <div id="clinics1" class="tab-pane fade">{{ page.user1 }}</div>
+                <div id="reviews1" class="tab-pane fade">{{ content.field_doctor_reviews }}</div>
+                <div id="cert1" class="tab-pane fade">{{ content.field_doctor_certificates }}</div>
+            </div>
         </div>
-     </div>
+    </div>
 </div>
