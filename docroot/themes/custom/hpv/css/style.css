@@ -647,7 +647,12 @@ clinic-block-one .inner-box .content-box .like-box a {
 .doctor-block-two .image {
  display: flex;
   border-radius: 20px;
-    box-shadow: 0 10px 40px rgba(0, 24, 73, 0.2);
+
+}
+
+.field.field--name-field-doctor-profile-pic.field--type-image.field--label-hidden.field__item {
+  box-shadow: 0 10px 40px rgba(0, 24, 73, 0.2);
+  border-radius: 20px;
 }
 .doctor-block-two img{
   border-radius: 20px;
