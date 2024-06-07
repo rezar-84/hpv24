@@ -316,8 +316,13 @@ span.ui-accordion-header-icon {
   color: #fff !important;
 }
 
+.webform-submission-form .form-item input[type="radio"]:checked + label:before {
+  content: '✓';
+}
+
 .webform-submission-form .form-item input[type="radio"]:checked + label{
   background-color: #58ba83;
+  color: #fff;
 }
 .webform-submission-form .form-item input[type="radio"]{
   height: 0;
@@ -1429,7 +1434,13 @@ visibility: visible;
 
 
 /* gallery .story-image */
+.gallery-post .item-image{
+  border-radius: 50%;
+}
 
+.gallery-post .item-image:after {
+  transition: none;
+}
 .story .images img {
   -webkit-transition: all 5s;
 
