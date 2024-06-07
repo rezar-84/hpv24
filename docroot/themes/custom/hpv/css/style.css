@@ -2,6 +2,12 @@
 body{
     font-family: 'Vazirmatn', sans-serif !important;
 }
+
+/* CSS HEX */
+
+
+/* SCSS HEX */
+
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
     font-family: 'Vazirmatn', sans-serif !important;
 
@@ -24,7 +30,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
 float: right;
 
 }
-.feature-carousel,.porfolio-carousel,.blog-carousel,.testimonial-main ,.landing-ltr{
+.feature-carousel,.porfolio-carousel,.blog-carousel,.testimonial-main ,.landing-ltr , .ltr-carousel{
     direction:ltr
 }
 .feature-one__single{
@@ -150,12 +156,13 @@ span.language-link.active-language{
   color: aliceblue;
 }
 
-.owl-carousel.owl-loaded{
-direction: ltr;
-text-align: right;
 
+.hero-landing{
+
+  border-radius: 25px;
 }
-.header-one{
+/* header */
+/* .header-one{
   background: #EFF8FB !important;
   padding-bottom: 10px;
 }
@@ -177,7 +184,7 @@ text-align: right;
 }
 .navigation .gva_menu > li > a{
   padding: 25px 18px !important;
-}
+} */
 
 /* block  */
 .block .block-title:before{
@@ -430,7 +437,7 @@ border-radius: 50%;
   background-position: 0 50%;
   border-radius: 50%;
   padding: 3px;
-  animation: moveGradient 4s alternate infinite;
+  /* animation: moveGradient 4s alternate infinite; */
 
 }
 
@@ -1463,3 +1470,30 @@ visibility: visible;
   animation: moveGradient 4s alternate infinite;
 
 };
+
+.landing-cta .gsc-call-to-action.skin-v1 .content-inner, .gsc-call-to-action.skin-v1 .content-inner{
+
+  text-align: right !important;
+}
+.gsc-call-to-action.skin-v1 .content{
+  padding: 20px;
+  text-align: right;
+}
+.landing-cta .button-action{
+  width: 60%;
+  margin: 0 auto;
+  
+}
+.landing-cta .btn-white{
+  width: 60%;
+  text-align: center;
+}
+
+.image-content-seven__image:before{
+
+background: url("../images/24-7.png") no-repeat center center;  
+}
+
+.image-content-seven__image:before{
+  animation: animation_top_bottom 6.5s linear 0s infinite;
+}
