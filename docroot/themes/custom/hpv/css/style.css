@@ -263,9 +263,11 @@ span.ui-accordion-header-icon {
 
  .breadcrumb-style.gva-parallax-background{
     background: none !important;
-    background-color: #124390 !important;
-
+    background-color: #335C5Aff !important;
  }
+ .breadcrumb-style.gva-parallax-background a{
+  
+}
 
  /* cpanel */
  #customize-gavias-preivew select, #customize-gavias-preivew input{
