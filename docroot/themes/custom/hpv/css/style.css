@@ -132,9 +132,18 @@ span.language-link.active-language{
 
 
 /* navigation */
-.menu-bar{
-    right:200px;
+.header-one__main-inner{
+  flex-direction: row-reverse;
 }
+.menu-bar{
+    right:10px;
+    left: auto;
+    width: 32;
+}
+.menu-bar span{
+  width: 32px;
+}
+
 .navigation .gva_menu li a{
     text-align: right !important;
 }
@@ -144,7 +153,10 @@ span.language-link.active-language{
     right: 0;
     left: auto;
 }
-
+.header-one__left{
+  padding-right:0 ;
+  padding-left: 20px;
+}
 .gsc-call-to-action.skin-v1{
   background: url(../images/fun-fact-bg.jpg);
 }
