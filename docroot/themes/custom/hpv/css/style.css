@@ -154,8 +154,8 @@ span.language-link.active-language{
     left: auto;
 }
 .header-one__left{
-  padding-right:0 ;
-  padding-left: 20px;
+  padding-left:5 ;
+  padding-right: 20px;
 }
 .gsc-call-to-action.skin-v1{
   background: url(../images/fun-fact-bg.jpg);
@@ -266,7 +266,6 @@ span.ui-accordion-header-icon {
  */
 
  .gva-offcanvas-mobile .gva-navigation .gva_menu li a .icaret{
-    font-family: 'Vazirmatn', sans-serif !important ;
 
     left: 5px;
     right: auto;
