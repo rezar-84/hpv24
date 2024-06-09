@@ -29,17 +29,21 @@
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="inner-box">
+
+                {{ drupal_region('user1') }}
+                </div>
+            </div>
         </div>
         <div class="right-column col-md-4">
             <div class="content-two">
                 <ul class="list">
                     <li><i class="fas fa-map-marker-alt"></i> تهران</li>
                     <li><i class="fas fa-award"></i> سال تجربه</li>
-                    <li><i class="fas fa-calendar-week"></i> ساعات کاری</li>
                 </ul>
                 <div class="link-btn">
                     <a href="doctor-details.html" class="theme-btn">ویزیت</a>
-                    <a href="#" class="like"><i class="far fa-heart"></i></a>
                 </div>
             </div>
 
@@ -52,7 +56,6 @@
         <div class="tabs_wrapper tabs_">
             <ul class="nav nav-tabs">
                 <li><a class="active show" data-bs-toggle="tab" href="#desc1">درباره</a></li>
-                <li><a data-bs-toggle="tab" href="#clinics1">کلینیک</a></li>
                 <li><a data-bs-toggle="tab" href="#reviews1">نظرات کاربران</a></li>
                 <li><a data-bs-toggle="tab" href="#cert1">گواهینامه</a></li>
             </ul>
@@ -60,11 +63,7 @@
                 <div id="desc1" class="tab-pane fade show active">
                     <p>{{ content.body }}</p>
                 </div>
-                <div id="clinics1" class="tab-pane fade">
-                    <h3> clinics </h3>
-                    {{ drupal_region('user1') }}
-
-                </div>
+               
                 <div id="reviews1" class="tab-pane fade">{{ content.field_doctor_reviews }}</div>
                 <div id="cert1" class="tab-pane fade">{{ content.field_doctor_certificates }}</div>
             </div>
