@@ -1499,3 +1499,21 @@ background: url("../images/24-7.png") no-repeat center center;
 .image-content-seven__image:before{
   animation: animation_top_bottom 6.5s linear 0s infinite;
 }
+
+
+/* topbar */
+.topbar-social {
+  margin-right: 30px;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 3px 20px;
+}
+.topbar-social a + a {
+  margin-right: 20px;
+  margin-left:0 ;
+}
+.topbar-social a {
+  font-size: 20px;
+}
+.topbar__one {
+  background: #335c5a !important;
+}
