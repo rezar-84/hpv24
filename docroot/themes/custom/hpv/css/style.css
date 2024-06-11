@@ -132,8 +132,10 @@ span.language-link.active-language{
 
 
 /* navigation */
+@media (max-width: 1024px) {
 .header-one__main-inner{
   flex-direction: row-reverse;
+}
 }
 .menu-bar{
     right:10px;
@@ -264,13 +266,13 @@ span.ui-accordion-header-icon {
 
 /* /mobile menu
  */
-
+@media (max-width: 1024px) {
  .gva-offcanvas-mobile .gva-navigation .gva_menu li a .icaret{
 
     left: 5px;
     right: auto;
  }
-
+}
 
  .breadcrumb-style.gva-parallax-background{
     background: none !important;
