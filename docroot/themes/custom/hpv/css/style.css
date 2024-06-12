@@ -1539,7 +1539,7 @@ background: url("../images/24-7.png") no-repeat center center;
 Top Header Area CSS
 =================================================*/
 .top-header-area {
-  background: #8EC0EE;
+  background:linear-gradient(90deg, hsla(197, 100%, 64%, 1) 0%, hsla(339, 100%, 55%, 1) 100%);;
   -webkit-box-shadow: 0px 4px 30px 0px rgba(146, 139, 221, 0.1);
           box-shadow: 0px 4px 30px 0px rgba(146, 139, 221, 0.1);
 }
@@ -1549,54 +1549,13 @@ Top Header Area CSS
   padding-right: 30px;
 }
 
-.top-header-info p {
-  color: #020D2B;
-  font-size: 14px;
-}
-
-.top-header-info p a {
-  color: #020D2B;
-  font-weight: 500;
-}
-
-.top-header-info p a i {
-  font-size: 14px;
+.top-header-area p  i {
+  font-size: 24px;
   margin-left: 5px;
+  color:#fff;
+  padding-top:10px;
 }
+.top-header-area a{
 
-.top-header-info p a:hover {
-  color: #F82828;
-}
 
-.top-header-btn {
-  text-align: end;
-}
-
-.top-header-btn a {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 15px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: var(--optionalColor);
-  font-size: 14px;
-  font-weight: 500;
-  color: #ffffff;
-}
-
-.top-header-btn a i {
-  font-size: 20px;
-  margin-right: 10px;
-}
-
-.top-header-btn a:hover {
-  background-color: #020D2B;
-}
-.region__topbar{
-  justify-content: center;
 }
