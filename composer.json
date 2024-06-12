@@ -59,7 +59,8 @@
     "drupal/eva": "^3.0",
     "drupal/office_hours": "^1.17",
     "drupal/facets": "^3.0@beta",
-    "drupal/twig_tweak": "^3.3"
+    "drupal/twig_tweak": "^3.3",
+    "drupal/telephone_validation": "^2.4"
   },
   "require-dev": {
     "drupal/core-dev": "~10",
