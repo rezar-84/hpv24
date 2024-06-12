@@ -1528,10 +1528,75 @@ background: url("../images/24-7.png") no-repeat center center;
   font-size: 20px;
 }
 .topbar__one {
-  background: #335c5a !important;
+  background: #eff8fb !important;
 }
 
 
 .round-it{
   border-radius: 20px !important;
+}
+/*================================================
+Top Header Area CSS
+=================================================*/
+.top-header-area {
+  background: #8EC0EE;
+  -webkit-box-shadow: 0px 4px 30px 0px rgba(146, 139, 221, 0.1);
+          box-shadow: 0px 4px 30px 0px rgba(146, 139, 221, 0.1);
+}
+
+.top-header-area .container-fluid, .top-header-area .container-sm, .top-header-area .container-md, .top-header-area .container-lg, .top-header-area .container-xl, .top-header-area .container-xxl {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.top-header-info p {
+  color: #020D2B;
+  font-size: 14px;
+}
+
+.top-header-info p a {
+  color: #020D2B;
+  font-weight: 500;
+}
+
+.top-header-info p a i {
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.top-header-info p a:hover {
+  color: #F82828;
+}
+
+.top-header-btn {
+  text-align: end;
+}
+
+.top-header-btn a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--optionalColor);
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.top-header-btn a i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.top-header-btn a:hover {
+  background-color: #020D2B;
+}
+.region__topbar{
+  justify-content: center;
 }

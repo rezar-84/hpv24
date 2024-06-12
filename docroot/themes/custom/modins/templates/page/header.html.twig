@@ -9,22 +9,11 @@
 	<div class="header-one__main {{ class_sticky }}">
 			
 	{% if page.topbar %}
-	<div class="topbar topbar__one">
-		<div class="topbar__content header-default__topbar-content">
-			<div class="topbar__left">
-				<div class="topbar__left-content"> 
-					{{ page.topbar }}
-				</div>	
-			</div>
-			<div class="topbar__right">
-				<div class="topbar__right-content"> 
-					{% if page.topbar_right %}
-						{{ page.topbar_right }}
-					{% endif %}
-				</div>	
-			</div>
+	<div class="top-header-area">
+		<div class="container-fluid">
+			{{ page.topbar }}
 		</div>
-	</div>
+		</div>
 {% endif %}
 		<div class="header-one__content">
 			<div class="header-one__main-inner p-relative">
