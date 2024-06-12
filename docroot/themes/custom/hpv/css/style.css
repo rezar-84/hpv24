@@ -1530,3 +1530,8 @@ background: url("../images/24-7.png") no-repeat center center;
 .topbar__one {
   background: #335c5a !important;
 }
+
+
+.round-it{
+  border-radius: 20px !important;
+}
