@@ -1549,13 +1549,13 @@ Top Header Area CSS
   padding-right: 30px;
 }
 
-.top-header-area p  i {
+.top-header-area p {
   font-size: 24px;
   margin-left: 5px;
-  color:#fff;
-  padding-top:10px;
+  color: #fff;
+  padding-top: 10px;
+  text-align: center;
 }
-.top-header-area a{
-
-
+.region__topbar{
+  justify-content: center !important;
 }
