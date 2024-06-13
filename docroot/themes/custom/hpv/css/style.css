@@ -1577,3 +1577,10 @@ cursor: pointer;
 
 color:#fff;
 }
+.main-cta-text.style-white {
+  padding: 3rem;
+  background: rgba(255, 255, 255, 0.8);
+  margin: 1rem;
+  border-radius: 23px;
+  /* margin-bottom: -18rem; */
+}
