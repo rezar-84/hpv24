@@ -1563,7 +1563,14 @@ Top Header Area CSS
 .slide-cta{
 background-color: #020D2B;
 color:#fff;
+border-radius: 20px;
+padding: 5px;
+}
+.slide-cta:hover{
+background:#47cbff ;
 
+}
+.slide-cta a{
 
-
+color:#fff;
 }
