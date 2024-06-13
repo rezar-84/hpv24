@@ -276,10 +276,10 @@ span.ui-accordion-header-icon {
 
  .breadcrumb-style.gva-parallax-background{
     background: none !important;
-    background-color: #335C5Aff !important;
+    background-color: #afcbd6 !important;
  }
- .breadcrumb-style.gva-parallax-background a{
-  
+.breadcrumb-style.gva-parallax-background a{
+color: #fff;
 }
 
  /* cpanel */
