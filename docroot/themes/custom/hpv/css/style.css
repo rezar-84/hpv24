@@ -279,7 +279,7 @@ span.ui-accordion-header-icon {
     background-color: #afcbd6 !important;
  }
 .breadcrumb-style.gva-parallax-background a{
-color: #fff;
+color: #fff !important;
 }
 
  /* cpanel */
