@@ -1560,14 +1560,17 @@ Top Header Area CSS
   justify-content: center !important;
 }
 
-.slide-cta{
-background-color: #020D2B;
-color:#fff;
-border-radius: 20px;
-padding: 5px;
+
+.slide-cta {
+  background-color: #020D2B;
+  color: #fff !important;
+  border-radius: 15px;
+  padding: 5px 29px 6px 19px !important;
+  cursor: pointer;
 }
 .slide-cta:hover{
 background:#47cbff ;
+cursor: pointer;
 
 }
 .slide-cta a{
