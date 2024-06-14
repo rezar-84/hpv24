@@ -1550,7 +1550,7 @@ Top Header Area CSS
 }
 
 .top-header-area p {
-  font-size: 24px;
+  font-size: 20px;
   margin-left: 5px;
   color: #fff;
   padding-top: 10px;
@@ -1585,4 +1585,9 @@ color:#fff;
   /* margin-bottom: -18rem; */
   color:#020D2B;
 
+}
+.seconnd-cta-text.style-white {
+  font-size: 20px;
+  color:#fff;
+  
 }
