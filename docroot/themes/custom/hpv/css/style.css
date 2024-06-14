@@ -1588,7 +1588,11 @@ color:#fff;
 }
 .second-cta-text.style-white  p{
   font-size: 25px;
-  color:#333 !important;
+  color:#020D2B !important;
   line-height: 36px;
+  font-weight: 700px;
   
+}
+.testimonial-two__quote{
+  text-align: right;
 }
