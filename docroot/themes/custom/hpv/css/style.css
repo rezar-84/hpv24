@@ -1586,9 +1586,9 @@ color:#fff;
   color:#020D2B;
 
 }
-.second-cta-text.style-white {
+.second-cta-text.style-white  p{
   font-size: 20px;
-  color:#fff;
+  color:#fff !important;
   line-height: 24px;
   
 }
