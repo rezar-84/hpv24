@@ -1671,3 +1671,16 @@ color:#fff;
 .pager ul.pager__items > li{
   float: right !important;
 }
+.blink {
+  animation: blinker 2.5s linear infinite;
+  color: white;
+  font-size: 1.5em;
+  /* Larger, responsive font size */
+  margin-bottom: 20px;
+}
+
+@keyframes blinker {
+  50% {
+      opacity: 0;
+  }
+}
