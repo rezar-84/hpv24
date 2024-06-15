@@ -1596,3 +1596,50 @@ color:#fff;
 .testimonial-two__quote{
   text-align: right;
 }
+
+.default-btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 10px 20px 10px 55px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+          background-color: #5DB996;
+          color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 50px;
+  position: relative;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.default-btn i {
+  font-size: 25px;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.default-btn:hover {
+  color: #ffffff !important;
+  background-color: #007aff;
+
+}
+
+
+.btn-cta:hover{
+  background-color: #007aff;
+}
+.btn-cta1{
+  background-color: #0B55E5;
+}
+.btn-cta1:hover{
+  background-color: #9588E8;
+}
