@@ -1666,3 +1666,8 @@ color:#fff;
     margin-bottom: 10px;
     line-height: 1.5;
 }
+
+
+.pager ul.pager__items > li{
+  float: right !important;
+}
