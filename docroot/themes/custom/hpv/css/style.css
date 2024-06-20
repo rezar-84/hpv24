@@ -166,10 +166,6 @@ span.language-link.active-language{
   background:none !important;
   background-color: #0D0246 !important;
 }
-#block-hpv-breadcrumbs h2{
-  color: aliceblue;
-}
-
 
 .hero-landing{
 
@@ -275,12 +271,23 @@ span.ui-accordion-header-icon {
  }
 }
 
- .breadcrumb-style.gva-parallax-background{
+
+/* breaadcrumb  */
+#block-hpv-breadcrumbs h2{
+  color: #020D2B;
+}
+
+
+.breadcrumb-style.gva-parallax-background{
     background: none !important;
-    background-color: #afcbd6 !important;
  }
 .breadcrumb-style.gva-parallax-background a{
 color: #fff !important;
+}
+.breadcrumb-content-inner .breadcrumb-content-main {
+  max-width: 1630px;
+  background: #E9EEF2 !important;
+  border-radius: 3rem;
 }
 
  /* cpanel */
@@ -339,7 +346,8 @@ color: #fff !important;
   color: #fff !important;
 }
 
-.webform-submission-form .form-item input[type="radio"]:checked + label:before {
+.webform-submission-form .form-item input[type="radio"]:checked + label:before , .webform-options-display-buttons input:checked + label.webform-options-display-buttons-label::before
+  {
   content: '✓';
 }
 
@@ -398,7 +406,7 @@ width: auto;
 }
 
 .webform-options-display-buttons input:checked + label.webform-options-display-buttons-label {
- 
+ border: 1px solid #9588E8  !important; 
 
 }
 .webform-button--previous, .webform-button--next {
