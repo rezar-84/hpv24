@@ -1690,10 +1690,7 @@ color:#fff;
 }
 
 .iti__country-list {
-  position: relative;
-
-  text-align: left;
-  padding: 0;
-  margin: 44px 2px 0 2px;
+  position: relative !important;
+  text-align: left !important;
 
 }
