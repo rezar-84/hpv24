@@ -374,7 +374,7 @@ color: #fff !important;
   background-color: #9588E8;
 }
 .webform-progress-tracker .progress-step:not(.is-active){
-  background-color: #e7e7e7;
+  background-color: #e8cfff;
 
 }
 .progress-step.is-active .progress-marker::before {
@@ -1608,7 +1608,7 @@ color:#fff;
 }
 .main-cta-text.style-white {
   padding: 2rem;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.2);
   margin: 0.5rem;
   border-radius: 20px;
   /* margin-bottom: -18rem; */
