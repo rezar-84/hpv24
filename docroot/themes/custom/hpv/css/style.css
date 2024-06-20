@@ -708,7 +708,7 @@ clinic-block-one .inner-box .content-box .like-box a {
 }
 
 .field.field--name-field-doctor-profile-pic.field--type-image.field--label-hidden.field__item {
-  box-shadow: 0 10px 40px rgba(0, 24, 73, 0.2);
+  /* box-shadow: 0 10px 40px rgba(0, 24, 73, 0.2); */
   border-radius: 20px;
 }
 .doctor-block-two img{
@@ -754,7 +754,6 @@ clinic-block-one .inner-box .content-box .like-box a {
 
 .doctor-block-two .right-column {
   padding-left: 20px;
-  border-left: 1px solid #ddd;
 }
 
 .doctor-block-two .list {
@@ -1792,7 +1791,7 @@ Doctors Details Area CSS
 .doctor-details-top-content .title span {
   display: block;
   font-size: 18px;
-  color: var(--mainColor);
+  color: #9588E8;
   display: block;
   margin-top: 12px;
 }
@@ -1825,7 +1824,7 @@ Doctors Details Area CSS
   font-size: 18px;
   -webkit-transition: 0.6s;
   transition: 0.6s;
-  color: var(--optionalColor);
+  color: #0B55E5;
 }
 
 .doctor-details-top-content .list li span {
@@ -1837,7 +1836,7 @@ Doctors Details Area CSS
 }
 
 .doctor-details-top-content .list li span a:hover {
-  color: var(--mainColor);
+  color: #9588E8;
 }
 
 .doctor-details-top-content .list li:last-child {
@@ -1849,7 +1848,7 @@ Doctors Details Area CSS
 }
 
 .doctor-details-top-content .default-btn:hover {
-  background-color: var(--mainColor);
+  background-color: #9588E8;
 }
 
 .doctor-details-top-content .social-box {
@@ -1862,7 +1861,7 @@ Doctors Details Area CSS
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: var(--mainColor);
+  background-color: #9588E8;
   padding: 5px 7px;
   border-radius: 50px;
   line-height: 1;
@@ -1890,7 +1889,7 @@ Doctors Details Area CSS
 
 .doctor-details-top-content .social-box li a i:hover {
   background-color: #ffffff;
-  color: var(--optionalColor);
+  color: #0B55E5;
 }
 
 .doctor-details-top-content .social-box li:last-child {
