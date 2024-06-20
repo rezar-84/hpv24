@@ -1743,11 +1743,7 @@ color:#fff;
 
 
 .body-page input[type="text"], .body-page input[type="tel"], .body-page input[type="password"], .body-page input[type="email"], .body-page textarea, .body-page select {
-  background-color: #fff;
-  box-shadow: none;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
+
 }
 
 
