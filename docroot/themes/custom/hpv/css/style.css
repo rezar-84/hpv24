@@ -282,8 +282,14 @@ span.ui-accordion-header-icon {
     background: none !important;
  }
 .breadcrumb-style.gva-parallax-background a{
-color: #fff !important;
+color: #007aff !important;
 }
+.breadcrumb-style.gva-parallax-background a:hover{
+  color: #9588E8 !important;
+  }
+  .breadcrumb-content-inner .gva-block-breadcrumb .breadcrumb-links nav.breadcrumb ol li{
+    color:#444F6F;
+  }
 .breadcrumb-content-inner .breadcrumb-content-main {
   max-width: 1630px;
   background: #E9EEF2 !important;
