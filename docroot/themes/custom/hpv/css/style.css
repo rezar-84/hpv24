@@ -1684,3 +1684,16 @@ color:#fff;
       opacity: 0;
   }
 }
+
+.iti__country-name, .iti__flag-box{
+  float: left;
+}
+
+.iti__country-list {
+  position: relative;
+
+  text-align: left;
+  padding: 0;
+  margin: 44px 2px 0 2px;
+
+}
