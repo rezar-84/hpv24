@@ -344,8 +344,8 @@ color: #fff !important;
 }
 
 .webform-submission-form .form-item input[type="radio"]:checked + label{
-  background-color: #58ba83;
-  color: #fff;
+  background-color: #C4DCF3;
+  color: #020D2B;
 }
 .webform-submission-form .form-item input[type="radio"]{
   height: 0;
@@ -357,10 +357,10 @@ color: #fff !important;
   background: #fffcf6;
 }
 .progress-step.is-active .progress-marker::before {
-  background-color: #325343;
+  background-color: #C4DCF3;
 }
 .webform-progress-tracker .progress-step.is-active:hover .progress-marker::before {
-  background-color: #325343;
+  background-color: #C4DCF3;
 }
 
 .webform-progress-tracker .progress-step:not(.is-active) , .webform-progress-tracker .progress-step:hover .progress-marker::before {
@@ -371,9 +371,9 @@ color: #fff !important;
 }
 
 .btn-primary {
-    background: #397a4a;
+    background: #C4DCF3;
     border-radius: 0.3rem;
-    border-color: #397a4a;
+    border-color: #C4DCF3;
 }
 .webform-submission-form .form-item input{
 display: inline;
@@ -384,8 +384,8 @@ width: auto;
 .webform-options-display-buttons label.webform-options-display-buttons-label{
   border: none !important ;
   border-radius: 20px !important;
-  color: #325343 !important;
-  background-color: #a6de9b !important;
+  color: #020D2B !important;
+  background-color: #C4DCF3 !important;
   cursor: pointer;
   font-size: 18px;
   padding: 16px 25px 14px;
@@ -393,6 +393,7 @@ width: auto;
 
 .webform-options-display-buttons label.webform-options-display-buttons-label:hover{
   color: #fff !important;
+  background-color: #9588E8 !important;
 
 }
 
