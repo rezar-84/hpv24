@@ -676,7 +676,7 @@ clinic-block-one .inner-box .content-box .like-box a {
   position: relative;
 }
 
-.doctor-block-two .inner-box {
+.doctor-block-two  {
   position: relative;
   background: #fff;
   padding: 25px;
@@ -686,8 +686,13 @@ clinic-block-one .inner-box .content-box .like-box a {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  min-height: 210px;
+  min-height: 200px;
   margin-bottom: 30px;
+  border: 1px solid #eee;
+}
+.doctor-block-two:hover  {
+  background: #C4DCF3;
+  cursor: pointer;
 }
 
 .doctor-block-two .left-column {
