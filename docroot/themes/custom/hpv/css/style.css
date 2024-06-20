@@ -1694,3 +1694,9 @@ color:#fff;
   text-align: left !important;
 
 }
+.iti input, .iti input[type=tel]{
+  padding-left: 52px !important;
+}
+.iti-mobile .iti__country{
+  direction: ltr !important;
+}
