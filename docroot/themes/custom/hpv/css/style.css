@@ -678,7 +678,7 @@ clinic-block-one .inner-box .content-box .like-box a {
 
 .doctor-block-two  {
   position: relative;
-  background: #fff;
+  background: #fff !important;
   padding: 25px;
   border-radius: 5px;
   box-shadow: 10px 10px 30px rgb(0 0 0 / 5%);
@@ -691,7 +691,7 @@ clinic-block-one .inner-box .content-box .like-box a {
   border: 1px solid #eee;
 }
 .doctor-block-two:hover  {
-  background: #C4DCF3;
+  background: #C4DCF3 !important;
   cursor: pointer;
 }
 
@@ -705,6 +705,9 @@ clinic-block-one .inner-box .content-box .like-box a {
   flex-wrap: wrap;
   flex-direction: column;
   padding: 20px;
+  align-content: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 .doctor-block-two .image {
  display: flex;
@@ -759,7 +762,9 @@ clinic-block-one .inner-box .content-box .like-box a {
 
 .doctor-block-two .right-column {
   padding-left: 0;
-  padding-right: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 
 .doctor-block-two .list {
