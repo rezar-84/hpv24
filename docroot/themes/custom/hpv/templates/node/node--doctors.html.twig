@@ -12,59 +12,101 @@
 %}
    
   <!-- Start Display doctor for detail page -->
-  
-  <div class="doctor-block-two">
-    <div class="inner-box">
-        <div class="left-column col-md-8">
-            <div class="row">
-                <div class="image col-md-4">{{ content.field_doctor_profile_pic }}</div>
-                <div class="content col-md-8">
-                    <h4>
-                        <a href="#">{{ content.field_doctor_name }}</a>
-                    </h4>
-                    <div class="designation">{{ content.field_doctor_specialty }}</div>
-                    <div class="rating">
-                        {{ content.field_doctor_rating }}
-                        <span></span>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-        <div class="right-column col-md-4">
-            <div class="content-two">
-                <ul class="list">
-                    <li><i class="fas fa-map-marker-alt"></i> تهران</li>
-                    <li><i class="fas fa-award"></i> سال تجربه</li>
-                </ul>
-                <div class="link-btn">
-                    <a href="online-help" class="btn gsc-button">ویزیت</a>
-                </div>
-            </div>
+<div class="row justify-content-center">
+	<div class="col-lg-5 col-md-12">
+		<div class="doctor-details-image">
+			{{ content.field_doctor_profile_pic }}
+		</div>
+	</div>
+	<div class="col-lg-7 col-md-12">
+		<div class="doctor-details-top-content">
+			<div class="title">
+				<h2>{{ content.field_doctor_name }}</h2>
+				<span>{{ content.field_doctor_specialty }}</span>
+			</div>
+			<ul class="list">
+				<li>
+					<i class="fa fa-phone-call"></i>
+					<span>تلفن:
+						<a href="tel:">+98 </a>
+					</span>
+				</li>
+				
+				<li>
+					<i class="ti ti-map-pin"></i>
+					<span>نشانی:
 
-        </div>
-        <hr/>
-        <div class="row">
-            <div class="inner-box">
+					</span>
+				</li>
+			</ul>
+			<a href="/online-help" class="default-btn">
+				<i class="ti ti-circle-arrow-right-filled"></i>
+                    شروع تریاژ آنلاین
+			</a>
+			<ul class="social-box">
+				<li>
+					<a href="#" target="_blank">
+						<i class="fab fa-facebook"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">
+						<i class="fab fa-twitter"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">
+						<i class="fab fa-instagram"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">
+						<i class="ti ti-brand-linkedin"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-xl-8 col-md-12">
+				<div class="doctor-details-desc">
+					<div class="content">
+						<h3>درباره  {{ content.field_doctor_name }}</h3>
+	                        {{ content.body }}
+					</div>
+					<div class="swiper quote-slider swiper-initialized swiper-horizontal swiper-autoheight swiper-backface-hidden">
+					
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-4 col-md-12">
+				<div class="doctor-details-sidebar">
+					<h3>
+						ویژگی‌های و صلاحیت ها</h3>
+					<ul class="info-list">
+						<li>
+							<h5>تحصیلات و تخصص ها
+							</h5>
+						</li>
+						<li>
+							<h5>مدارک
+							</h5>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
-            {{ drupal_region('user1') }}
-            </div>
-        </div>
-
-    </div>
 
     <div class="gsc-tabs">
         <div class="tabs_wrapper tabs_">
             <ul class="nav nav-tabs">
-                <li><a class="active show" data-bs-toggle="tab" href="#desc1">درباره</a></li>
                 <li><a data-bs-toggle="tab" href="#reviews1">نظرات کاربران</a></li>
                 <li><a data-bs-toggle="tab" href="#cert1">گواهینامه</a></li>
             </ul>
-            <div class="tab-content">
-                <div id="desc1" class="tab-pane fade show active">
-                    <p>{{ content.body }}</p>
-                </div>
-               
+            <div class="tab-content">               
                 <div id="reviews1" class="tab-pane fade">{{ content.field_doctor_reviews }}</div>
                 <div id="cert1" class="tab-pane fade">{{ content.field_doctor_certificates }}</div>
             </div>

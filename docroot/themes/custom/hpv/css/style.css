@@ -1733,3 +1733,313 @@ color:#fff;
 .iti-mobile .iti__country{
   direction: ltr !important;
 }
+
+
+.form-select{
+  color:#020D2B;
+  background-position: left 0.75rem center;
+}
+
+
+
+.body-page input[type="text"], .body-page input[type="tel"], .body-page input[type="password"], .body-page input[type="email"], .body-page textarea, .body-page select {
+  background-color: #fff;
+  box-shadow: none;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+
+
+/*================================================
+Doctors Details Area CSS
+=================================================*/
+.doctor-details-area {
+  padding-top: 30px;
+}
+
+.doctor-details-area .container-fluid, .doctor-details-area .container-sm, .doctor-details-area .container-md, .doctor-details-area .container-lg, .doctor-details-area .container-xl, .doctor-details-area .container-xxl {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.doctor-details-image {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 165px;
+}
+
+.doctor-details-image img {
+  border-radius: 20px !important;
+}
+
+.doctor-details-top-content {
+  border-radius: 20px;
+  background-color: #E9EEF2;
+  padding: 45px;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.doctor-details-top-content .title {
+  margin-bottom: 25px;
+  padding-right: 200px;
+}
+
+.doctor-details-top-content .title h2, .doctor-details-top-content .title .h2 {
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+.doctor-details-top-content .title span {
+  display: block;
+  font-size: 18px;
+  color: var(--mainColor);
+  display: block;
+  margin-top: 12px;
+}
+
+.doctor-details-top-content .list {
+  margin-bottom: 25px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.doctor-details-top-content .list li {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.doctor-details-top-content .list li i {
+  display: inline-block;
+  height: 33px;
+  width: 33px;
+  line-height: 33px;
+  border-radius: 50px;
+  background: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  color: var(--optionalColor);
+}
+
+.doctor-details-top-content .list li span {
+  margin-left: 10px;
+}
+
+.doctor-details-top-content .list li span a {
+  color: #444F6F;
+}
+
+.doctor-details-top-content .list li span a:hover {
+  color: var(--mainColor);
+}
+
+.doctor-details-top-content .list li:last-child {
+  margin-bottom: 0;
+}
+
+.doctor-details-top-content .default-btn {
+  background-color: #F82828;
+}
+
+.doctor-details-top-content .default-btn:hover {
+  background-color: var(--mainColor);
+}
+
+.doctor-details-top-content .social-box {
+  position: absolute;
+  top: 45px;
+  right: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--mainColor);
+  padding: 5px 7px;
+  border-radius: 50px;
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+.doctor-details-top-content .social-box li {
+  list-style-type: none;
+  margin-right: 5px;
+}
+
+.doctor-details-top-content .social-box li a i {
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 50px;
+  font-size: 17px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  background-color: transparent;
+}
+
+.doctor-details-top-content .social-box li a i:hover {
+  background-color: #ffffff;
+  color: var(--optionalColor);
+}
+
+.doctor-details-top-content .social-box li:last-child {
+  margin-right: 0;
+}
+
+.doctor-details-desc .content {
+  border-radius: 20px;
+  background-color: #F2DDD9;
+  padding: 45px;
+  margin-bottom: 25px;
+}
+
+.doctor-details-desc .content h3, .doctor-details-desc .content .h3 {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.doctor-details-desc .quote-card {
+  border-radius: 20px;
+  background-color: #D6D2F1;
+  padding: 45px;
+}
+
+.doctor-details-desc .quote-card .quote {
+  margin-bottom: 15px;
+}
+
+.doctor-details-desc .quote-card p {
+  font-size: 20px;
+  color: #020D2B;
+  margin-bottom: 0;
+}
+
+.doctor-details-desc .quote-card .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 35px;
+}
+
+.doctor-details-desc .quote-card .info img {
+  max-width: 55px;
+}
+
+.doctor-details-desc .quote-card .info .title {
+  margin-left: 15px;
+}
+
+.doctor-details-desc .quote-card .info .title h3, .doctor-details-desc .quote-card .info .title .h3 {
+  font-size: 15px;
+  letter-spacing: 1.4px;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.doctor-details-desc .quote-card .info .title span {
+  font-size: 14px;
+  display: block;
+  margin-top: 8px;
+}
+
+.doctor-details-desc .quote-slider {
+  position: relative;
+}
+
+.doctor-details-desc .quote-slider .quote-button {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0;
+  z-index: 1;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.doctor-details-desc .quote-slider .quote-button li {
+  list-style-type: none;
+  margin-right: 10px;
+}
+
+.doctor-details-desc .quote-slider .quote-button li:last-child {
+  margin-right: 0;
+}
+
+.doctor-details-desc .quote-slider .quote-button li i {
+  display: inline-block;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #020D2B;
+  text-align: center;
+  border-radius: 50px;
+  font-size: 18px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.doctor-details-desc .quote-slider .quote-button li i:hover {
+  background-color: #ffffff;
+}
+
+.doctor-details-sidebar {
+  border-radius: 20px;
+  background-color: #D7ECE4;
+  padding: 30px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 165px;
+}
+
+.doctor-details-sidebar h3, .doctor-details-sidebar .h3 {
+  font-size: 25px;
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+}
+
+.doctor-details-sidebar .info-list {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.doctor-details-sidebar .info-list li {
+  list-style-type: none;
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.doctor-details-sidebar .info-list li h5, .doctor-details-sidebar .info-list li .h5 {
+  font-weight: 500;
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+
+.doctor-details-sidebar .info-list li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
