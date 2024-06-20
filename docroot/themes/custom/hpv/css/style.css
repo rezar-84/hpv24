@@ -367,11 +367,15 @@ color: #fff !important;
 .webform-progress-tracker .progress-step:hover .progress-marker::before, .webform-progress-tracker .progress-step .progress-marker::after{
   background: #020D2B !important;
 }
-.webform-progress-tracker .progress-step:not(.is-active), .webform-progress-tracker .progress-step:hover .progress-marker::before{
+.webform-progress-tracker .progress-step:hover .progress-marker::before{
   background: #fff !important;
 }
 .webform-progress-tracker .progress-step.is-complete .progress-marker::before, .webform-progress-tracker .progress-step.is-complete:hover .progress-marker::before, .webform-progress-tracker .progress-step.is-complete .progress-marker::after {
   background-color: #9588E8;
+}
+.webform-progress-tracker .progress-step:not(.is-active){
+  background-color: #e7e7e7;
+
 }
 .progress-step.is-active .progress-marker::before {
   background-color: #C4DCF3;
