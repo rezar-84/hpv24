@@ -2180,6 +2180,6 @@ Doctors Details Area CSS
   color: #fff;
 }
 .webform-custom-options-button[data-option-value][aria-checked=true]{
-
+  color: #fff;
   background-color: #020D2B;
 }
