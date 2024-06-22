@@ -1582,6 +1582,12 @@ Top Header Area CSS
 .region__topbar .block{
  width: 90%; 
 }
+@media only screen and (max-width: 767px) {
+  .top-header-area {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+}
 .top-header-area {
   /* background:linear-gradient(90deg, hsla(197, 100%, 64%, 1) 0%, hsla(339, 100%, 55%, 1) 100%);; */
   background: linear-gradient(90deg, hsla(184, 75%, 46%, 1) 0%, hsla(248, 53%, 88%, 1) 100%);
@@ -1631,7 +1637,7 @@ Top Header Area CSS
 }
 
 .top-header-btn {
-  text-align: end;
+  text-align: center;
   width: 100%;
 }
 
