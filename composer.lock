@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "06300c15468343ad9799c90022d09f6c",
+    "content-hash": "760abc58b9456f7310da9366c4fe0589",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -14663,6 +14663,64 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/services",
                 "issues": "https://www.drupal.org/project/issues/services"
+            }
+        },
+        {
+            "name": "drupal/share_everywhere",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/share_everywhere.git",
+                "reference": "3.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/share_everywhere-3.0.0.zip",
+                "reference": "3.0.0",
+                "shasum": "1b2d86262728774fd6606f9a242bc08c756cd8ff"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9.0 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.0.0",
+                    "datestamp": "1712726625",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Malatenszki David",
+                    "homepage": "https://www.drupal.org/user/3509607",
+                    "email": "malatenszki.david@gmail.com"
+                },
+                {
+                    "name": "Rozsa Arpad",
+                    "homepage": "https://www.drupal.org/user/3687220",
+                    "email": "rozsaarpad44@gmail.com"
+                },
+                {
+                    "name": "malatenszki",
+                    "homepage": "https://www.drupal.org/user/3452551"
+                },
+                {
+                    "name": "zpopic",
+                    "homepage": "https://www.drupal.org/user/3662175"
+                }
+            ],
+            "description": "Drupal social share module",
+            "homepage": "https://www.drupal.org/project/share_everywhere",
+            "support": {
+                "source": "https://git.drupalcode.org/project/share_everywhere"
             }
         },
         {

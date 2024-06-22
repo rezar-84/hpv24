@@ -61,7 +61,8 @@
     "drupal/facets": "^3.0@beta",
     "drupal/twig_tweak": "^3.3",
     "drupal/telephone_validation": "^2.4",
-    "drupal/color_field": "^3.0"
+    "drupal/color_field": "^3.0",
+    "drupal/share_everywhere": "^3.0"
   },
   "require-dev": {
     "drupal/core-dev": "~10",
