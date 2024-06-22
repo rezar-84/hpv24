@@ -316,7 +316,7 @@ color: #007aff !important;
   form#webform-submission-online-consult-add-form , .webform-ajax-form-wrapper{
     max-width: 640px;
     margin: 0 auto;
-    padding-bottom: 100px;
+    padding-bottom: 30px;
   }
   
   .progress-title {
@@ -1642,6 +1642,9 @@ color:#fff;
 .testimonial-two__quote{
   text-align: right;
 }
+.testimonial-two__content{
+  min-height: 350px;
+}
 
 .default-btn {
   display: -webkit-inline-box;
@@ -2049,3 +2052,25 @@ Doctors Details Area CSS
   padding-bottom: 0;
   margin-bottom: 0;
 }
+
+
+
+/* magazine */
+
+.post-block.teaser-1 .content-inner{
+  min-height: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: flex-start;
+
+}
+.post-block.teaser-1 .read-more{
+  display: flex;
+  width: 100%;
+  align-content: flex-end;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
