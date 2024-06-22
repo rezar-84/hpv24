@@ -137,6 +137,11 @@ span.language-link.active-language{
   flex-direction: row-reverse;
 }
 }
+@media (min-width: 1024.1px) {
+  .navigation .gva_menu > li > a {
+
+    padding: 30px 18px;
+  }}
 .menu-bar{
     right:10px;
     left: auto;
@@ -302,6 +307,7 @@ color: #007aff !important;
     direction: ltr;
  }
  .header-one__right {
+  align-items: baseline;
  }
 
 
