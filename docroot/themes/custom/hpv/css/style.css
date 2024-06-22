@@ -2165,3 +2165,21 @@ Doctors Details Area CSS
 .read-more span {
     padding-left: 5px;
 }
+
+webform-custom-options-button {
+
+  border: 3px solid #1dc0cc;
+  border-radius: 20px;
+  background-color: #1dc0cc;
+
+  color: #fff;
+  cursor: pointer;
+}
+webform-custom-options-button:hover{
+  background-color:  #9588E8 ;
+  color: #fff;
+}
+.webform-custom-options-button[data-option-value][aria-checked=true]{
+
+  background-color: #020D2B;
+}
