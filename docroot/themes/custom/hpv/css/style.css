@@ -2058,11 +2058,12 @@ Doctors Details Area CSS
 /* magazine */
 
 .post-block.teaser-1 .content-inner{
-  min-height: 250px;
+  min-height: 280px;
   display: flex;
   flex-wrap: wrap;
-  align-content: stretch;
+  align-content: space-between;
   justify-content: flex-start;
+
 
 }
 .post-block.teaser-1 .read-more{
@@ -2071,6 +2072,11 @@ Doctors Details Area CSS
   align-content: flex-end;
   flex-direction: row;
   flex-wrap: wrap;
+  align-content: center;
 
 }
 
+
+.read-more span {
+    padding-left: 5px;
+}
