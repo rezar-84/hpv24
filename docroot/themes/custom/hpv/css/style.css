@@ -1645,7 +1645,7 @@ Top Header Area CSS
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 15px;
+  padding: 8px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
