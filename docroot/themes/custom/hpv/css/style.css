@@ -1681,6 +1681,16 @@ Top Header Area CSS
   background-color: #F82828;
   border: 1px solid #F82828;
 }
+.banner-btn {
+  margin-top: 20px;
+}
+
+ .banner-btn .default-btn {
+  background-color: #007aff;
+}
+ .banner-btn .default-btn:hover {
+  background-color: #9588E8;
+}
 
 .slide-cta {
   background-color: #020D2B;
