@@ -2166,7 +2166,7 @@ Doctors Details Area CSS
     padding-left: 5px;
 }
 
-webform-custom-options-button {
+.webform-custom-options-button {
 
   border: 3px solid #1dc0cc;
   border-radius: 20px;
@@ -2175,7 +2175,7 @@ webform-custom-options-button {
   color: #fff;
   cursor: pointer;
 }
-webform-custom-options-button:hover{
+.webform-custom-options-button:hover{
   background-color:  #9588E8 ;
   color: #fff;
 }
