@@ -1652,7 +1652,7 @@ Top Header Area CSS
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #007aff;
+  background-color: #5DB996;
   font-size: 14px;
   font-weight: 500;
   color: #ffffff;
@@ -1671,13 +1671,13 @@ Top Header Area CSS
 .region__topbar{
   justify-content: center !important;
 }
-.navbar-area-with-optional-color .others-option .option-item .default-btn {
+.option-item .default-btn {
   background-color: #5DB996;
   color: #ffffff !important;
   border: 1px solid #5DB996;
 }
 
-.navbar-area-with-optional-color .others-option .option-item .default-btn:hover {
+option-item .default-btn:hover {
   background-color: #F82828;
   border: 1px solid #F82828;
 }
