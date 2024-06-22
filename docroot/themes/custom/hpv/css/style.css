@@ -1613,7 +1613,7 @@ Top Header Area CSS
 
 .top-header-info p {
   color: #020D2B;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .top-header-info p a {
@@ -1632,6 +1632,7 @@ Top Header Area CSS
 
 .top-header-btn {
   text-align: end;
+  width: 80%;
 }
 
 .top-header-btn a {
