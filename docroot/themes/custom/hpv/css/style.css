@@ -1632,7 +1632,7 @@ Top Header Area CSS
 
 .top-header-btn {
   text-align: end;
-  width: 80%;
+  width: 100%;
 }
 
 .top-header-btn a {
@@ -1649,7 +1649,7 @@ Top Header Area CSS
   background-color: #007aff;
   font-size: 14px;
   font-weight: 500;
-  color: #ffffff;
+  color: #ffffff;%;
 }
 
 .top-header-btn a i {
