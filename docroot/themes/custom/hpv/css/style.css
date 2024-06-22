@@ -1603,7 +1603,7 @@ Top Header Area CSS
   color: #fff;
   padding-top: 5px;
   padding-bottom: 5px;
-  text-align: center;
+  text-align: right;
 }
 
 .top-header-area .container-fluid, .top-header-area .container-sm, .top-header-area .container-md, .top-header-area .container-lg, .top-header-area .container-xl, .top-header-area .container-xxl {
