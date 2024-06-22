@@ -1649,7 +1649,8 @@ Top Header Area CSS
   background-color: #007aff;
   font-size: 14px;
   font-weight: 500;
-  color: #ffffff;%;
+  color: #ffffff;
+  width: 80%;
 }
 
 .top-header-btn a i {
