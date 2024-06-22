@@ -1579,6 +1579,9 @@ background: url("../images/24-7.png") no-repeat center center;
 /*================================================
 Top Header Area CSS
 =================================================*/
+.region__topbar{
+ display: inline-block; 
+}
 .top-header-area {
   /* background:linear-gradient(90deg, hsla(197, 100%, 64%, 1) 0%, hsla(339, 100%, 55%, 1) 100%);; */
   background: linear-gradient(90deg, hsla(184, 75%, 46%, 1) 0%, hsla(248, 53%, 88%, 1) 100%);
