@@ -327,14 +327,14 @@ color: #007aff !important;
   }
   /* forms */
   .form-select{
-    padding: none;
+    padding: 0  !important;
   }
   .chosen-rtl .chosen-single {
     padding: 10px 8px 10px 11px !important;
 }
 .chosen-container-single .chosen-single{
   background-color: #f4f3f8 !important;
-  border: 1px solid #f4f3f8 !im;
+  border: 1px solid #f4f3f8 !important;
 }
   form#webform-submission-online-consult-add-form , .webform-ajax-form-wrapper{
     max-width: 640px;
