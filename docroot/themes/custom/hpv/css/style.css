@@ -174,9 +174,10 @@ span.language-link.active-language{
 .copyright p{
   font-size: 18px !important;
   text-align: center !important;
+  color: #fff !important;
 }
 .copyright a {
-  color: #020D2B !important;
+  color: #eee !important;
 }
 .hero-landing{
 
