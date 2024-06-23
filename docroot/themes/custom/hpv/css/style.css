@@ -171,7 +171,9 @@ span.language-link.active-language{
   background:none !important;
   background-color: #0D0246 !important;
 }
-
+.copyright a {
+  color: #020D2B;
+}
 .hero-landing{
 
   border-radius: 25px;
@@ -300,6 +302,7 @@ color: #007aff !important;
   background: #E9EEF2 !important;
   border-radius: 2rem;
   width: 95%;
+  padding: 60px 15px 40px;
 }
 
  /* cpanel */
@@ -307,7 +310,7 @@ color: #007aff !important;
     direction: ltr;
  }
  .header-one__right {
-  align-items: baseline;
+  align-items: baseline !important;
  }
 
 
@@ -318,7 +321,17 @@ color: #007aff !important;
   .card-header:first-child{
     background: #fff;
   }
-  
+  /* forms */
+  .form-select{
+    padding: none;
+  }
+  .chosen-rtl .chosen-single {
+    padding: 10px 8px 10px 11px;
+}
+.chosen-container-single .chosen-single{
+  background-color: #f4f3f8;
+  border: 1px solid #f4f3f8;
+}
   form#webform-submission-online-consult-add-form , .webform-ajax-form-wrapper{
     max-width: 640px;
     margin: 0 auto;
@@ -2188,4 +2201,11 @@ Doctors Details Area CSS
 .webform-custom-options-button[data-option-value][aria-checked=true]{
   color: #fff;
   background-color: #020D2B;
+}
+
+.iti__selected-flag{
+  justify-content: flex-end;
+}
+.iti__country-list{
+  z-index: 999;
 }
