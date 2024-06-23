@@ -1695,15 +1695,18 @@ Top Header Area CSS
 .region__topbar{
   justify-content: center !important;
 }
-.option-item .default-btn {
+.option-item .default-btn ,.vaccine-btn {
   background-color: #5DB996;
   color: #ffffff !important;
   border: 1px solid #5DB996;
 }
 
-option-item .default-btn:hover {
+option-item .default-btn:hover ,vaccine-btn:hover{
   background-color: #F82828;
   border: 1px solid #F82828;
+}
+.vaccine-btn {
+  width: 80%;
 }
 .banner-btn {
   margin-top: 20px;
