@@ -1701,12 +1701,12 @@ Top Header Area CSS
   border: 1px solid #5DB996;
 }
 
-option-item .default-btn:hover ,vaccine-btn:hover{
+option-item .default-btn:hover ,{
   background-color: #F82828;
   border: 1px solid #F82828;
 }
 .vaccine-btn {
-  width: 80%;
+  width: 90%;
 }
 .banner-btn {
   margin-top: 20px;
@@ -1715,7 +1715,7 @@ option-item .default-btn:hover ,vaccine-btn:hover{
  .banner-btn .default-btn {
   background-color: #1dc0cc;
 }
- .banner-btn .default-btn:hover {
+ .banner-btn .default-btn:hover,.vaccine-btn:hover {
   background-color: #9588E8;
 }
 
