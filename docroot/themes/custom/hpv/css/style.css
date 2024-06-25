@@ -1701,7 +1701,7 @@ Top Header Area CSS
   border: 1px solid #5DB996;
 }
 
-option-item .default-btn:hover ,{
+option-item .default-btn:hover {
   background-color: #F82828;
   border: 1px solid #F82828;
 }
@@ -2121,9 +2121,7 @@ Doctors Details Area CSS
   border-radius: 20px;
   background-color: #D7ECE4;
   padding: 30px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 165px;
+  margin-bottom: 10px;
 }
 
 .doctor-details-sidebar h3, .doctor-details-sidebar .h3 {
