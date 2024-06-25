@@ -83,14 +83,14 @@
                         <h3> {{ content.field_doctor_name }}</h3>
                         {{ content.body }}
                     </div>
-                    <div class="swiper quote-slider swiper-initialized swiper-horizontal swiper-autoheight swiper-backface-hidden"></div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 aa
-{{ drupal_view('clinic_info_doctor_detail', 'clinic_info') }}
+{{ drupal_view('clinic_info_doctor_detail', 'clinic_info', 'field_doctor_practices_target_id') }}
+{{ drupal_region('user2') }}
 
 <div class="gsc-tabs">
     <div class="tabs_wrapper tabs_">
