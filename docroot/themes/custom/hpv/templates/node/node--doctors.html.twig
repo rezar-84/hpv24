@@ -18,8 +18,8 @@
             {{ content.field_doctor_profile_pic }}
         </div>
         <hr>
-        <div class="col-xl-12 col-md-12">
-            <div class="doctor-details-sidebar">
+        <div class="col-xl-12 col-md-12 d-none d-lg-block" >
+            <div class="doctor-details-sidebar ">
                 <h3>ویژگی‌های و صلاحیت ها</h3>
                 <ul class="info-list">
                     <li>
@@ -58,11 +58,29 @@
             </a>
            
         </div>
+
+        <div class="row justify-content-center">
+            <div class="col-xs-12 d-block d-sm-none ">
+        <div class="doctor-details-sidebar">
+                <h3>ویژگی‌های و صلاحیت ها</h3>
+                <ul class="info-list">
+                    <li>
+                        <h5>تحصیلات و تخصص ها</h5>
+                                        <span>{{ content.field_doctor_specialty }}</span>
+
+                    </li>
+                    <li>
+                        <h5>مدارک</h5>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            </div>
         <div class="row justify-content-center">
             <div class="col-xl-12 col-md-12">
                 <div class="doctor-details-desc">
                     <div class="content">
-                        <h3>درباره {{ content.field_doctor_name }}</h3>
+                        <h3> {{ content.field_doctor_name }}</h3>
                         {{ content.body }}
                     </div>
                     <div class="swiper quote-slider swiper-initialized swiper-horizontal swiper-autoheight swiper-backface-hidden"></div>
