@@ -1905,7 +1905,6 @@ Doctors Details Area CSS
 
 .doctor-details-top-content .title {
   margin-bottom: 25px;
-  padding-right: 200px;
 }
 
 .doctor-details-top-content .title h2, .doctor-details-top-content .title .h2 {
@@ -1978,15 +1977,8 @@ Doctors Details Area CSS
 }
 
 .doctor-details-top-content .social-box {
-  position: absolute;
-  top: 45px;
-  right: 45px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   background-color: #9588E8;
   padding: 5px 7px;
   border-radius: 50px;
