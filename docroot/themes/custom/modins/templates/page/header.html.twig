@@ -46,23 +46,13 @@
 								</div>
 							{% endif %}
 
-							<div class="row ">
-								<div class="banner-btn ">
-									<a href="/online-help" class="default-btn">
-									<i class="fa fa-stethoscope"></i>
-									شروع مشاوره </a>
-									</div>
-									<br>
-									 
-									<div class="option-item ">
-										<a href="/vaccination" class="default-btn">
-										<i class="fa fa-syringe"></i>
-											
-											 واکسن گارداسیل
-										</a>
-										</div>
-							
+								{% if page.user6%}
+							<div class="after-offcanvas hidden ">
+								
+								{{ page.user6 }}
+
 							 </div>
+							 {% endif %}
 							<div class="close-offcanvas hidden"><i class="fa fa-times"></i> {{ 'بستن' | t }}</div>
 
 						</div>
