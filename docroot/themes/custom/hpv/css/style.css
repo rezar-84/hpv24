@@ -178,6 +178,9 @@ span.language-link.active-language{
   background:none !important;
   background-color: #0D0246 !important;
 }
+.footer-ext-menu a{
+  font-size: 12px;
+}
 .copyright p{
   font-size: 18px !important;
   text-align: center !important;
@@ -1790,9 +1793,7 @@ option-item .default-btn:hover {
 .vaccine-btn {
   width: 90%;
 }
-.banner-btn {
-  margin-top: 20px;
-}
+
 
  .banner-btn .default-btn {
   background-color: #1dc0cc;
