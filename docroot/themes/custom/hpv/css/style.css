@@ -324,14 +324,14 @@ span.ui-accordion-header-icon {
     visibility: hidden;
   
   }
-  .cta-consult {
+  .gva-offcanvas-mobile .cta-consult {
     margin-top: 0;
     display: flex;
     justify-content: flex-start;
     align-content: space-between;
     margin-bottom: 10px;
 }
-.cta-vaccine {
+.gva-offcanvas-mobile .cta-vaccine {
   display: flex;
   justify-content: flex-start;
   margin-bottom: 10px;
