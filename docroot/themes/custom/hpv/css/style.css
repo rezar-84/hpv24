@@ -331,6 +331,15 @@ color: #007aff !important;
     background: #fff;
   }
   /* forms */
+
+  .body-page input[type="text"], .body-page input[type="tel"], .body-page input[type="password"], .body-page input[type="email"], .body-page textarea, .body-page select {
+    background-color: #f4f3f8;
+    border: 1px solid #fff;
+
+    padding: 0 30px;
+    box-shadow: none;
+    border-radius: 10px;
+}
   .form-select{
     padding: 0  !important;
   }
@@ -399,6 +408,17 @@ color: #007aff !important;
 .mb-3{    margin-bottom: 1rem !important;
   background: #fffcf6;
 }
+
+.webform-submission-online-consult-form {
+  background: #EAF3F0;
+  padding: 30px;
+  border-radius: 20px;
+}
+.webform-element-more--link:before {
+  content: "◀ ";
+  font-size: 0.8em;
+  cursor: pointer;
+}
 .webform-progress-tracker .progress-step:hover .progress-marker::before, .webform-progress-tracker .progress-step .progress-marker::after{
   background: #020D2B !important;
 }
@@ -409,7 +429,7 @@ color: #007aff !important;
   background-color: #9588E8;
 }
 .webform-progress-tracker .progress-step:not(.is-active){
-  background-color: #e8cfff;
+  background-color: #EAF3F0;
 
 }
 .progress-step.is-active .progress-marker::before {
