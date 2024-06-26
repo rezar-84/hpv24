@@ -309,7 +309,18 @@ span.ui-accordion-header-icon {
     left: 5px;
     right: auto;
  }
- 
+ .gva-offcanvas-mobile .cta-consult {
+  margin-top: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-content: space-between;
+  margin-bottom: 10px;
+}
+.gva-offcanvas-mobile .cta-vaccine {
+display: flex;
+justify-content: flex-start;
+margin-bottom: 10px;
+}
 
 }
 @media (min-width: 1024.1px) {
@@ -324,18 +335,7 @@ span.ui-accordion-header-icon {
     visibility: hidden;
   
   }
-  .gva-offcanvas-mobile .cta-consult {
-    margin-top: 0;
-    display: flex;
-    justify-content: flex-start;
-    align-content: space-between;
-    margin-bottom: 10px;
-}
-.gva-offcanvas-mobile .cta-vaccine {
-  display: flex;
-  justify-content: flex-start;
-  margin-bottom: 10px;
-}
+
 
 }
 
