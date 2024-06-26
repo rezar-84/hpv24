@@ -181,6 +181,7 @@ span.language-link.active-language{
 .footer-ext-menu a{
   font-size: 12px !important;
 }
+ 
 .copyright p{
   font-size: 18px !important;
   text-align: center !important;
@@ -326,6 +327,10 @@ margin-bottom: 10px;
 }
 .banner-btn .default-btn,.option-item .default-btn, .vaccine-btn {
   width: 100%;
+}
+.footer-ext-menu li.menu-item {
+  display: inline-block !important;
+  margin-left: 5px !important;
 }
 }
 @media (min-width: 1024.1px) {
