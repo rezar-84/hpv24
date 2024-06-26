@@ -309,6 +309,12 @@ span.ui-accordion-header-icon {
     left: 5px;
     right: auto;
  }
+ .gva-offcanvas-mobile .header-one__branding {
+ 
+  display: none;
+  visibility: hidden;
+
+} 
 
 }
 @media (min-width: 1024.1px) {
@@ -317,12 +323,7 @@ span.ui-accordion-header-icon {
       border: none !important;
       font-size: 16px;
   }
- .gva-offcanvas-mobile .header-one__branding {
- 
-  display: none;
-  visibility: hidden;
 
-} 
 }
 
 /* breaadcrumb  */
