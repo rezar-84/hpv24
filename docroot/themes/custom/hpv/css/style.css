@@ -321,7 +321,9 @@ display: flex;
 justify-content: flex-start;
 margin-bottom: 10px;
 }
-
+.banner-btn .default-btn,.option-item .default-btn, .vaccine-btn {
+  width: 100%;
+}
 }
 @media (min-width: 1024.1px) {
   .navigation .gva_menu li a .icaret {
