@@ -1743,6 +1743,24 @@ option-item .default-btn:hover {
   background-color: #9588E8;
 }
 
+.cta-row{
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.cta-consult{
+    margin-top: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+.cta-vaccine{
+  display: flex;
+  justify-content: flex-start;
+
+}
+
 .slide-cta {
   background-color: #020D2B;
   color: #fff !important;
