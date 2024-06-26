@@ -349,7 +349,14 @@ margin-bottom: 10px;
 
 
 }
-
+@media (max-width: 767px) {
+  .pricing-vertical ul > li {
+      height: 111px;
+  }
+  .pricing-vertical ul{
+    text-align: right;
+  }
+}
 /* breaadcrumb  */
 .breadcrumb-content-inner {
   margin-bottom: 5px;
