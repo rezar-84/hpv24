@@ -179,7 +179,7 @@ span.language-link.active-language{
   background-color: #0D0246 !important;
 }
 .footer-ext-menu a{
-  font-size: 12px;
+  font-size: 12px !important;
 }
 .copyright p{
   font-size: 18px !important;
