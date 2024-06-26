@@ -236,9 +236,7 @@ span.language-link.active-language{
   .navigation .gva_menu .sub-menu > li {
   border-bottom: none;
   }
-  .navigation .gva_menu .sub-menu > li > a::after{
 
-  }
 }
 /* block  */
 .block .block-title:before{
@@ -311,6 +309,7 @@ span.ui-accordion-header-icon {
     left: 5px;
     right: auto;
  }
+
 }
 @media (min-width: 1024.1px) {
   .navigation .gva_menu li a .icaret {
@@ -318,6 +317,12 @@ span.ui-accordion-header-icon {
       border: none !important;
       font-size: 16px;
   }
+ .gva-offcanvas-mobile .header-one__branding {
+ 
+  display: none;
+  visibility: hidden;
+
+} 
 }
 
 /* breaadcrumb  */
