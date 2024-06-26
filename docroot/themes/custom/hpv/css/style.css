@@ -211,6 +211,11 @@ span.language-link.active-language{
 .topbar__content a{
   color: #002345;
 */
+.gva-offcanvas-mobile .header-one__branding {
+  padding: 3px 7px 1px 10px;
+  float: left;
+
+}
 .navigation .gva_menu > li > a{
   font-size: 18px;
   color: #2b2b5e;
@@ -227,7 +232,7 @@ span.language-link.active-language{
   border-bottom: none;
   }
   .navigation .gva_menu .sub-menu > li > a::after{
-    
+
   }
 }
 /* block  */
