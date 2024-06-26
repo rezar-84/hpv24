@@ -329,8 +329,9 @@ margin-bottom: 10px;
   width: 100%;
 }
 .footer-ext-menu li.menu-item {
-  display: inline-block !important;
-  margin-left: 5px !important;
+  /* display: inline-block !important; */
+  /* margin-left: 5px !important; */
+  list-style: none;
 }
 }
 @media (min-width: 1024.1px) {
