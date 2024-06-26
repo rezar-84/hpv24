@@ -28,7 +28,11 @@
 				<div class="header-one__right">
 					<div class="header-one__main-menu">
 						<div class="gva-offcanvas-mobile">
-							
+							<div class="header-one__branding">
+								{% if page.branding %}
+									{{ page.branding }}
+								{% endif %}
+							</div>
 							
 							<div class="main-menu-inner">
 								{% if page.main_menu %}
