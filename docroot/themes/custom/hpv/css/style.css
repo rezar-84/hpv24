@@ -483,7 +483,7 @@ color: #00cde5 !important;
 }
 
 .webform-submission-online-consult-form {
-  background: #EAF3F0;
+  background: #E1E6EB;
   padding: 30px;
   border-radius: 20px;
 }
@@ -504,7 +504,7 @@ color: #00cde5 !important;
   background-color: #9588E8;
 }
 .webform-progress-tracker .progress-step:not(.is-active){
-  background-color: #EAF3F0;
+  background-color: #E1E6EB;
 
 }
 .progress-step.is-active .progress-marker::before {

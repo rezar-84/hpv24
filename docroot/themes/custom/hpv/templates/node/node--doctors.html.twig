@@ -54,7 +54,7 @@
             </ul>
             <a href="/online-help" class="default-btn">
                 <i class="fa fa-arrow-right"></i>
-                شروع تریاژ آنلاین
+                {{'Start Triage'|t}}
             </a>
            
         </div>
@@ -66,7 +66,7 @@
                 <ul class="info-list">
                     <li>
                         <h5>تحصیلات و تخصص ها</h5>
-                                        <span>{{ content.field_doctor_specialty }}</span>
+                        {{ content.field_doctor_specialty }}
 
                     </li>
                     <li>
@@ -95,8 +95,8 @@ aa
 <div class="gsc-tabs">
     <div class="tabs_wrapper tabs_">
         <ul class="nav nav-tabs">
-            <li><a data-bs-toggle="tab" href="#reviews1">نظرات کاربران</a></li>
-            <li><a data-bs-toggle="tab" href="#cert1">گواهینامه</a></li>
+            <li><a data-bs-toggle="tab" href="#reviews1">{{'User Comments'|t}}</a></li>
+            <li><a data-bs-toggle="tab" href="#cert1">{{'Certificates'| t}}</a></li>
         </ul>
         <div class="tab-content">
             <div id="reviews1" class="tab-pane fade">{{ content.field_doctor_reviews }}</div>
