@@ -95,8 +95,12 @@
 <div class="gsc-tabs">
     <div class="tabs_wrapper tabs_">
         <ul class="nav nav-tabs">
-            <li><a data-bs-toggle="tab" href="#reviews1">{{'User Comments'|t}}</a></li>
-            <li><a data-bs-toggle="tab" href="#cert1">{{'Certificates'| t}}</a></li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#reviews1">{{ 'User Comments'|t }}</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#cert1">{{ 'Certificates'|t }}</a>
+            </li>
         </ul>
         <div class="tab-content">
             <div id="reviews1" class="tab-pane fade">{{ content.field_doctor_reviews }}</div>
