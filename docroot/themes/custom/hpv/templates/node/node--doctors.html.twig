@@ -44,12 +44,12 @@
                 <li>
                     <i class="fa fa-phone"></i>
                     <span>تلفن:
-                        <a href="tel:"> </a>
+                        <a href="tel:">{{content.field_doctor_tel}} </a>
                     </span>
                 </li>
                 <li>
                     <i class="fa fa-map-pin"></i>
-                    <span>نشانی:</span>
+                    <span>نشانی: {{content.field_doctor_address}}	</span>
                 </li>
             </ul>
             <a href="/online-help" class="default-btn">
@@ -70,7 +70,8 @@
 
                     </li>
                     <li>
-                        <h5>مدارک</h5>
+                        <h5>خدمات درمانی</h5>
+                        {{content.field_doctor_services}}
                     </li>
                 </ul>
             </div>
