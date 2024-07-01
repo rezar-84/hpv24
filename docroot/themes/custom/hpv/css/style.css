@@ -1844,3 +1844,6 @@ Doctors Details Area CSS
 .iti__country-list{
   z-index: 9999 !important;
 }
+.post-block.teaser-3{
+  direction: rtl !important;
+}
