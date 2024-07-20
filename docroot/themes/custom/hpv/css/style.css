@@ -798,11 +798,11 @@ clinic-block-one .inner-box .content-box .like-box a {
 /* doctors new */
 
 /* doctor block two */
-.doctor-block-two {
+.doctor-card {
   position: relative;
 }
 
-.doctor-block-two  {
+.doctor-card  {
   position: relative;
   background: #fff !important;
   padding: 25px;
@@ -816,17 +816,17 @@ clinic-block-one .inner-box .content-box .like-box a {
   margin-bottom: 30px;
   border: 1px solid #eee;
 }
-.doctor-block-two:hover  {
+.doctor-card:hover  {
   background: #C4DCF3 !important;
   cursor: pointer;
 }
 
-.doctor-block-two .left-column {
+.doctor-card .left-column {
   /* padding-left: 166px; */
 
 }
 
-.doctor-block-two .content {
+.doctor-card .content {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -835,7 +835,7 @@ clinic-block-one .inner-box .content-box .like-box a {
     justify-content: flex-start;
     align-items: flex-start;
 }
-.doctor-block-two .image {
+.doctor-card .image {
  display: flex;
   border-radius: 20px;
 
@@ -845,71 +845,71 @@ clinic-block-one .inner-box .content-box .like-box a {
   /* box-shadow: 0 10px 40px rgba(0, 24, 73, 0.2); */
   border-radius: 20px;
 }
-.doctor-block-two img{
+.doctor-card img{
   border-radius: 20px;
 
 }
 
-.doctor-block-two h4 {
+.doctor-card h4 {
   font-size: 20px;
   font-family: inherit;
   font-weight: 700;
   margin-bottom: 5px;
 }
 
-.doctor-block-two h4 a {
+.doctor-card h4 a {
   color: var(--theme_dark);
   transition: .5s;
 }
 
-.doctor-block-two h4 a:hover {
+.doctor-card h4 a:hover {
   color: var(--theme_primary);
 }
 
-.doctor-block-two .designation {
+.doctor-card .designation {
   font-size: 16px;
   font-weight: 500;
   color: var(--theme_dark);
   margin-bottom: 6px;
 }
 
-.doctor-block-two .rating {
+.doctor-card .rating {
   position: relative;
   font-size: 13px;
   color: var(--theme_dark);
   margin-bottom: 10px;
 }
 
-.doctor-block-two .text {
+.doctor-card .text {
   position: relative;
   margin: 0;
   line-height: 26px;
 }
 
-.doctor-block-two .right-column {
+.doctor-card .right-column {
   padding-left: 0;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
 }
 
-.doctor-block-two .list {
+.doctor-card .list {
   position: relative;
   margin-bottom: 15px;
 }
 
-.doctor-block-two .list li {
+.doctor-card .list li {
   position: relative;
   font-size: 16px;
   color: var(--theme_dark);
 }
 
-.doctor-block-two .list i {
+.doctor-card .list i {
   margin-right: 10px;
   color: var(--theme_primary);
 }
 
-.doctor-block-two .theme-btn {
+.doctor-card .theme-btn {
   padding: 8.5px 10px;
   min-width: 140px;
   vertical-align: middle;
@@ -919,17 +919,17 @@ clinic-block-one .inner-box .content-box .like-box a {
   border: 2px solid #EBF2F3;
 }
 
-.doctor-block-two .theme-btn:hover {
+.doctor-card .theme-btn:hover {
   background-color: var(--theme_primary);
   border-color: var(--theme_primary);
   color: #fff;
 }
 
-.doctor-block-two .theme-btn:before {
+.doctor-card .theme-btn:before {
   background-color: var(--theme_primary);
 }
 
-.doctor-block-two .like {
+.doctor-card .like {
   margin-left: 5px;
   width: 45px;
   height: 45px;
@@ -942,7 +942,7 @@ clinic-block-one .inner-box .content-box .like-box a {
   transition: .5s;
 }
 
-.doctor-block-two .like:hover {
+.doctor-card .like:hover {
   color: #fff;
   background-color: var(--theme_primary);
   border-color: var(--theme_primary);
