@@ -1513,6 +1513,18 @@ color:#fff;
 /*================================================
 Doctors Details Area CSS
 =================================================*/
+
+input#edit-field-doctor-name-title--2 {
+  max-width: 311px;
+  height: 50px;
+}
+
+.views-field.views-field-field-doctor-rating {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+}
+
 .doctor-details-area {
   padding-top: 30px;
 }
