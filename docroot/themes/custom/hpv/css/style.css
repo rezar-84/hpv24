@@ -1531,14 +1531,11 @@ Doctors Details Area CSS
 .doctor-details-image img {
   border-radius: 20px !important;
 }
-.views-field.views-field-field-doctor-rating {
-  float: left;
-  position: absolute;
-  top: 6rem;
-  left: 2rem;
-}
+
 .doctor-details-top-content {
-  padding: 5px;
+  border-radius: 20px;
+  background-color: #E9EEF2;
+  padding: 45px;
   position: relative;
   margin-bottom: 25px;
 }
