@@ -565,11 +565,14 @@ width: auto;
   float: none;
 }
 
-.webform-submission-form .description {
+.webform-submission-form .description, .webform-confirmation {
   background: #def6d9;
   color: green;
   padding: 1rem;
   border-radius: 10px;
+}
+.webform-confirmation {
+  margin: 2rem;
 }
 
 .js-hide.button {
