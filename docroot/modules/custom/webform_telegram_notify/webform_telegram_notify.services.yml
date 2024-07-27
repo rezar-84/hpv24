@@ -1,0 +1,6 @@
+services:
+  webform_telegram_notify.webform_submission_subscriber:
+    class: Drupal\webform_telegram_notify\EventSubscriber\WebformSubmissionSubscriber
+    arguments: ['@logger.factory', '@http_client', '@config.factory']
+    tags:
+      - { name: event_subscriber }

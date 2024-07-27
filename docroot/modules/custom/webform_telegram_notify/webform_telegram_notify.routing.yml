@@ -1,0 +1,14 @@
+webform_telegram_notify.settings:
+  path: '/admin/config/services/webform-telegram-notify'
+  defaults:
+    _form: '\Drupal\webform_telegram_notify\Form\TelegramSettingsForm'
+    _title: 'Webform Telegram Notify Settings'
+  requirements:
+    _permission: 'administer site configuration'
+webform_telegram_notify.test_log:
+  path: '/admin/webform-telegram-notify/test-log'
+  defaults:
+    _controller: '\Drupal\webform_telegram_notify\Controller\TestLogController::logTest'
+    _title: 'Test Log'
+  requirements:
+    _permission: 'administer site configuration'

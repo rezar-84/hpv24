@@ -1,0 +1,6 @@
+webform_telegram_notify.settings:
+  title: 'Webform Telegram Notify Settings'
+  description: 'Configure Telegram settings for Webform notifications.'
+  parent: system.admin_config_services
+  route_name: webform_telegram_notify.settings
+  weight: 100

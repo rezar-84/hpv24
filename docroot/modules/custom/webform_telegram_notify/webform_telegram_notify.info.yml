@@ -1,0 +1,7 @@
+name: 'Webform Telegram Notify'
+type: module
+description: 'Sends a Telegram message after a webform is submitted.'
+core_version_requirement: ^10
+package: Custom
+dependencies:
+  - drupal:webform
