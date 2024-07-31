@@ -1141,7 +1141,17 @@ clinic-block-one .inner-box .content-box .like-box a {
   vertical-align: middle;
   transition: .5s;
 }
-
+/* tabs */
+.gsc-tabs{
+  background: #E9EEF2;
+}
+.gsc-tabs li.nav-item {
+  margin-right: 0 !important;
+}
+.gsc-tabs .nav-tabs .nav-link.active,.gsc-tabs .nav-tabs .nav-item.show .nav-link{
+  color: #9588E8;
+  background-color: #fff;
+}
 
 /* gallery .story-image */
 .gallery-post .item-image{

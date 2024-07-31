@@ -37,15 +37,17 @@
     </div>
     <div class="col-lg-8 col-md-12">
         <div class="doctor-details-top-content">
+             <div class="rating">
+                        {{ content.field_doctor_rating }}
+                    </div>
             <div class="title">
                 <h2>{{ content.field_doctor_name }}</h2>
+                
                 <span>{{ content.field_doctor_specialty }}</span>
                 <br/>
                 <span>{{ content.field_doctor_reg_code }}</span>
             </div>
-            <div class="rating">
-                        {{ content.field_doctor_rating }}
-                    </div>
+       
             <ul class="list">
                 <li>
                     <i class="fa fa-phone"></i>
