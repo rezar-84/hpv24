@@ -1000,6 +1000,7 @@ clinic-block-one .inner-box .content-box .like-box a {
   border-radius: 20px;
   padding: 40px;
   direction: ltr;
+  margin-bottom: 15px;
 }
 .doctor-testimonial-card .owl-carousel .owl-nav{
   opacity: 1;
