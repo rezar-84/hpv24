@@ -995,7 +995,12 @@ clinic-block-one .inner-box .content-box .like-box a {
   border-radius: 10px;
 }
 
-
+.doctor-testimonial-card{
+  background: #D6D2F1;
+  border-radius: 20px;
+  padding: 40px;
+  direction: ltr;
+}
 /* doctor block four */
 .doctor-block-four {
   position: relative;
@@ -1147,12 +1152,20 @@ clinic-block-one .inner-box .content-box .like-box a {
 /* tabs */
 .gsc-tabs .nav-tabs{
   background: #E9EEF2;
+  border: none;
 }
 .gsc-tabs li.nav-item {
   margin-right: 0 !important;
 }
 .gsc-tabs .nav-tabs .nav-link{
   font-size: 20px;
+}
+.gsc-tabs .nav-tabs .nav-link {
+  margin-bottom: -0;
+  background: none;
+  border: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 .gsc-tabs .nav-tabs .nav-link.active,.gsc-tabs .nav-tabs .nav-item.show .nav-link{
   color: #9588E8;
@@ -1168,6 +1181,9 @@ clinic-block-one .inner-box .content-box .like-box a {
  
   top: -2px;
   background-color:#9588E8 ;
+}
+.tab-content.is-b-visible{
+  padding-top: 10px;
 }
 /* gallery .story-image */
 .gallery-post .item-image{
