@@ -95,7 +95,8 @@
                 </div>
                 <div class="doctor-testimonial-card">
                 <div class="quote">
-                    <img decoding="async" src="../../images/quote.svg" alt="Quote Image">
+                    <img src="{{ source(directory ~ '/images/quote.svg')|data_uri('image/svg+xml') }}" alt="{{ 'Quote'|t }}"/>
+
                 </div>
                     {{ drupal_region('user3') }}
                 </div>
