@@ -1159,7 +1159,16 @@ clinic-block-one .inner-box .content-box .like-box a {
   background-color: #fff;
   font-size: 20px;
 }
-
+.gsc-tabs .nav-tabs .nav-link.active::before,.gsc-tabs .nav-tabs .nav-item.show .nav-link:hover{
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 3px;
+ 
+  top: -2px;
+  background-color:#9588E8 ;
+}
 /* gallery .story-image */
 .gallery-post .item-image{
   border-radius: 50%;
