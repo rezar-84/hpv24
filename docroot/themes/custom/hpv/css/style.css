@@ -847,9 +847,12 @@ clinic-block-one .inner-box .content-box .like-box a {
 .field.field--name-field-doctor-profile-pic.field--type-image.field--label-hidden.field__item {
   /* box-shadow: 0 10px 40px rgba(0, 24, 73, 0.2); */
   border-radius: 20px;
+  display: flex;
+  justify-content: center;
 }
 .doctor-card img{
   border-radius: 20px;
+
 
 }
 
@@ -1148,9 +1151,13 @@ clinic-block-one .inner-box .content-box .like-box a {
 .gsc-tabs li.nav-item {
   margin-right: 0 !important;
 }
+.gsc-tabs .nav-tabs .nav-link{
+  font-size: 20px;
+}
 .gsc-tabs .nav-tabs .nav-link.active,.gsc-tabs .nav-tabs .nav-item.show .nav-link{
   color: #9588E8;
   background-color: #fff;
+  font-size: 20px;
 }
 
 /* gallery .story-image */
