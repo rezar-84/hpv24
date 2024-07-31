@@ -1001,6 +1001,25 @@ clinic-block-one .inner-box .content-box .like-box a {
   padding: 40px;
   direction: ltr;
 }
+.doctor-testimonial-card .owl-carousel .owl-nav{
+  opacity: 1;
+  transition: opacity 0.3s;
+  bottom: 10px;
+  position: absolute;
+  right: 10px;
+
+}
+.doctor-testimonial-card .owl-carousel .owl-nav > div.owl-prev{
+  right:50px;
+  left:auto;
+}
+.doctor-testimonial-card .owl-carousel .owl-nav > div.owl-next{
+  right:0;
+}
+.doctor-testimonial-card .owl-carousel .owl-nav > div{
+  background: none;
+  border-radius: 50%;
+}
 /* doctor block four */
 .doctor-block-four {
   position: relative;
