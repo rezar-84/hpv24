@@ -1145,7 +1145,7 @@ clinic-block-one .inner-box .content-box .like-box a {
   transition: .5s;
 }
 /* tabs */
-.gsc-tabs{
+.gsc-tabs .nav-tabs{
   background: #E9EEF2;
 }
 .gsc-tabs li.nav-item {
