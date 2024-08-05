@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "518038e702cd2275e4dfc0667f30b901",
+    "content-hash": "b2f92577cc8f12a77557d98a5a35b6c3",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -16152,6 +16152,94 @@
             "homepage": "https://www.drupal.org/project/symfony_mailer",
             "support": {
                 "source": "https://git.drupalcode.org/project/symfony_mailer"
+            }
+        },
+        {
+            "name": "drupal/tagclouds",
+            "version": "2.0.8",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/tagclouds.git",
+                "reference": "2.0.8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/tagclouds-2.0.8.zip",
+                "reference": "2.0.8",
+                "shasum": "d98a9472344821d36fbc17e92d34dd3b64ccdc07"
+            },
+            "require": {
+                "drupal/core": "^9.5 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.8",
+                    "datestamp": "1711308772",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "amourow",
+                    "homepage": "https://www.drupal.org/user/281473"
+                },
+                {
+                    "name": "andrey.troeglazov",
+                    "homepage": "https://www.drupal.org/user/3145389"
+                },
+                {
+                    "name": "Andriy Parkhomiuk",
+                    "homepage": "https://www.drupal.org/user/2565426"
+                },
+                {
+                    "name": "dejan0",
+                    "homepage": "https://www.drupal.org/user/3634531"
+                },
+                {
+                    "name": "joseph.olstad",
+                    "homepage": "https://www.drupal.org/user/1321830"
+                },
+                {
+                    "name": "martin107",
+                    "homepage": "https://www.drupal.org/user/2659379"
+                },
+                {
+                    "name": "MGParisi",
+                    "homepage": "https://www.drupal.org/user/243021"
+                },
+                {
+                    "name": "mxr576",
+                    "homepage": "https://www.drupal.org/user/315522"
+                },
+                {
+                    "name": "nikolas.tatianenko",
+                    "homepage": "https://www.drupal.org/user/1579942"
+                },
+                {
+                    "name": "NitinSP",
+                    "homepage": "https://www.drupal.org/user/2198938"
+                },
+                {
+                    "name": "oriol_e9g",
+                    "homepage": "https://www.drupal.org/user/66422"
+                },
+                {
+                    "name": "scito",
+                    "homepage": "https://www.drupal.org/user/1094714"
+                }
+            ],
+            "description": "TagClouds makes weighted tag clouds from your taxonomy terms.",
+            "homepage": "https://www.drupal.org/project/tagclouds",
+            "support": {
+                "source": "https://git.drupalcode.org/project/tagclouds"
             }
         },
         {

@@ -34,7 +34,7 @@ float: right;
 .feature-carousel,.porfolio-carousel,.blog-carousel,.testimonial-main ,.landing-ltr , .ltr-carousel{
     direction:ltr
 }
-.feature-one__single{
+f{
     direction:rtl
 }
 
@@ -1169,6 +1169,9 @@ clinic-block-one .inner-box .content-box .like-box a {
   vertical-align: middle;
   transition: .5s;
 }
+.comment .links li{
+  list-style: none !important;
+}
 /* tabs */
 .gsc-tabs .nav-tabs{
   background: #E9EEF2;
@@ -1872,6 +1875,14 @@ input#edit-field-doctor-name-title--2 {
 
 
 /* magazine */
+.node-detail .post-block .post-title ,.post-block .post-title{
+
+  font-size: 20px;
+  line-height: 34px;
+}
+.post-block {
+  margin-bottom: 2px;
+}
 
 .post-block.teaser-1 .content-inner{
   min-height: 280px;
