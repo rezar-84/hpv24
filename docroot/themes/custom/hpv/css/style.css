@@ -1880,9 +1880,7 @@ input#edit-field-doctor-name-title--2 {
   font-size: 20px;
   line-height: 34px;
 }
-.post-block {
-  margin-bottom: 2px;
-}
+
 
 .post-block.teaser-1 .content-inner{
   min-height: 280px;
@@ -1935,3 +1933,6 @@ input#edit-field-doctor-name-title--2 {
 .post-block.teaser-3{
   direction: rtl !important;
 }
+
+
+/* styles */
