@@ -12,6 +12,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
     font-family: 'Vazirmatn', sans-serif !important;
 
 }
+h1{
+  line-height: 1.6em;
+}
 .gavias_sliderlayer .inner.btn-slide, .gavias_sliderlayer .btn-slide a, #gavias_slider_single .inner.btn-slide, #gavias_slider_single .btn-slide a {
 
   font-family: 'Vazirmatn', sans-serif !important;
