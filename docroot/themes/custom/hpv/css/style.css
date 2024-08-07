@@ -1273,6 +1273,9 @@ input#edit-field-doctor-specialty-target-id--2 {
   padding-right: 18px;
   background-position: right center;
   padding-left: 3px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgb(234, 236, 240);
+
 }
 .region__sidebar-left .block-views-exposed-filter-blockdoctors-page-1{
 
@@ -1283,6 +1286,28 @@ input#edit-field-doctor-specialty-target-id--2 {
   border-bottom: 1px solid rgb(234, 236, 240);
   padding: 16px 0px 14px;
 }
+
+div#edit-actions--2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+input#edit-submit-doctors--2, input#edit-reset--2 {
+  margin: 0.5rem;
+  height: 45px;
+  font-size: 14px;
+  padding: 3px;
+  width: 70%;
+
+}
+
+input#edit-reset--2 {
+    color: rgb(240, 68, 56) !important;
+    background-color: rgb(254, 243, 242) !important;
+    border-radius: 20px;
+}
+
 
 /* topbar */
 
