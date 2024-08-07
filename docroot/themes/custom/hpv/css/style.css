@@ -1267,6 +1267,23 @@ background: url("../images/24-7.png") no-repeat center center;
 }
 
 
+input#edit-field-doctor-specialty-target-id--2 {
+  max-width: 304px;
+  min-height: 60px;
+  padding-right: 18px;
+  background-position: right center;
+  padding-left: 3px;
+}
+.region__sidebar-left .block-views-exposed-filter-blockdoctors-page-1{
+
+ background: #fff;
+  border: 1px solid rgb(234, 236, 240);
+}
+.region__sidebar-left .js-form-item-field-doctor-name-title {
+  border-bottom: 1px solid rgb(234, 236, 240);
+  padding: 16px 0px 14px;
+}
+
 /* topbar */
 
 .topbar-social {
