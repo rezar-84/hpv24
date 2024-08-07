@@ -383,7 +383,9 @@ margin-bottom: 10px;
 #block-hpv-breadcrumbs h2{
   color: #020D2B;
 }
-
+.breadcrumb-content-inner .gva-block-breadcrumb .page-title{
+  font-size: 20px;
+}
 
 .breadcrumb-style.gva-parallax-background{
     background: none !important;
@@ -400,9 +402,9 @@ color: #00cde5 !important;
 .breadcrumb-content-inner .breadcrumb-content-main {
   max-width: 1630px;
   background: #E9EEF2 !important;
-  border-radius: 2rem;
-  width: 95%;
-  padding: 60px 15px 40px;
+  border-radius: 1rem;
+  width: 90%;
+  padding: 20px 15px 20px;
 }
 
  /* cpanel */
