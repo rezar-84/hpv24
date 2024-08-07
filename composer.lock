@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "705391aeae88e756745fdb5269bc50ad",
+    "content-hash": "741115d9fb46472a1c05517b2621b13a",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -5596,6 +5596,75 @@
             }
         },
         {
+            "name": "drupal/cookies",
+            "version": "1.2.12",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/cookies.git",
+                "reference": "1.2.12"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/cookies-1.2.12.zip",
+                "reference": "1.2.12",
+                "shasum": "7a5d2cbada9465f0043d098e8641ac1cce5f4925"
+            },
+            "require": {
+                "drupal/core": "^8.9 || ^9 || ^10",
+                "jfeltkamp/cookiesjsr": "^1.0.12"
+            },
+            "require-dev": {
+                "drupal/asset_injector": "^2",
+                "drupal/facebook_pixel": "^2.0",
+                "drupal/google_analytics": "^4.0",
+                "drupal/google_tag": "^2.0",
+                "drupal/ivw_integration": "^2.0",
+                "drupal/matomo": "^1.0",
+                "drupal/media_entity_instagram": "^3.0",
+                "drupal/media_entity_twitter": "^2.0",
+                "drupal/recaptcha": "^3.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.2.12",
+                    "datestamp": "1710755762",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Anybody",
+                    "homepage": "https://www.drupal.org/user/291091"
+                },
+                {
+                    "name": "Grevil",
+                    "homepage": "https://www.drupal.org/user/3668491"
+                },
+                {
+                    "name": "JFeltkamp",
+                    "homepage": "https://www.drupal.org/user/2471686"
+                },
+                {
+                    "name": "thomas.frobieter",
+                    "homepage": "https://www.drupal.org/user/409335"
+                }
+            ],
+            "description": "Cookie consent tool.",
+            "homepage": "https://www.drupal.org/project/cookies",
+            "support": {
+                "source": "http://cgit.drupalcode.org/cookies",
+                "issues": "https://www.drupal.org/project/issues/cookies"
+            }
+        },
+        {
             "name": "drupal/core",
             "version": "10.2.5",
             "source": {
@@ -7977,6 +8046,79 @@
             }
         },
         {
+            "name": "drupal/eu_cookie_compliance",
+            "version": "1.24.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/eu-cookie-compliance.git",
+                "reference": "8.x-1.24"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/eu_cookie_compliance-8.x-1.24.zip",
+                "reference": "8.x-1.24",
+                "shasum": "ab8dcd866e5ad95cde6fdf9cbca509c7f399bd23"
+            },
+            "require": {
+                "drupal/core": "^8.9 || ^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.24",
+                    "datestamp": "1665158185",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Marcin Pajdzik",
+                    "homepage": "https://www.drupal.org/u/marcin-pajdzik",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Sven Berg Ryen",
+                    "homepage": "https://www.drupal.org/u/svenryen",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Neslee Canil Pinto",
+                    "homepage": "https://www.drupal.org/u/neslee-canil-pinto",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "See other contributors",
+                    "homepage": "https://www.drupal.org/node/1538032/committers"
+                },
+                {
+                    "name": "svenryen",
+                    "homepage": "https://www.drupal.org/user/667244"
+                }
+            ],
+            "description": "This module aims at making the website compliant with the new EU cookie regulation.",
+            "homepage": "https://drupal.org/project/eu_cookie_compliance",
+            "keywords": [
+                "Cookie",
+                "CookieCompliance",
+                "Drupal",
+                "GDPR"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/eu-cookie-compliance",
+                "docs": "https://www.drupal.org/docs/contributed-modules/eu-cookie-compliance",
+                "forum": "https://drupal.stackexchange.com/search?q=eu+cookie+compliance",
+                "issues": "https://www.drupal.org/project/issues/eu_cookie_compliance?version=8.x",
+                "slack": "https://app.slack.com/client/T06GX3JTS/C012XBTH81E"
+            }
+        },
+        {
             "name": "drupal/eva",
             "version": "3.0.0",
             "source": {
@@ -9458,21 +9600,20 @@
         },
         {
             "name": "drupal/google_tag",
-            "version": "2.0.4",
+            "version": "2.0.6",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/google_tag.git",
-                "reference": "2.0.4"
+                "reference": "2.0.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/google_tag-2.0.4.zip",
-                "reference": "2.0.4",
-                "shasum": "a56bcdb566bf1af54dc0c8871eb720ba54f1392e"
+                "url": "https://ftp.drupal.org/files/projects/google_tag-2.0.6.zip",
+                "reference": "2.0.6",
+                "shasum": "c8f2895a81a7898ac909bdc693fcd25ffe6f62be"
             },
             "require": {
-                "drupal/core": "^9.5 || ^10",
-                "php": "^7.4 || ^8"
+                "drupal/core": "^9.5 || ^10 || ^11"
             },
             "require-dev": {
                 "drupal/commerce": "^2.0",
@@ -9486,8 +9627,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.4",
-                    "datestamp": "1709073204",
+                    "version": "2.0.6",
+                    "datestamp": "1721948116",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -9523,7 +9664,7 @@
                     "homepage": "https://www.drupal.org/user/240748"
                 }
             ],
-            "description": "Sets up Google Tag",
+            "description": "Provides support for Google Tag and Google Tag Manager in Drupal.",
             "homepage": "https://www.drupal.org/project/google_tag",
             "support": {
                 "source": "https://git.drupalcode.org/project/google_tag"
@@ -21201,6 +21342,33 @@
                 "source": "https://github.com/J7mbo/twitter-api-php/tree/master"
             },
             "time": "2017-05-08T12:10:56+00:00"
+        },
+        {
+            "name": "jfeltkamp/cookiesjsr",
+            "version": "1.0.13",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jfeltkamp/cookiesjsr.git",
+                "reference": "a25132aadb01975cbe77dc7746fd5cf15f06d246"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jfeltkamp/cookiesjsr/zipball/a25132aadb01975cbe77dc7746fd5cf15f06d246",
+                "reference": "a25132aadb01975cbe77dc7746fd5cf15f06d246",
+                "shasum": ""
+            },
+            "type": "drupal-library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Cookie consent tool.",
+            "homepage": "https://github.com/jfeltkamp/cookiesjsr",
+            "support": {
+                "issues": "https://github.com/jfeltkamp/cookiesjsr/issues",
+                "source": "https://github.com/jfeltkamp/cookiesjsr.git"
+            },
+            "time": "2022-03-25T09:05:23+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
