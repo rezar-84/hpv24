@@ -286,28 +286,43 @@ span.ui-accordion-header-icon {
 }
 
 .ui-accordion .ui-accordion-header {
-    padding: 25px 40px 25px 25px;
+    padding: 15px 20px 15px 15px;
     color: #222222;
     position: relative;
     display: block;
     text-transform: capitalize;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     cursor: pointer;
     background: #f6f7f9;
     border: none;
     border-radius: 5px;
 }
+.ui-accordion .ui-accordion-header:hover{
+ background: #C4DCF3 !important ;
+  color: #fff;
+}
 .ui-accordion h3.ui-state-active {
 
     background: #e5e7e9;
 
 }
-.ui-icon-triangle-1-e {
-    background-position: -94px -16px;
+
+
+.ui-accordion-header .ui-icon-triangle-1-e {
+  background-position: -31px -127px;
 }
-
-
+.ui-accordion-header .ui-icon-triangle-1-s {
+  background-position: -61px -126px;
+}
+.faq-block {
+  background: rgb(255 255 255) !important;
+  padding: 21px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  box-shadow: 10px 10px 30px rgb(0 0 0 / 5%);
+}
 
 /* /mobile menu
  */
@@ -1307,6 +1322,7 @@ input#edit-reset--2 {
     background-color: rgb(254, 243, 242) !important;
     border-radius: 20px;
 }
+
 
 
 /* topbar */
