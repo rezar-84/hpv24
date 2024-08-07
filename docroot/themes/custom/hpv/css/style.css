@@ -1187,6 +1187,18 @@ clinic-block-one .inner-box .content-box .like-box a {
 .comment .links li{
   list-style: none !important;
 }
+
+
+
+.info-card {
+  background: #fff;
+  box-shadow: 10px 10px 30px rgb(0 0 0 / 5%);
+  padding: 22px 22px;
+  border-radius: 10px;
+  margin: 10px 0;
+  border: 1px solid #eee;
+  font-size: 12px;
+}
 /* tabs */
 .gsc-tabs .nav-tabs{
   background: #E9EEF2;
