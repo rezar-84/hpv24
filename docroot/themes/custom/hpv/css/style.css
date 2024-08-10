@@ -40,7 +40,10 @@ pre {
   font-family: monospace, monospace;
   font-size: 1em;
 }
-pre[language-plaintext]:after {
+pre code {
+  unicode-bidi: isolate;
+}
+pre .language-plaintext:after {
   background: #757575;
   color: #fff;
   font-family:Helvetica,Arial,Tahoma,Verdana,Sans-Serif;
