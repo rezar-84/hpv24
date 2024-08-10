@@ -305,6 +305,10 @@ span.language-link.active-language{
 .blog-menu.navigation .gva_menu > li {
   display: list-item;
 }
+.blog-menu.navigation .gva_menu > li > a{
+  padding:3px ;
+  font-size: 14px;
+}
 
 /* faq */
 span.ui-accordion-header-icon {
