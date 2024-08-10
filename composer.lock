@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "741115d9fb46472a1c05517b2621b13a",
+    "content-hash": "90c3852e00dc5a7f688377c5ec8e5976",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -2788,6 +2788,10 @@
                 {
                     "name": "sepgil",
                     "homepage": "https://www.drupal.org/user/512828"
+                },
+                {
+                    "name": "sickness29",
+                    "homepage": "https://www.drupal.org/user/2586096"
                 }
             ],
             "description": "Enhanced autocomplete using Jquery UI autocomplete.",
