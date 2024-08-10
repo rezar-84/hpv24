@@ -1240,9 +1240,14 @@ clinic-block-one .inner-box .content-box .like-box a {
   background: none !important;
   color: #666;
   box-shadow: 10px 10px 30px rgb(0 0 0 / 5%);
-  font-size: 31px;
-  padding: 30px 30px 1px 30px;
+  font-size: 24px;
+  padding: 1.3rem 4rem 0.3rem 4rem;
   border: 1px solid #eee;
+  height: 42px;
+}
+.info-card a.button:hover {
+  background: none !important;
+  color: #00cde5;
 }
 /* tabs */
 .gsc-tabs .nav-tabs{
