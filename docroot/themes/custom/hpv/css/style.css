@@ -1231,9 +1231,18 @@ clinic-block-one .inner-box .content-box .like-box a {
   box-shadow: 10px 10px 30px rgb(0 0 0 / 5%);
   padding: 22px 22px;
   border-radius: 10px;
-  margin: 10px 0;
+  margin: 12px 0;
   border: 1px solid #eee;
   font-size: 12px;
+}
+
+.info-card a.button {
+  background: none !important;
+  color: #666;
+  box-shadow: 10px 10px 30px rgb(0 0 0 / 5%);
+  font-size: 31px;
+  padding: 30px 30px 1px 30px;
+  border: 1px solid #eee;
 }
 /* tabs */
 .gsc-tabs .nav-tabs{
