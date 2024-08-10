@@ -290,17 +290,20 @@ span.language-link.active-language{
     content: "\ec45";
 }
 
-.skin-care-blog-card .blog-content .entry-meta li:last-child {
-    margin-right: 0;
+
+.blog-menu.navigation {
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
 }
-.skin-care-blog-card .blog-content h3 {
-    font-size: 24px;
-    font-weight: 500;
-    font-family: 'Vazirmatn', sans-serif !important ;
-    line-height: 1.5;
+.blog-menu.navigation .gva_menu {
+  display: flex;
+  width: 95%;
+  flex-direction: column;
 }
-.skin-care-blog-card .blog-content h3 a {
-    color: #002345;
+
+.blog-menu.navigation .gva_menu > li {
+  display: list-item;
 }
 
 /* faq */
