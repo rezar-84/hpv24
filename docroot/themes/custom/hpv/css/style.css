@@ -23,6 +23,34 @@ h1{
     font-family: 'Vazirmatn', sans-serif !important ;
 
 }
+pre {
+  background: hsla(0, 0%, 78%, .3);
+  border: 1px solid #c4c4c4;
+  border-radius: 2px;
+  color: #353535;
+  direction: ltr;
+  font-style: normal;
+  min-width: 200px;
+  padding: 1em;
+  tab-size: 4;
+  text-align: left;
+  white-space: pre-wrap;
+}
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+pre[language-plaintext]:after {
+  background: #757575;
+  color: #fff;
+  font-family:Helvetica,Arial,Tahoma,Verdana,Sans-Serif;
+  font-size: 10px;
+  line-height: 16px;
+  right: 10px;
+  top: -1px;
+  white-space: nowrap;
+}
+
 .gavias_sliderlayer{
     direction:ltr;
 }
