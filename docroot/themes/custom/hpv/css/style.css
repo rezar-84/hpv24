@@ -35,8 +35,6 @@ pre {
   tab-size: 4;
   text-align: left;
   white-space: pre-wrap;
-}
-pre {
   font-family: monospace, monospace;
   font-size: 1em;
 }
@@ -192,7 +190,7 @@ span.language-link.active-language{
 .menu-bar{
     right:10px;
     left: auto;
-    width: 32;
+    width: 32px;
 }
 .menu-bar span{
   width: 32px;
@@ -214,7 +212,7 @@ span.language-link.active-language{
   }
 }
 .header-one__left{
-  padding-left:5 ;
+  padding-left:5px;
   padding-right: 20px;
 }
 .gsc-call-to-action.skin-v1{
@@ -520,7 +518,6 @@ color: #00cde5 !important;
 
   .webform-submission-form .form-item input[type="radio"] + label {
     display: block;
-    vertical-align: middle;
     cursor: pointer;
     color: #fff;
     background-color: #9588E8;
@@ -892,11 +889,6 @@ clinic-block-one .inner-box .content-box .like-box a {
   cursor: pointer;
 }
 
-.doctor-card .left-column {
-  /* padding-left: 166px; */
-
-}
-
 .doctor-card .content {
   display: flex;
   flex-wrap: wrap;
@@ -1050,7 +1042,6 @@ clinic-block-one .inner-box .content-box .like-box a {
 }
 
 .post-pagination li a {
-  color: var(--theme_dark);
   display: block;
   transition: .5s;
 }
@@ -1058,7 +1049,6 @@ clinic-block-one .inner-box .content-box .like-box a {
 .post-pagination li a:hover,
 .post-pagination li .current {
   color: #fff;
-  background: var(--theme_primary);
   display: block;
   border-radius: 10px;
 }
@@ -1311,9 +1301,6 @@ clinic-block-one .inner-box .content-box .like-box a {
   transition: none;
 }
 .story .images img {
-  -webkit-transition: all 5s;
-
-  /* background: linear-gradient(90deg, hsla(197, 100%, 64%, 1) 0%, hsla(339, 100%, 55%, 1) 100%); */
   background: linear-gradient(
     60deg,
     hsl(224, 85%, 66%),
@@ -1714,13 +1701,6 @@ color:#fff;
   color:#020D2B;
   background-position: left 0.75rem center;
 }
-
-
-
-.body-page input[type="text"], .body-page input[type="tel"], .body-page input[type="password"], .body-page input[type="email"], .body-page textarea, .body-page select {
-
-}
-
 
 
 /*================================================
