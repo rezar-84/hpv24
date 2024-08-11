@@ -170,6 +170,14 @@ span.language-link.active-language{
 
 
 /* navigation */
+@media (min-width: 1025px) {
+  .header-one__main-menu .navigation .gva_menu {
+      float: none;
+      text-align: right;
+      display: flex;
+      justify-content: space-between;
+      width: 95%;
+  }
 @media (max-width: 1024px) {
 .header-one__main-inner{
   flex-direction: row-reverse;
@@ -177,8 +185,8 @@ span.language-link.active-language{
 }
 @media (min-width: 1024.1px) {
   .navigation .gva_menu > li > a {
-
-    padding: 30px 18px;
+    
+    padding: 30px 12px;
   }}
 .menu-bar{
     right:10px;
@@ -1341,6 +1349,9 @@ clinic-block-one .inner-box .content-box .like-box a {
   width: 60%;
   text-align: center;
 }
+.cta-vaccine .default-btn i{
+  left:15px;
+}
 
 .image-content-seven__image:before{
 
@@ -1533,6 +1544,9 @@ option-item .default-btn:hover {
  .banner-btn .default-btn:hover,.vaccine-btn:hover {
   background-color: #9588E8;
 }
+.header-information{
+  min-width: 31%;
+}
 
 .cta-row{
   display: flex;
@@ -1541,6 +1555,7 @@ option-item .default-btn:hover {
   justify-content: space-between;
   flex-direction: row;
 }
+
 .cta-consult{
     margin-top: 0;
     display: flex;
