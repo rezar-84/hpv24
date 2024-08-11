@@ -386,6 +386,7 @@ margin-bottom: 10px;
 }
 .banner-btn .default-btn,.option-item .default-btn, .vaccine-btn {
   width: 100%;
+  padding: 10px 20px 10px 45px !important;
 }
 .footer-ext-menu li.menu-item {
   /* display: inline-block !important; */
