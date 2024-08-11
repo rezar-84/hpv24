@@ -175,8 +175,8 @@ span.language-link.active-language{
       float: none;
       text-align: right;
       display: flex;
-      justify-content: space-between;
-      width: 95%;
+      justify-content: space-around;
+      /* width: 90%; */
   }
 @media (max-width: 1024px) {
 .header-one__main-inner{
@@ -1540,6 +1540,7 @@ option-item .default-btn:hover {
 
  .banner-btn .default-btn {
   background-color: #1dc0cc;
+  padding: 10px 16px 10px 46px;
 }
  .banner-btn .default-btn:hover,.vaccine-btn:hover {
   background-color: #9588E8;
