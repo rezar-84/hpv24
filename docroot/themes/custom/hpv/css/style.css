@@ -178,6 +178,7 @@ span.language-link.active-language{
       justify-content: space-around;
       /* width: 90%; */
   }
+}
 @media (max-width: 1024px) {
 .header-one__main-inner{
   flex-direction: row-reverse;
