@@ -51,6 +51,10 @@ pre .language-plaintext:after {
   top: -1px;
   white-space: nowrap;
 }
+.field--name-body a{
+  color: #9588E8;
+
+}
 
 .gavias_sliderlayer{
     direction:ltr;
