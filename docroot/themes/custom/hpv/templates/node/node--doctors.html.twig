@@ -23,7 +23,7 @@
                 <h3>ویژگی‌ها و صلاحیت‌ها</h3>
                     <ul class="info-list">
                         <li>
-                            <h5>تحصیلات و تخصص‌ها</h5>
+                            <h4>تحصیلات و تخصص‌ها</h4>
                             {{ content.field_doctor_specialty }}
                         </li>
                      </ul>
@@ -42,11 +42,10 @@
             <div class="rating">
                 {{ content.field_doctor_rating }}
             </div>
-            <div class="title">
+            <div class="doctors-main-info">
                 <h2>{{ content.field_doctor_name }}</h2>
-                <span>{{ content.field_doctor_specialty }}</span>
-                <br/>
-                <span>{{ content.field_doctor_reg_code }}</span>
+                <div class="doctos-specialty">{{ content.field_doctor_specialty }}</div>
+                <div class="doctors-reg-info">{{ content.field_doctor_reg_code }}</div>
             </div>
             <ul class="list">
                 {% for tel in content.field_doctor_tel %}
