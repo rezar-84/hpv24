@@ -46,16 +46,17 @@
                 <span>{{ content.field_doctor_reg_code }}</span>
             </div>
             <ul class="list">
-                {% if content.field_doctor_tel is defined and content.field_doctor_tel|length > 0 %}
-                    {% for tel in content.field_doctor_tel %}
-                        <li>
-                            <i class="fa fa-phone"></i>
-                            <span>
-                                <a href="tel:{{ content.field_doctor_tel }}">{{ content.field_doctor_tel }}</a>
-                            </span>
-                        </li>
-                    {% endfor %}
-                {% endif %}
+                {% if content.field_doctor_tel is defined %}
+                {% for tel in content.field_doctor_tel %}
+                    <li>
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            <a href="tel:{{ tel }}">{{ tel }}</a>
+                        </span>
+                    </li>
+                {% endfor %}
+            {% endif %}
+            
                 <li>
                     <i class="fa fa-map-pin"></i>
                     <span>{{ content.field_doctor_address }}</span>
