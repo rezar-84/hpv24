@@ -1754,12 +1754,19 @@ input#edit-field-doctor-name-title--2 {
   font-weight: 800;
   margin-bottom: 0;
 }
-
-.doctor-details-top-content .title span {
-  display: block;
+.doctos-specialty .field__item, .doctors-reg-info .field__item {
+  padding: 0px 10px;
+}
+.doctos-specialty .field__items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  margin: 0px 14px;
+}
+.doctor-details-top-content .field__label {
   font-size: 18px;
   color: #9588E8;
-  display: block;
   margin-top: 12px;
 }
 
