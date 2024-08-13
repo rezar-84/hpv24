@@ -47,15 +47,16 @@
             </div>
             <ul class="list">
                 {% if content.field_doctor_tel is defined %}
-                {% for tel in content.field_doctor_tel %}
+                {% for item in content.field_doctor_tel %}
                     <li>
                         <i class="fa fa-phone"></i>
                         <span>
-                            <a href="tel:{{ tel }}">{{ tel }}</a>
+                            <a href="tel:{{ item['#markup'] }}">{{ item['#markup'] }}</a>
                         </span>
                     </li>
                 {% endfor %}
             {% endif %}
+            
             
                 <li>
                     <i class="fa fa-map-pin"></i>
