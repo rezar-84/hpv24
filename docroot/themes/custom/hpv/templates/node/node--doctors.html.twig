@@ -1,4 +1,4 @@
-{%
+{% 
 	set classes = [
 		'node',
 		'node-detail',
@@ -10,26 +10,25 @@
 		'clearfix',
 	]
 %}
-   
-  <!-- Start Display doctor for detail page -->
- <div class="row justify-content-center">
+
+<!-- Start Display doctor for detail page -->
+<div class="row justify-content-center">
     <div class="col-lg-4 col-md-12">
         <div class="doctor-details-image">
             {{ content.field_doctor_profile_pic }}
         </div>
         <hr>
-        <div class="col-xl-12 col-md-12 d-none d-lg-block" >
-            <div class="doctor-details-sidebar ">
-                <h3>ویژگی‌های و صلاحیت ها</h3>
+        <div class="col-xl-12 col-md-12 d-none d-lg-block">
+            <div class="doctor-details-sidebar">
+                <h3>ویژگی‌ها و صلاحیت‌ها</h3>
                 <ul class="info-list">
                     <li>
-                        <h5>تحصیلات و تخصص ها</h5>
-                                        <span>{{ content.field_doctor_specialty }}</span>
-
+                        <h5>تحصیلات و تخصص‌ها</h5>
+                        <span>{{ content.field_doctor_specialty }}</span>
                     </li>
                     <li>
                         <h5>خدمات درمانی</h5>
-                        {{content.field_doctor_services}}
+                        {{ content.field_doctor_services }}
                     </li>
                 </ul>
             </div>
@@ -37,67 +36,66 @@
     </div>
     <div class="col-lg-8 col-md-12">
         <div class="doctor-details-top-content">
-             <div class="rating">
-                        {{ content.field_doctor_rating }}
-                    </div>
+            <div class="rating">
+                {{ content.field_doctor_rating }}
+            </div>
             <div class="title">
                 <h2>{{ content.field_doctor_name }}</h2>
-                
                 <span>{{ content.field_doctor_specialty }}</span>
                 <br/>
                 <span>{{ content.field_doctor_reg_code }}</span>
             </div>
-       
             <ul class="list">
-                <li>
-                    <i class="fa fa-phone"></i>
-                    <span>
-                        <a href="tel:">{{content.field_doctor_tel}} </a>
-                    </span>
-                </li>
+                {% if content.field_doctor_tel is defined and content.field_doctor_tel|length > 0 %}
+                    {% for tel in content.field_doctor_tel %}
+                        <li>
+                            <i class="fa fa-phone"></i>
+                            <span>
+                                <a href="tel:{{ tel.content['#markup'] }}">{{ tel.content['#markup'] }}</a>
+                            </span>
+                        </li>
+                    {% endfor %}
+                {% endif %}
                 <li>
                     <i class="fa fa-map-pin"></i>
-                    <span>{{content.field_doctor_address}}	</span>
+                    <span>{{ content.field_doctor_address }}</span>
                 </li>
             </ul>
             <a href="/online-help" class="default-btn">
                 <i class="fa fa-arrow-right"></i>
-                {{'Start Triage'|t}}
+                {{ 'Start Triage'|t }}
             </a>
-           
         </div>
 
         <div class="row justify-content-center">
-            <div class="col-xs-12 d-block d-sm-none ">
-        <div class="doctor-details-sidebar">
-                <h3>ویژگی‌های و صلاحیت ها</h3>
-                <ul class="info-list">
-                    <li>
-                        <h5>تحصیلات و تخصص ها</h5>
-                        {{ content.field_doctor_specialty }}
-
-                    </li>
-                    <li>
-                        <h5>خدمات درمانی</h5>
-                        {{content.field_doctor_services}}
-                    </li>
-                </ul>
+            <div class="col-xs-12 d-block d-sm-none">
+                <div class="doctor-details-sidebar">
+                    <h3>ویژگی‌ها و صلاحیت‌ها</h3>
+                    <ul class="info-list">
+                        <li>
+                            <h5>تحصیلات و تخصص‌ها</h5>
+                            {{ content.field_doctor_specialty }}
+                        </li>
+                        <li>
+                            <h5>خدمات درمانی</h5>
+                            {{ content.field_doctor_services }}
+                        </li>
+                    </ul>
+                </div>
             </div>
-            </div>
-            </div>
+        </div>
         <div class="row justify-content-center">
             <div class="col-xl-12 col-md-12">
                 <div class="doctor-details-desc">
                     <div class="content">
-                        <h3> {{ content.field_doctor_name }}</h3>
+                        <h3>{{ content.field_doctor_name }}</h3>
                         {{ content.body }}
                     </div>
                 </div>
                 <div class="doctor-testimonial-card">
-                <div class="quote">
-                    <img src="{{ source(directory ~ '/images/quote.svg')|data_uri('image/svg+xml') }}" alt="{{ 'Quote'|t }}"/>
-
-                </div>
+                    <div class="quote">
+                        <img src="{{ file_url(directory ~ '/images/quote.svg') }}" alt="{{ 'Quote'|t }}"/>
+                    </div>
                     {{ drupal_region('user3') }}
                 </div>
             </div>
@@ -105,13 +103,13 @@
     </div>
 </div>
 
-{# {{ drupal_view('clinic_info_doctor_detail', 'clinic_info', 'field_doctor_practices_target_id') }} #}
+{{ drupal_view('clinic_info_doctor_detail', 'clinic_info', 'field_doctor_practices_target_id') }}
 
 <div class="gsc-tabs">
     <div class="tabs_wrapper tabs_">
         <ul class="nav nav-tabs">
-        <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#clinics1">{{ 'کلینیک‌ها و مراکز درمانی'|t }}</a>
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#clinics1">{{ 'کلینیک‌ها و مراکز درمانی'|t }}</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" data-bs-toggle="tab" href="#reviews1">{{ 'ارسال نظر'|t }}</a>
@@ -121,7 +119,7 @@
             </li>
         </ul>
         <div class="tab-content">
-            <div id="clinics1" class="tab-pane fade">{{ drupal_region('user2') }}</div>
+            <div id="clinics1" class="tab-pane fade show active">{{ drupal_region('user2') }}</div>
             <div id="reviews1" class="tab-pane fade">{{ content.field_doctor_reviews }}</div>
             <div id="cert1" class="tab-pane fade">{{ content.field_doctor_certificates }}</div>
         </div>
