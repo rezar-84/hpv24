@@ -46,16 +46,17 @@
                 <span>{{ content.field_doctor_reg_code }}</span>
             </div>
             <ul class="list">
-                {% if content.field_doctor_tel is defined %}
-                {% for item in content.field_doctor_tel %}
+                {% for tel in content.field_doctor_tel %}
+                {% if tel['#markup'] is not empty %}
                     <li>
                         <i class="fa fa-phone"></i>
                         <span>
-                            <a href="tel:{{ item['#markup'] }}">{{ item['#markup'] }}</a>
+                            <a href="tel:{{ tel['#markup'] }}">{{ tel['#markup'] }}</a>
                         </span>
                     </li>
-                {% endfor %}
-            {% endif %}
+                {% endif %}
+            {% endfor %}
+            
             
             
                 <li>
