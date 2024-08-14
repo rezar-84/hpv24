@@ -2082,3 +2082,9 @@ input#edit-field-doctor-name-title--2 {
   background-color: #fafafa !important;
   height: 60px;
 }
+.glossary-block{
+  background-image: url(/sites/default/files/gbb-uploads/bg-9.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding: 50px 20px;
+}
