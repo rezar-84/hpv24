@@ -10,10 +10,9 @@
 		'clearfix',
 	]
 %}
-{{ content.field_doctor_status['#markup']}}
 {{ content.field_doctor_status}}
 <div class="row justify-content-center position-relative">
-    {% if content.field_doctor_status['#markup'] == '0' %}
+    {% if content.field_doctor_status == '0' %}
         <!-- Gray overlay for inactive doctors -->
         <div class="inactive-overlay">
             <span class="inactive-text">Not Active</span>
@@ -73,7 +72,7 @@
                 <li>
                     <i class="fa fa-map-pin"></i>
                     <span>
-                        {% if content.field_doctor_status['#markup'] == '1' %}
+                        {% if content.field_doctor_status == '1' %}
                             {{ content.field_doctor_address }}
                         {% else %}
                             Address not available
