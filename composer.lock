@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "90c3852e00dc5a7f688377c5ec8e5976",
+    "content-hash": "78614d5bf04ce1fdb8b7a77b85c0ca07",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -4811,6 +4811,94 @@
             }
         },
         {
+            "name": "drupal/commerce_cart",
+            "version": "2.40.0",
+            "require": {
+                "drupal/commerce": "*",
+                "drupal/commerce_order": "*",
+                "drupal/commerce_product": "*",
+                "drupal/core": "^9.3 || ^10"
+            },
+            "type": "metapackage",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.40",
+                    "datestamp": "1724399894",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Centarro",
+                    "homepage": "https://www.drupal.org/user/3661446"
+                },
+                {
+                    "name": "jsacksick",
+                    "homepage": "https://www.drupal.org/user/972218"
+                },
+                {
+                    "name": "rszrama",
+                    "homepage": "https://www.drupal.org/user/49344"
+                }
+            ],
+            "description": "Implements the shopping cart system and add to cart features.",
+            "homepage": "https://www.drupal.org/project/commerce",
+            "support": {
+                "source": "https://git.drupalcode.org/project/commerce"
+            }
+        },
+        {
+            "name": "drupal/commerce_checkout",
+            "version": "2.40.0",
+            "require": {
+                "drupal/commerce": "*",
+                "drupal/commerce_cart": "*",
+                "drupal/commerce_order": "*",
+                "drupal/core": "^9.3 || ^10"
+            },
+            "type": "metapackage",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.40",
+                    "datestamp": "1724399894",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Centarro",
+                    "homepage": "https://www.drupal.org/user/3661446"
+                },
+                {
+                    "name": "jsacksick",
+                    "homepage": "https://www.drupal.org/user/972218"
+                },
+                {
+                    "name": "rszrama",
+                    "homepage": "https://www.drupal.org/user/49344"
+                }
+            ],
+            "description": "Provides configurable checkout flows.",
+            "homepage": "https://www.drupal.org/project/commerce",
+            "support": {
+                "source": "https://git.drupalcode.org/project/commerce"
+            }
+        },
+        {
             "name": "drupal/commerce_number_pattern",
             "version": "2.39.0",
             "require": {
@@ -4896,6 +4984,50 @@
                 }
             ],
             "description": "Defines the Order entity and associated features.",
+            "homepage": "https://www.drupal.org/project/commerce",
+            "support": {
+                "source": "https://git.drupalcode.org/project/commerce"
+            }
+        },
+        {
+            "name": "drupal/commerce_payment",
+            "version": "2.40.0",
+            "require": {
+                "drupal/commerce": "*",
+                "drupal/commerce_order": "*",
+                "drupal/core": "^9.3 || ^10",
+                "drupal/entity_reference_revisions": "*"
+            },
+            "type": "metapackage",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.40",
+                    "datestamp": "1724399894",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Centarro",
+                    "homepage": "https://www.drupal.org/user/3661446"
+                },
+                {
+                    "name": "jsacksick",
+                    "homepage": "https://www.drupal.org/user/972218"
+                },
+                {
+                    "name": "rszrama",
+                    "homepage": "https://www.drupal.org/user/49344"
+                }
+            ],
+            "description": "Provides payment functionality.",
             "homepage": "https://www.drupal.org/project/commerce",
             "support": {
                 "source": "https://git.drupalcode.org/project/commerce"
@@ -19844,6 +19976,81 @@
             }
         },
         {
+            "name": "drupal/webform_product",
+            "version": "3.1.0-rc3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/webform_product.git",
+                "reference": "3.1.0-rc3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webform_product-3.1.0-rc3.zip",
+                "reference": "3.1.0-rc3",
+                "shasum": "02f43267d08491465bc1706fd64b0a3ed48b4ce4"
+            },
+            "require": {
+                "drupal/commerce": "^2 || ^3",
+                "drupal/commerce_cart": "*",
+                "drupal/commerce_checkout": "*",
+                "drupal/commerce_order": "*",
+                "drupal/commerce_payment": "*",
+                "drupal/commerce_product": "*",
+                "drupal/core": "^10.1 || ^11",
+                "drupal/webform": "^6"
+            },
+            "require-dev": {
+                "drupal/commerce": "*",
+                "drupal/commerce_checkout": "*",
+                "drupal/commerce_order": "*",
+                "drupal/commerce_payment": "*",
+                "drupal/commerce_payment_example": "*",
+                "drupal/commerce_price": "*",
+                "drupal/commerce_product": "*",
+                "drupal/commerce_store": "*",
+                "drupal/webform": "*",
+                "drupal/webform_ui": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.1.0-rc3",
+                    "datestamp": "1722791502",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Bálint Nagy (nagy.balint)",
+                    "homepage": "https://www.drupal.org/u/nagybalint",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Tess Bakker",
+                    "homepage": "https://www.drupal.org/u/tess-bakker",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Tamás Pintér (mr.york)",
+                    "homepage": "https://www.drupal.org/u/mryork",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Setup a single webform as a product for Commerce.",
+            "homepage": "https://www.drupal.org/project/webform_product",
+            "support": {
+                "source": "https://git.drupalcode.org/project/webform_product",
+                "issues": "https://www.drupal.org/project/issues/webform_product"
+            }
+        },
+        {
             "name": "drupal/webform_views",
             "version": "5.2.0",
             "source": {
@@ -32617,7 +32824,8 @@
         "drupal/votingapi": 10,
         "drupal/fivestar": 15,
         "drupal/facets": 10,
-        "drupal/advagg": 15
+        "drupal/advagg": 15,
+        "drupal/webform_product": 5
     },
     "prefer-stable": true,
     "prefer-lowest": false,
