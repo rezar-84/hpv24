@@ -10,9 +10,12 @@
 		'clearfix',
 	]
 %}
-{{ content.field_doctor_status}}
+
+<!-- Start Display doctor for detail page -->
+{% set doctor_status = node.field_doctor_status.value %}
+
 <div class="row justify-content-center position-relative">
-    {% if content.field_doctor_status == '0' %}
+    {% if doctor_status == '0' %}
         <!-- Gray overlay for inactive doctors -->
         <div class="inactive-overlay">
             <span class="inactive-text">Not Active</span>
@@ -60,7 +63,7 @@
                     <li>
                         <i class="fa fa-phone"></i>
                         <span>
-                            {% if content.field_doctor_status['#markup'] == '1' %}
+                            {% if doctor_status == '1' %}
                                 <a href="tel:{{ tel['#markup'] }}">{{ tel['#markup'] }}</a>
                             {% else %}
                                 xxx-xxxxx
@@ -72,7 +75,7 @@
                 <li>
                     <i class="fa fa-map-pin"></i>
                     <span>
-                        {% if content.field_doctor_status == '1' %}
+                        {% if doctor_status == '1' %}
                             {{ content.field_doctor_address }}
                         {% else %}
                             Address not available
