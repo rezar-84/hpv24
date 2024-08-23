@@ -60,27 +60,22 @@
             
             <ul class="list">
                 {% for tel in content.field_doctor_tel %}
+                {% if tel['#markup'] is not empty %}
                     <li>
                         <i class="fa fa-phone"></i>
                         <span>
-                            {% if doctor_status == '1' %}
-                                <a href="tel:{{ tel['#markup'] }}">{{ tel['#markup'] }}</a>
-                            {% else %}
-                                xxx-xxxxx
-                            {% endif %}
+                            <a href="tel:{{ tel['#markup'] }}">{{ tel['#markup'] }}</a>
                         </span>
                     </li>
-                {% endfor %}
+                {% endif %}
+            {% endfor %}
+
+
                 
                 <li>
                     <i class="fa fa-map-pin"></i>
-                    <span>
-                        {% if doctor_status == '1' %}
-                            {{ content.field_doctor_address }}
-                        {% else %}
-                            Address not available
-                        {% endif %}
-                    </span>
+                    <span>{{ content.field_doctor_address }}</span>
+
                 </li>
             </ul>
             
