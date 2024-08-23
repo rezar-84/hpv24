@@ -14,26 +14,29 @@
 <!-- Start Display doctor for detail page -->
 <div class="row justify-content-center">
     <div class="col-lg-4 col-md-12">
-        <div class="doctor-details-image">
+        <div class="doctor-details-image position-relative">
             {{ content.field_doctor_profile_pic }}
+            {% if content.field_doctor_status['#markup'] == '0' %}
+                <span class="badge badge-danger position-absolute top-0 start-0">Inactive</span>
+            {% endif %}
         </div>
         <hr>
         <div class="col-xl-12 col-md-12 d-none d-lg-block">
             <div class="doctor-details-sidebar">
                 <h3>ویژگی‌ها و صلاحیت‌ها</h3>
-                    <ul class="info-list">
-                        <li>
-                            <h4>تحصیلات و تخصص‌ها</h4>
-                            {{ content.field_doctor_specialty }}
-                        </li>
-                     </ul>
-                    <h3>خدمات درمانی</h3>
-                    <ul class="info-list">
-                        <li>
-                            <h5>خدمات درمانی</h5>
-                            {{ content.field_doctor_services }}
-                        </li>
-                    </ul>
+                <ul class="info-list">
+                    <li>
+                        <h4>تحصیلات و تخصص‌ها</h4>
+                        {{ content.field_doctor_specialty }}
+                    </li>
+                 </ul>
+                <h3>خدمات درمانی</h3>
+                <ul class="info-list">
+                    <li>
+                        <h5>خدمات درمانی</h5>
+                        {{ content.field_doctor_services }}
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -47,25 +50,24 @@
                 <div class="doctos-specialty">{{ content.field_doctor_specialty }}</div>
                 <div class="doctors-reg-info">{{ content.field_doctor_reg_code }}</div>
             </div>
-            <ul class="list">
-                {% for tel in content.field_doctor_tel %}
-                {% if tel['#markup'] is not empty %}
+            {% if content.field_doctor_status['#markup'] == '1' %}
+                <ul class="list">
+                    {% for tel in content.field_doctor_tel %}
+                    {% if tel['#markup'] is not empty %}
+                        <li>
+                            <i class="fa fa-phone"></i>
+                            <span>
+                                <a href="tel:{{ tel['#markup'] }}">{{ tel['#markup'] }}</a>
+                            </span>
+                        </li>
+                    {% endif %}
+                    {% endfor %}
                     <li>
-                        <i class="fa fa-phone"></i>
-                        <span>
-                            <a href="tel:{{ tel['#markup'] }}">{{ tel['#markup'] }}</a>
-                        </span>
+                        <i class="fa fa-map-pin"></i>
+                        <span>{{ content.field_doctor_address }}</span>
                     </li>
-                {% endif %}
-            {% endfor %}
-            
-            
-            
-                <li>
-                    <i class="fa fa-map-pin"></i>
-                    <span>{{ content.field_doctor_address }}</span>
-                </li>
-            </ul>
+                </ul>
+            {% endif %}
             <a href="/online-help" class="default-btn">
                 <i class="fa fa-arrow-right"></i>
                 {{ 'Start Triage'|t }}
