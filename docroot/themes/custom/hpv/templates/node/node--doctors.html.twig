@@ -12,6 +12,7 @@
 %}
 
 <div class="row justify-content-center position-relative">
+    {{content.field_doctor_status['#markup']}}
     {% if content.field_doctor_status['#markup'] == '0' %}
         <!-- Gray overlay for inactive doctors -->
         <div class="inactive-overlay">
