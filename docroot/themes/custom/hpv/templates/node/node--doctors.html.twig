@@ -11,14 +11,17 @@
 	]
 %}
 
-<!-- Start Display doctor for detail page -->
-<div class="row justify-content-center">
+<div class="row justify-content-center position-relative">
+    {% if content.field_doctor_status['#markup'] == '0' %}
+        <!-- Gray overlay for inactive doctors -->
+        <div class="inactive-overlay">
+            <span class="inactive-text">Not Active</span>
+        </div>
+    {% endif %}
+    
     <div class="col-lg-4 col-md-12">
-        <div class="doctor-details-image position-relative">
+        <div class="doctor-details-image">
             {{ content.field_doctor_profile_pic }}
-            {% if content.field_doctor_status['#markup'] == '0' %}
-                <span class="badge badge-danger position-absolute top-0 start-0">Inactive</span>
-            {% endif %}
         </div>
         <hr>
         <div class="col-xl-12 col-md-12 d-none d-lg-block">
@@ -40,6 +43,7 @@
             </div>
         </div>
     </div>
+    
     <div class="col-lg-8 col-md-12">
         <div class="doctor-details-top-content">
             <div class="rating">
@@ -50,24 +54,33 @@
                 <div class="doctos-specialty">{{ content.field_doctor_specialty }}</div>
                 <div class="doctors-reg-info">{{ content.field_doctor_reg_code }}</div>
             </div>
-            {% if content.field_doctor_status['#markup'] == '1' %}
-                <ul class="list">
-                    {% for tel in content.field_doctor_tel %}
-                    {% if tel['#markup'] is not empty %}
-                        <li>
-                            <i class="fa fa-phone"></i>
-                            <span>
-                                <a href="tel:{{ tel['#markup'] }}">{{ tel['#markup'] }}</a>
-                            </span>
-                        </li>
-                    {% endif %}
-                    {% endfor %}
+            
+            <ul class="list">
+                {% for tel in content.field_doctor_tel %}
                     <li>
-                        <i class="fa fa-map-pin"></i>
-                        <span>{{ content.field_doctor_address }}</span>
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            {% if content.field_doctor_status['#markup'] == '1' %}
+                                <a href="tel:{{ tel['#markup'] }}">{{ tel['#markup'] }}</a>
+                            {% else %}
+                                xxx-xxxxx
+                            {% endif %}
+                        </span>
                     </li>
-                </ul>
-            {% endif %}
+                {% endfor %}
+                
+                <li>
+                    <i class="fa fa-map-pin"></i>
+                    <span>
+                        {% if content.field_doctor_status['#markup'] == '1' %}
+                            {{ content.field_doctor_address }}
+                        {% else %}
+                            Address not available
+                        {% endif %}
+                    </span>
+                </li>
+            </ul>
+            
             <a href="/online-help" class="default-btn">
                 <i class="fa fa-arrow-right"></i>
                 {{ 'Start Triage'|t }}
@@ -94,6 +107,7 @@
                 </div>
             </div>
         </div>
+        
         <div class="row justify-content-center">
             <div class="col-xl-12 col-md-12">
                 <div class="doctor-details-desc">
