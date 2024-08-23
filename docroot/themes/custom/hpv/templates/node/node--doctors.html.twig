@@ -10,11 +10,9 @@
 		'clearfix',
 	]
 %}
-{{ content.field_doctor_profile_pic }}
-markup
 {{ content.field_doctor_status['#markup']}}
+{{ content.field_doctor_status}}
 <div class="row justify-content-center position-relative">
-    {{content.field_doctor_status['#markup']}}
     {% if content.field_doctor_status['#markup'] == '0' %}
         <!-- Gray overlay for inactive doctors -->
         <div class="inactive-overlay">
@@ -24,6 +22,7 @@ markup
     
     <div class="col-lg-4 col-md-12">
         <div class="doctor-details-image">
+            {{ content.field_doctor_profile_pic }}
         </div>
         <hr>
         <div class="col-xl-12 col-md-12 d-none d-lg-block">
