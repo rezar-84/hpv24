@@ -2148,6 +2148,18 @@ input#edit-field-doctor-name-title--2 {
   padding-left: 0;
   padding-right: 85px;
 }
+.pricing-table:hover{
+  background: #D6D2F1;
+  /* cursor: pointer; */
+  transition: ease-in;
+
+}
+.pricing-table .plan-name .title{
+  font-size: 1.5rem;
+}
+.pricing-table .content-wrap .plan-price .interval{
+  font-size: 0.8rem;
+}
 .pricing-table.highlight-plan{
   border: 3px solid #e1038e;
 }
