@@ -2140,3 +2140,11 @@ input#edit-field-doctor-name-title--2 {
   float: left;
   text-align: center;
 }
+.iconbox-five__icon-inner  {
+ float: right;
+}
+.iconbox-five__content-inner{
+  text-align: right !important;
+  padding-left: 0;
+  padding-right: 85px;
+}
