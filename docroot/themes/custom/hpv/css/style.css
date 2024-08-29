@@ -2170,3 +2170,15 @@ input#edit-field-doctor-name-title--2 {
 .price-value .space{
   display: none;
 }
+.silver-package{
+  border: 3px solid #93a197;
+
+}
+.platinium-package{
+  border: 3px solid #8fdede;
+
+}
+.gold-package{
+  border: 3px solid #ac9300;
+
+}
