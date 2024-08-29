@@ -2148,3 +2148,16 @@ input#edit-field-doctor-name-title--2 {
   padding-left: 0;
   padding-right: 85px;
 }
+.pricing-table.highlight-plan{
+  border: 3px solid #e1038e;
+}
+.pricing-table.highlight-plan .recommended-plan{
+  background: #e1038e;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  top: -32px;
+  letter-spacing: 1px;
+  padding: 11px 5px;
+  border-radius: 2rem;
+}
