@@ -2161,3 +2161,12 @@ input#edit-field-doctor-name-title--2 {
   padding: 11px 5px;
   border-radius: 2rem;
 }
+
+.pricing-table .content-wrap .plan-price .price-value {
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: nowrap;
+}
+.price-value .space{
+  display: none;
+}
