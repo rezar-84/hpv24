@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700&display=swap');
 body{
     font-family: 'Vazirmatn', sans-serif !important;
+    color: #020D2B;
 }
 
 /* CSS HEX */
@@ -2129,4 +2130,13 @@ input#edit-field-doctor-name-title--2 {
 }
 .pricing-table .plan-list ul li{
   padding:5px 20px 5px 0 !important ;
+}
+
+.shockwave-button {
+  margin-top: 10px;
+  width: 30%;
+  justify-content: center;
+  font-size: 24px !important;
+  float: left;
+  text-align: center;
 }
