@@ -2193,3 +2193,7 @@ input#edit-field-doctor-name-title--2 {
   border: 3px solid #ac9300;
 
 }
+.feature-one__content{
+  flex-direction: row-reverse;
+  text-align: right;
+}
