@@ -543,11 +543,12 @@ color: #00cde5 !important;
   content: '✓';
 }
 
-.webform-submission-form .form-item input[type="radio"]:checked + label, .hpv24-checkbox-wrapper .form-item input[type="radio"]:checked + label{
+.webform-submission-form .form-item input[type="radio"]:checked + label,
+ .hpv24-checkbox-wrapper .form-item input[type="checkbox"]:checked + label{
   background-color: #C4DCF3;
   color: #020D2B;
 }
-.webform-submission-form .form-item input[type="radio"]{
+.webform-submission-form .form-item input[type="radio"], .webform-submission-form .form-item input[type="checkbox"]{
   height: 0;
   width: 0;
   display: none;
