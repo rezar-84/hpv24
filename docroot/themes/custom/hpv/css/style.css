@@ -520,8 +520,8 @@ color: #00cde5 !important;
     display: inline;
     color: #333;
   }
-
-  .webform-submission-form .form-item input[type="radio"] + label {
+ 
+  .webform-submission-form .form-item input[type="radio"] + label,   .hpv24-checkbox-wrapper .form-item input[type="checkbox"] + label {
     display: block;
     cursor: pointer;
     color: #fff;
@@ -531,17 +531,19 @@ color: #00cde5 !important;
     padding: 16px 25px 14px;
     line-height: 24px;
 }
-.webform-submission-form .form-item input[type=radio]:hover + label  {
+.webform-submission-form .form-item input[type=radio]:hover + label , .hpv24-checkbox-wrapper .form-item input[type="checkbox"]:hover + label {
   background-color: #58ba83 !important;
   color: #fff !important;
 }
 
-.webform-submission-form .form-item input[type="radio"]:checked + label:before , .webform-options-display-buttons input:checked + label.webform-options-display-buttons-label::before
+.webform-submission-form .form-item input[type="radio"]:checked + label:before , 
+.webform-options-display-buttons input:checked + label.webform-options-display-buttons-label::before,
+.hpv24-checkbox-wrapper .form-item input[type="checkbox"]:checked + label:before 
   {
   content: '✓';
 }
 
-.webform-submission-form .form-item input[type="radio"]:checked + label{
+.webform-submission-form .form-item input[type="radio"]:checked + label, .hpv24-checkbox-wrapper .form-item input[type="radio"]:checked + label{
   background-color: #C4DCF3;
   color: #020D2B;
 }
@@ -2197,3 +2199,4 @@ input#edit-field-doctor-name-title--2 {
   flex-direction: row-reverse;
   text-align: right;
 }
+
