@@ -149,6 +149,9 @@ span.language-link.active-language{
 }
 
     /* typography  */
+    .gsc-heading__title{
+      letter-spacing: -0.2px;
+    }
     .gsc-heading__sub-title span:before {
     margin-left: 10px;
     margin-bottom: 5px;
@@ -170,7 +173,10 @@ span.language-link.active-language{
     right:auto;
     left: 1px;
 }
+.em2-line{
+  line-height: 2em;
 
+}
 
 /* navigation */
 @media (min-width: 1025px) {
@@ -2201,3 +2207,54 @@ input#edit-field-doctor-name-title--2 {
   text-align: right;
 }
 
+
+.ech-contact-us-information .item, .ech-con-card.item {
+  border-radius: 40px;
+  background-color: #D6D2F1;
+  padding: 26px;
+  margin-bottom: 25px;
+}
+
+.ech-contact-us-information .item .inner, .ech-con-card.item .inner {
+  border: 1px solid #ffffff;
+  padding: 50px 35px;
+  border-radius: 40px;
+}
+.ech-contact-us-information .item .inner .title, .ech-con-card.item .inner .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.ech-contact-us-information .item .inner .title i, .ech-con-card.item .inner .title i {
+  font-size: 40px;
+  color: #020D2B;
+  margin-right: 15px;
+}
+.ti-ambulance:before {
+  content: "\ebf5";
+}
+.ech-contact-us-information .bg-F2DDD9 .item {
+  background-color: #F2DDD9;
+}
+.ech-contact-us-information .item, .ech-con-card.item {
+  border-radius: 40px;
+  background-color: #D6D2F1;
+  padding: 26px;
+  margin-bottom: 25px;
+}
+.ech-contact-us-information .bg-D7ECE4 .item {
+  background-color: #D7ECE4;
+}
+
+.service-four__desc:after{
+  right: 0;
+  left: auto;
+}
+.service-four__desc{
+  font-size: 16px;
+  line-height: 28px;
+}
