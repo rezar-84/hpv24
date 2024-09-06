@@ -71,7 +71,8 @@
     "drupal/eu_cookie_compliance": "^1.24",
     "drupal/cookies": "^1.2",
     "drupal/autocomplete_deluxe": "^2.0",
-    "drupal/webform_product": "^3.1@RC"
+    "drupal/webform_product": "^3.1@RC",
+    "drupal/ckeditor_bidi": "^4.0"
   },
   "require-dev": {
     "drupal/core-dev": "~10",
