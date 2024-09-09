@@ -52,7 +52,7 @@ pre .language-plaintext:after {
   top: -1px;
   white-space: nowrap;
 }
-.field--name-body a{
+.post-block .field--name-body a{
   color: #9588E8;
 
 }
