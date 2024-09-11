@@ -2088,20 +2088,20 @@ input#edit-field-doctor-name-title--2 {
 
 .webform-custom-options-button {
 
-  border: 3px solid #1dc0cc;
-  border-radius: 20px;
-  background-color: #1dc0cc;
+  border: 3px solid #1dc0cc !important;
+  border-radius: 20px !important;
+  background-color: #1dc0cc !important;
 
-  color: #fff;
+  color: #fff !important;
   cursor: pointer;
 }
 .webform-custom-options-button:hover{
-  background-color:  #9588E8 ;
+  background-color:  #9588E8 !important ;
   color: #fff;
 }
 .webform-custom-options-button[data-option-value][aria-checked=true]{
-  color: #fff;
-  background-color: #020D2B;
+  color: #fff !important;
+  background-color: #020D2B !important;
 }
 
 .iti__selected-flag{
