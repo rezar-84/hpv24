@@ -64,8 +64,18 @@
   
     gtag('config', 'G-Q9WMJXWVJW');
   </script>
-<script src="//code.jivosite.com/widget/Rq7jHfbMxd" async></script>
 
+  <script type="text/javascript">
+  window.RAYCHAT_TOKEN = "3fa95be9-e148-41af-bcdd-c238e86e3dd6";
+    (function () {
+      d = document;
+      s = d.createElement("script");
+      s.src = "https://widget-react.raychat.io/install/widget.js";
+      s.async = 1;
+      d.getElementsByTagName("head")[0].appendChild(s);
+    })();
+  </script>
+  
   {% set body_classes = [
     logged_in ? 'logged-in',
     not root_path ? 'frontpage' : 'path-' ~ root_path|clean_class,
