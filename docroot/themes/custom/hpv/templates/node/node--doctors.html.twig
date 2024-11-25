@@ -28,6 +28,7 @@
         </div>
         <hr>
         <div class="col-xl-12 col-md-12 d-none d-lg-block">
+               <div id="doctor-contact-form" class="doctor-contact-form">{{ drupal_region('user4') }}</div>
             <div class="doctor-details-sidebar">
                 <h3>ویژگی‌ها و صلاحیت‌ها</h3>
                 <ul class="info-list">
@@ -36,6 +37,7 @@
                         {{ content.field_doctor_specialty }}
                     </li>
                  </ul>
+                 <hr>
                 <h3>خدمات درمانی</h3>
                 <ul class="info-list">
                     <li>
@@ -120,13 +122,16 @@
                     </div>
                     {{ drupal_region('user3') }}
                 </div>
+
+               <div id="doctor-contact-form" class="doctor-contact-form">{{ drupal_region('user4') }}</div>
+
             </div>
         </div>
     </div>
 </div>
 
 {{ drupal_view('clinic_info_doctor_detail', 'clinic_info', 'field_doctor_practices_target_id') }}
-
+{#  
 <div class="gsc-tabs">
     <div class="tabs_wrapper tabs_">
         <ul class="nav nav-tabs">
@@ -146,4 +151,5 @@
             <div id="cert1" class="tab-pane fade">{{ content.field_doctor_certificates }}</div>
         </div>
     </div>
+    #}
 </div>
