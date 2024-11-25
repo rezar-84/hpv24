@@ -668,7 +668,7 @@ width: auto;
 .chosen-container-multi .chosen-choices li.search-choice {
   position: relative;
   margin: 3px 5px 3px 0;
-  padding: 5px 21px 4px 5px;
+  padding: 5px 5px 4px 21px;
   border: 1px solid #d7ece4;
   border-radius: 3px;
   max-width: 100%;
@@ -679,7 +679,9 @@ width: auto;
   border-radius: 5px;
 }
 .chosen-container .search-choice-close{
-  left:3px
+  left:3px !important;
+  right: auto !important;
+
 }
 
 .chosen-container-multi .chosen-choices li{
