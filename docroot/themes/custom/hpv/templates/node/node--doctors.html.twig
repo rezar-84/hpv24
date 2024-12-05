@@ -157,26 +157,6 @@
     </div>
 </div>
 
-{{ drupal_view('clinic_info_doctor_detail', 'clinic_info', 'field_doctor_practices_target_id') }}
- 
-<div class="gsc-tabs doctors-tabs">
-    <div class="tabs_wrapper tabs_">
-        <ul class="nav nav-tabs">
-            <li class="nav-item">
-                <a class="nav-link active" data-bs-toggle="tab" href="#clinics1">{{ 'کلینیک‌ها و مراکز درمانی'|t }}</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#reviews1">{{ 'ارسال نظر'|t }}</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#cert1">{{ 'گواهینامه‌ها'|t }}</a>
-            </li>
-        </ul>
-        <div class="tab-content">
-            <div id="clinics1" class="tab-pane fade show active">{{ drupal_region('user2') }}</div>
-            <div id="reviews1" class="tab-pane fade">{{ content.field_doctor_reviews }}</div>
-            <div id="cert1" class="tab-pane fade">{{ content.field_doctor_certificates }}</div>
-        </div>
-    </div>
+
    
 </div>
