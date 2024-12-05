@@ -2332,10 +2332,10 @@ input#edit-field-doctor-name-title--2 {
   padding: 10px;
   text-align: center;
   background: #fff;
-  color: bisque;
+  color: #fff;
 }
 span#ui-id-2 {
-  color: aqua;
+  color: #2b2b5e;
   line-height: 44px;
 }
 
@@ -2354,6 +2354,23 @@ span#ui-id-2 {
   right: auto;
   left: 0;
   content: "x";
-  background: #333;
+  background: #2b2b5e;
   border-radius: 50%;
+}
+.ui-dialog .ui-widget-content.ui-dialog-buttonpane{
+  border: none !important;
+    padding: 0 !important;
+    text-align: center;
+    margin: 0 !important;
+}
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+  /* float: right; */
+  display: flex !important;
+  justify-content: center !important;
+  padding: 10px;
+  font-family: 'Vazirmatn';
+}
+
+button.webform-button--submit.default-button.button.button--primary.js-form-submit.form-submit {
+  font-family: 'Vazirmatn';
 }
