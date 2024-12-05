@@ -24,91 +24,17 @@
     
     <div class="col-lg-4 col-md-12">
         <div class="doctor-details-image">
-        
-<div class="card doctor-card">
-  <div class="card-body d-flex">
-    <!-- Profile Image -->
-    <div class="profile-image me-3">
-                  {{ content.field_doctor_profile_pic }}
-
-    </div>
-
-    <!-- Profile Details -->
-    <div class="profile-details flex-grow-1">
-      <h5 class="card-title mb-2">{{ content.field_doctor_name }}</h5>
-      <p class="text-muted mb-2">
-          {{ content.field_doctor_specialty }}
-      </p>
-      <p class="location text-muted mb-2">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon me-1">
-          <path d="..." />
-        </svg>
-        <a href="/doctors/city/tehran" class="text-decoration-none">تهران</a>
-      </p>
-      <p class="medical-code text-muted mb-2">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon me-1">
-          <path d="..." />
-        </svg>
-                <div class="doctors-reg-info">{{ content.field_doctor_reg_code }}</div>
-      </p>
-    </div>
-
-    <!-- Action Menu -->
-    <div class="dropdown">
-      <button 
-        class="btn btn-outline-secondary dropdown-toggle" 
-        type="button" 
-        id="actionMenuButton" 
-        data-bs-toggle="dropdown" 
-        aria-expanded="false">
-        Actions
-      </button>
-      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="actionMenuButton">
-        <li>
-          <a class="dropdown-item" href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon me-2">
-              <path d="..." />
-            </svg>
-            افزودن به علاقه‌مندی‌ها
-          </a>
-        </li>
-        <li>
-          <a class="dropdown-item" href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon me-2">
-              <path d="..." />
-            </svg>
-            اشتراک گذاری
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Stats Section -->
-  <div class="card-footer d-flex justify-content-between text-center">
-    <div>
-      <svg xmlns="http://www.w3.org/2000/svg" class="icon me-1">
-        <path d="..." />
-      </svg>
-      <span>3.6 (7 نظر)</span>
-    </div>
-    <div>
-      <svg xmlns="http://www.w3.org/2000/svg" class="icon me-1">
-        <path d="..." />
-      </svg>
-      <span>٪72 پیشنهاد کاربران</span>
-    </div>
-    <div>
-      <svg xmlns="http://www.w3.org/2000/svg" class="icon me-1">
-        <path d="..." />
-      </svg>
-      <span>56 نوبت موفق</span>
-    </div>
-  </div>
-</div>
-
-
+            {{ content.field_doctor_profile_pic }}
         </div>
+
+         <div class="rating">
+                {{ content.field_doctor_rating }}
+            </div>
+            <div class="doctors-main-info">
+                <h2>{{ content.field_doctor_name }}</h2>
+                <div class="doctos-specialty">{{ content.field_doctor_specialty }}</div>
+                <div class="doctors-reg-info">{{ content.field_doctor_reg_code }}</div>
+            </div>
         <hr>
         <div class="col-xl-12 col-md-12 d-none d-lg-block">
                <div id="doctor-contact-form" class="doctor-contact-form-card">{{ drupal_region('user4') }}</div>
@@ -133,14 +59,7 @@
     
     <div class="col-lg-8 col-md-12">
         <div class="doctor-details-top-content">
-            <div class="rating">
-                {{ content.field_doctor_rating }}
-            </div>
-            <div class="doctors-main-info">
-                <h2>{{ content.field_doctor_name }}</h2>
-                <div class="doctos-specialty">{{ content.field_doctor_specialty }}</div>
-                <div class="doctors-reg-info">{{ content.field_doctor_reg_code }}</div>
-            </div>
+           
             
             <ul class="list">
                 {# {% for tel in content.field_doctor_tel %}
