@@ -1900,7 +1900,8 @@ input#edit-field-doctor-name-title--2 {
 }
 
 .doctor-details-top-content .list li span {
-  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 15px;
 }
 
 .doctor-details-top-content .list li span a {
