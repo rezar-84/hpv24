@@ -1824,7 +1824,11 @@ input#edit-field-doctor-name-title--2 {
   padding-left: 30px;
   padding-right: 30px;
 }
-
+.doctor-profile-pic{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .doctor-details-image {
   position: -webkit-sticky;
   position: sticky;
@@ -2373,4 +2377,9 @@ span#ui-id-2 {
 
 button.webform-button--submit.default-button.button.button--primary.js-form-submit.form-submit {
   font-family: 'Vazirmatn';
+}
+
+.doctor-req-button{
+  display: flex;
+  justify-content:flex-end;
 }
