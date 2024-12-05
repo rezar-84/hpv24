@@ -1836,11 +1836,11 @@ input#edit-field-doctor-name-title--2 {
   align-items:center;
   padding: 3px;
 }
-.doctor-details-image {
-}
+
 
 .doctor-details-image img {
-  border-radius: 50px !important;
+  border-radius: 50% !important;
+  aspect-ratio: 1;
 }
 
 .doctor-details-top-content {
@@ -2395,4 +2395,17 @@ button.webform-button--submit.default-button.button.button--primary.js-form-subm
 }
 .doctos-specialty a {
   font-size: 14px;
+}
+.comment__content{
+  border-radius: 20px;
+}
+[dir=rtl] .comment__content:after{
+  margin-left: 1px;
+  border-left: 10px solid #020d2b;
+}
+.comment__content:after{
+
+}
+[dir=rtl] .comment__content:before{
+  border-left: 10px solid #d3d7d9;
 }
