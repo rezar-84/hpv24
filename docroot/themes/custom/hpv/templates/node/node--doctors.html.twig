@@ -81,30 +81,10 @@
 
                 </li>
             </ul>
-            <script src="//hpv24.com/webform/doctors_contact/share.js?auto=false"></script>
-                <script>
-  (function($) {
-    $(document).ready(function() {
-      $('#open-webform-modal').click(function(e) {
-        e.preventDefault();
-        Drupal.webformShare.open({
-          url: '//hpv24.com/webform/doctors_contact/ajax',
-          title: 'Contact Us',
-          width: 800,
-          height: 600,
-          modal: true,
-          resizable: false,
-          draggable: true,
-          dialogClass: 'custom-dialog-class',
-          closeText: 'Close'
-        });
-      });
-    });
-  })(jQuery);
-</script>
-            <a href="#" id="open-webform-modal" class="button">Open Contact Form</a>
+            <a href="/form/doctors-contact" class="webform-dialog webform-dialog-normal button">درخواست نوبت</a>
 
-            </script>
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formModal">درخواست</a>
+
             {# <a href="/online-help" class="default-btn">
                 <i class="fa fa-arrow-right"></i>
                 {{ 'Start Triage'|t }}
