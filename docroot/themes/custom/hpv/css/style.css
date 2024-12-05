@@ -2309,3 +2309,51 @@ input#edit-field-doctor-name-title--2 {
   font-size: 16px;
   line-height: 28px;
 }
+
+
+
+.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-dialog-buttons {
+  background: rgba(255, 255, 255, 0.5);
+}
+[dir=rtl] .ui-dialog .ui-widget-content.ui-dialog-buttonpane .button:last-of-type {
+    /* margin-left: 0; */
+}
+
+[dir=rtl] .ui-dialog .ui-dialog-titlebar-close {
+  right: auto;
+  left: 0;
+  /* content: "x"; */
+  background: #fff;
+  border-radius: 50%;
+}
+
+.ui-dialog-titlebar.ui-corner-all.ui-widget-header.ui-helper-clearfix {
+  height: 64px;
+  padding: 10px;
+  text-align: center;
+  background: #fff;
+  color: bisque;
+}
+span#ui-id-2 {
+  color: aqua;
+  line-height: 44px;
+}
+
+.ui-helper-clearfix:after {
+  position: absolute;
+  content: "x";
+  clear: none;
+  display: block;
+  /* flex-wrap: nowrap; */
+  /* flex-direction: row-reverse; */
+  left: 32px;
+  font-size: 17px;
+  bottom: 21px;
+}
+[dir=rtl] .ui-dialog .ui-dialog-titlebar-close {
+  right: auto;
+  left: 0;
+  content: "x";
+  background: #333;
+  border-radius: 50%;
+}

@@ -37,7 +37,7 @@
             </div>
         <hr>
         <div class="col-xl-12 col-md-12 d-none d-lg-block">
-               <div id="doctor-contact-form" class="doctor-contact-form-card">{{ drupal_region('user4') }}</div>
+               {# <div id="doctor-contact-form" class="doctor-contact-form-card">{{ drupal_region('user4') }}</div> #}
             <div class="doctor-details-sidebar">
                 {# <h3>ویژگی‌ها و صلاحیت‌ها</h3> #}
                 <ul class="info-list">
@@ -81,9 +81,9 @@
 
                 </li>
             </ul>
-            <a href="/form/doctors-contact" class="webform-dialog webform-dialog-normal button">درخواست نوبت</a>
-
-            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formModal">درخواست</a>
+            <a href="/form/doctors-contact" class="btn btn-primary webform-dialog webform-dialog-normal button"
+            data-dialog-options="{&quot;width&quot;:600,&quot;title&quot;:&quot;درخواست نوبت&quot;,&quot;resizable&quot;:false}"
+            >درخواست نوبت</a>
 
             {# <a href="/online-help" class="default-btn">
                 <i class="fa fa-arrow-right"></i>
