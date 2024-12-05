@@ -1828,6 +1828,8 @@ input#edit-field-doctor-name-title--2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items:center;
+  padding: 3px;
 }
 .doctor-details-image {
   position: -webkit-sticky;
@@ -2373,6 +2375,7 @@ span#ui-id-2 {
   justify-content: center !important;
   padding: 10px;
   font-family: 'Vazirmatn';
+  float: none;
 }
 
 button.webform-button--submit.default-button.button.button--primary.js-form-submit.form-submit {
@@ -2382,4 +2385,12 @@ button.webform-button--submit.default-button.button.button--primary.js-form-subm
 .doctor-req-button{
   display: flex;
   justify-content:flex-end;
+}
+.field.field--name-field-doctor-reg-code.field--type-string.field--label-inline{
+  display: flex;
+  font-size: 14px;
+  font-weight: 700;
+}
+.doctos-specialty a {
+  font-size: 14px;
 }
