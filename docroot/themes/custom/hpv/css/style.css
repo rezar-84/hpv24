@@ -905,7 +905,7 @@ clinic-block-one .inner-box .content-box .like-box a {
   -ms-transition: all 900ms ease;
   -o-transition: all 900ms ease;
 }
-.doctors-tabs>.tab-pane{
+.doctors-tabs .tab-pane{
 background: #e9eef2;
 padding: 15px;
 border-radius: 20px;
