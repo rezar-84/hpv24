@@ -668,15 +668,15 @@ width: auto;
 .chosen-container-multi .chosen-choices li.search-choice {
   position: relative;
   margin: 3px 5px 3px 0;
-  padding: 5px 5px 4px 21px;
-  border: 1px solid #d7ece4;
-  border-radius: 3px;
+  padding: 5px 5px 4px 21px !important;
+  border: 1px solid #d7ece4 !important;
+  border-radius: 3px !important;
   max-width: 100%;
-  background-color: #d7ece4;
-  color: #2b2b5e;
-  line-height: 12px;
+  background-color: #d7ece4 !important;
+  color: #2b2b5e !important;
+  line-height: 12px !important;
   cursor: default;
-  border-radius: 5px;
+  border-radius: 5px !important;
 }
 .chosen-container .search-choice-close{
   left:3px !important;
