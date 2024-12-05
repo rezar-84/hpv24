@@ -23,18 +23,21 @@
     {% endif %}
     
     <div class="col-lg-4 col-md-12">
+         <div class="col-md-4 col-xs-12">
+
         <div class="doctor-details-image">
             {{ content.field_doctor_profile_pic }}
         </div>
-
-         <div class="rating">
+        </div>
+        <div class="col-lg-8 col-md-12"> <div class="rating">
                 {{ content.field_doctor_rating }}
             </div>
             <div class="doctors-main-info">
                 <h2>{{ content.field_doctor_name }}</h2>
                 <div class="doctos-specialty">{{ content.field_doctor_specialty }}</div>
                 <div class="doctors-reg-info">{{ content.field_doctor_reg_code }}</div>
-            </div>
+            </div></div>
+        
         <hr>
         <div class="col-xl-12 col-md-12 d-none d-lg-block">
                {# <div id="doctor-contact-form" class="doctor-contact-form-card">{{ drupal_region('user4') }}</div> #}
