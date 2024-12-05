@@ -653,7 +653,12 @@ width: auto;
 .webform-confirmation {
   margin: 2rem;
 }
+.chosen-container.chosen-with-drop .chosen-drop{
+  background-color: #f4f3f8 !important;
+  border: 1px solid #fff !important;
+  border-radius: 10px !important;
 
+}
 .chosen-container-multi .chosen-choices{
   background-color: #f4f3f8 !important;
     border: 1px solid #fff !important;
