@@ -1824,6 +1824,11 @@ input#edit-field-doctor-name-title--2 {
   padding-left: 30px;
   padding-right: 30px;
 }
+.doctor-profile-wrapper{
+  border-radius: 20px;
+  background: #eee;
+  padding: 40px 5px;
+}
 .doctor-profile-pic{
   display: flex;
   flex-direction: column;
@@ -1832,13 +1837,10 @@ input#edit-field-doctor-name-title--2 {
   padding: 3px;
 }
 .doctor-details-image {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 165px;
 }
 
 .doctor-details-image img {
-  border-radius: 20px !important;
+  border-radius: 50px !important;
 }
 
 .doctor-details-top-content {
