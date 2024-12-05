@@ -82,8 +82,31 @@
                 </li>
             </ul>
             
-            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formModal">درخواست ویزیت</a>
-<script src="//hpv24.com/webform/doctors_contact/share.js?width=800&height=600&title=Contact+Us&closeText=Close&modal=true&resizable=false&draggable=true&dialogClass=custom-dialog-class"></script>
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" id="open-webform-modal">درخواست ویزیت</a>
+            <script src="//hpv24.com/webform/doctors_contact/share.js?auto=false"></script>
+            <script>
+                <script>
+  (function($) {
+    $(document).ready(function() {
+      $('#open-webform-modal').click(function(e) {
+        e.preventDefault();
+        Drupal.webformShare.open({
+          url: '//hpv24.com/webform/doctors_contact/ajax',
+          title: 'Contact Us',
+          width: 800,
+          height: 600,
+          modal: true,
+          resizable: false,
+          draggable: true,
+          dialogClass: 'custom-dialog-class',
+          closeText: 'Close'
+        });
+      });
+    });
+  })(jQuery);
+</script>
+
+            </script>
             {# <a href="/online-help" class="default-btn">
                 <i class="fa fa-arrow-right"></i>
                 {{ 'Start Triage'|t }}
